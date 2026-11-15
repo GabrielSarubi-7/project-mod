@@ -1,5 +1,38 @@
 # Etheris development progress
 
+## Checkpoint 0.2.0-alpha — 2026-11-15
+
+This section supersedes the historical 0.1 notes below. Source now implements eight spells across Astra/Vita/Materia/Fluxo/Fulgor, persistent player learning/selection, four stateful machines, manual reagent exchanges, a native written-book Codex, a bounded directed energy link and an Overworld ruin feature with loot. All visuals reuse vanilla textures explicitly as development placeholders.
+
+The original 0.1 compilation did not establish playability: it lacked BlockItems and used obsolete plural recipe folders. Both are corrected. Its area spell also hit passive entities; the replacement uses a line-of-sight ray and hostile targets only.
+
+### Remaining GDD acceptance work
+
+Verification: `gradlew.bat build runGameTestServer --no-daemon --offline` passed on Java 21.0.13 with NeoForge 21.1.172. The server loaded 1298 recipes and reported **All 7 required tests passed**: storage bounds/persistence, collection under sky, transfer conservation, powered/unpowered forge exchange, healing/no-op/cooldown, Codex book conversion, and linking-wand interaction routing. These are headless tests, not a full player playthrough. No custom recipe-loading errors appeared. Existing vanilla command/schema warnings and a test-world 0.1→0.2 version warning remain.
+
+| Area | Implemented now | Still required |
+| --- | --- | --- |
+| Vertical slice | 8 spells, 5 schools, 4 machines, ruin, guide | Client playthrough, discovery proofs, 60–90-minute balancing |
+| Magic | Costs, cooldowns, basic learning | Mastery, hand casting, hybrids, 22 further spells, 5 further schools |
+| Ether | Personal pool, local collection, condensed items, storage, links | Regional concentration, depletion, overload, instability, priorities |
+| Machines | 4 manual devices | Queues, GUIs, inventories, automation, 6 other machines, multiblock |
+| Progression | Early learning sequence | Tier gates II–VI, nonrepetitive discoveries and preparation |
+| Life | None | 5 families, AI, contracts, modules, ownership, persistence |
+| Equipment | Personal focus | All 5 armor lines, transformations and maintenance |
+| Endgame | None | All 7 megamachines, activation proofs, Ascension and rewards |
+| Art | Vanilla placeholders, spell particles | Original textures, editable Blockbench sources, animation, sound and VFX settings |
+| Quality | Headless GameTests | Visual client QA, 2-player persistence, crash recovery, profiling and balancing |
+
+Machine data uses NBT and scheduled updates. Links are public and same-dimension, maximum 8 blocks, 8 Ether per 100 ticks. No chunk forcing. Breaking a machine deliberately discards its stored energy for now. The ruin is a feature rather than a registered locate-able structure; natural frequency has not been sampled.
+
+Spell behaviors not specified precisely by the GDD are provisional design decisions: Liga de Éter refines raw iron; Semente Quimérica advances one crop stage; Impulso grants temporary movement effects. These names do not imply their final art or full late-game behavior.
+
+Technical references: [block entities](https://docs.neoforged.net/docs/1.21.1/blockentities/) and [GameTests](https://docs.neoforged.net/docs/1.21.1/misc/gametest/). Runtime APIs also verified against the compiled NeoForge 21.1.172 environment.
+
+Next priority: validate the complete survival loop in a client, add discovery-based progression and automated machine queues, then expand tiers II–III. Do not call the GDD complete based on registration counts.
+
+## Historical 0.1 checkpoint (superseded)
+
 ## Current milestone
 
 `M1 — vertical slice foundation`

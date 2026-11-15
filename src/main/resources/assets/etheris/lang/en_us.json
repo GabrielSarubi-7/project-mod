@@ -1,5 +1,8 @@
 {
   "itemGroup.etheris": "Etheris: Echoes of Infinity",
+  "item.etheris.rune": "Principle Rune",
+  "item.etheris.codex": "Etheris Codex",
+  "item.etheris.link_wand": "Linking Wand",
   "item.etheris.etherium_fragment": "Etherium Fragment",
   "item.etheris.aether_focus": "Aether Focus",
   "block.etheris.ether_collector": "Ether Collector",

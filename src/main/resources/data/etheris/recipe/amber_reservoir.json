@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","pattern":["CCC","ASA","CCC"],"key":{"C":{"item":"minecraft:copper_ingot"},"A":{"item":"minecraft:amethyst_shard"},"S":{"item":"minecraft:chest"}},"result":{"id":"etheris:amber_reservoir","count":1}}

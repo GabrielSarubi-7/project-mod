@@ -14,6 +14,8 @@ public final class Etheris {
     public Etheris(IEventBus modBus) {
         ModItems.ITEMS.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
+        com.etheris.machine.MachineEntity.TYPES.register(modBus);
+        com.etheris.world.RuinFeature.FEATURES.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
         EtherEvents.register();
     }

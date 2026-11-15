@@ -14,12 +14,32 @@ neoForge {
     runs {
         client { client(); systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id }
         server { server(); programArgument '--nogui'; systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id }
-        gameTestServer { type = 'gameTestServer' }
+        gameTestServer { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id }
     }
     mods { "${project.mod_id}" { sourceSet sourceSets.main } }
 }
 
 sourceSets.main.resources.srcDir 'src/generated/resources'
+sourceSets.main.resources.srcDir layout.buildDirectory.dir('testTemplates')
+tasks.register('generateTestTemplate') {
+    def target = layout.buildDirectory.file('testTemplates/data/etheris/structure/empty.nbt')
+    outputs.file(target)
+    doLast {
+        def file = target.get().asFile
+        file.parentFile.mkdirs()
+        new DataOutputStream(new java.util.zip.GZIPOutputStream(new FileOutputStream(file))).withCloseable { out ->
+            out.writeByte(10); out.writeUTF('')
+            out.writeByte(3); out.writeUTF('DataVersion'); out.writeInt(3955)
+            out.writeByte(9); out.writeUTF('size'); out.writeByte(3); out.writeInt(3)
+            [5, 5, 5].each { out.writeInt(it) }
+            ['entities', 'blocks', 'palette'].each { name ->
+                out.writeByte(9); out.writeUTF(name); out.writeByte(10); out.writeInt(0)
+            }
+            out.writeByte(0)
+        }
+    }
+}
+tasks.named('processResources') { dependsOn 'generateTestTemplate' }
 
 java { toolchain.languageVersion = JavaLanguageVersion.of(21) }
 

@@ -1,5 +1,8 @@
 {
   "itemGroup.etheris": "Etheris: Ecos do Infinito",
+  "item.etheris.rune": "Runa de Princípio",
+  "item.etheris.codex": "Códice de Etheris",
+  "item.etheris.link_wand": "Vara de Enlace",
   "item.etheris.etherium_fragment": "Fragmento de Etherium",
   "item.etheris.aether_focus": "Foco de Éter",
   "block.etheris.ether_collector": "Coletor Etérico",

@@ -16,6 +16,9 @@ public final class ModCreativeTabs {
         .displayItems((parameters, output) -> {
             output.accept(ModItems.ETHERIUM_FRAGMENT);
             output.accept(ModItems.AETHER_FOCUS);
+            output.accept(ModItems.RUNE);
+            output.accept(ModItems.CODEX);
+            output.accept(ModItems.LINK_WAND);
             output.accept(ModBlocks.ETHER_COLLECTOR);
             output.accept(ModBlocks.AETHER_FOCUS_BLOCK);
             output.accept(ModBlocks.RUNE_FORGE);
