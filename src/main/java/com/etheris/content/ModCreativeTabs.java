@@ -23,6 +23,7 @@ public final class ModCreativeTabs {
             output.accept(ModBlocks.PRISMATIC_CRUSHER);
             output.accept(ModBlocks.CRYSTAL_REFINERY);
             output.accept(ModBlocks.DISTRIBUTION_NODE);
+            output.accept(ModBlocks.TRANSMUTATION_CHAMBER);
             output.accept(ModItems.CODEX);
             output.accept(ModItems.LINK_WAND);
             output.accept(ModBlocks.ETHER_COLLECTOR);

@@ -39,6 +39,7 @@ public final class MachineMenu extends AbstractContainerMenu {
         });
         addSlot(new SlotItemHandler(items, 1, 116, 47) {
             @Override public boolean mayPlace(ItemStack stack) { return false; }
+            @Override public void onTake(Player player, ItemStack stack) { super.onTake(player, stack); if (machine != null) machine.grantDiscovery(player); }
         });
         for (int row = 0; row < 3; row++) for (int col = 0; col < 9; col++)
             addSlot(new Slot(playerInventory, col + row * 9 + 9, 8 + col * 18, 112 + row * 18));

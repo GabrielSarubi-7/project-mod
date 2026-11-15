@@ -1,4 +1,11 @@
 {
+  "block.etheris.transmutation_chamber": "Câmara de Transmutação",
+  "gui.etheris.status.7": "Estrutura incompleta",
+  "gui.etheris.status.8": "Reagentes insuficientes",
+  "advancement.etheris.chamber.title": "Matéria em projeto",
+  "advancement.etheris.chamber.description": "Fabrique uma Câmara. Monte a base 3×3 de ardósia polida, cantos de ametista e lados de cobre cortado.",
+  "advancement.etheris.transmutation.title": "Prova de transmutação",
+  "advancement.etheris.transmutation.description": "Opere a Câmara completa e abra seu painel ou retire o produto para registrar a descoberta.",
   "gui.etheris.pause": "Pausar",
   "gui.etheris.resume": "Retomar",
   "gui.etheris.unlink": "Desconectar",

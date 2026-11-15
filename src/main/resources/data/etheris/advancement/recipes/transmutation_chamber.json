@@ -1,0 +1,9 @@
+{
+  "criteria": {
+    "crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": ["etheris:stable_crystal"]}]}
+    }
+  },
+  "rewards": {"recipes": ["etheris:transmutation_chamber"]}
+}

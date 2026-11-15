@@ -19,11 +19,11 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
       - run: bash ./gradlew build runGameTestServer --no-daemon
       - name: Verify game tests actually ran
-        run: grep -E 'All [1-9][0-9]* required tests passed' run/logs/latest.log
+        run: grep -E 'All [1-9][0-9]* required tests passed' run-gametest/logs/latest.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: etheris-build-and-test-log
           path: |
             build/libs/*.jar
-            run/logs/latest.log
+            run-gametest/logs/latest.log

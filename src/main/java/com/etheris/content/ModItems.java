@@ -24,6 +24,7 @@ public final class ModItems {
         ITEMS.registerSimpleBlockItem(ModBlocks.PRISMATIC_CRUSHER);
         ITEMS.registerSimpleBlockItem(ModBlocks.CRYSTAL_REFINERY);
         ITEMS.registerSimpleBlockItem(ModBlocks.DISTRIBUTION_NODE);
+        ITEMS.registerSimpleBlockItem(ModBlocks.TRANSMUTATION_CHAMBER);
     }
     private ModItems() {}
 }

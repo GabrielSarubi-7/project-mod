@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SRS",
+    "GFG",
+    "DDD"
+  ],
+  "key": {
+    "S": {
+      "item": "etheris:stable_crystal"
+    },
+    "R": {
+      "item": "etheris:rune"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "F": {
+      "item": "minecraft:blast_furnace"
+    },
+    "D": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "result": {
+    "id": "etheris:transmutation_chamber",
+    "count": 1
+  }
+}

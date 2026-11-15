@@ -1,10 +1,30 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.4.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.5.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+
+## Novidades da versão 0.5
+
+A Câmara de Transmutação é a oitava máquina e o primeiro multibloco. Ela oferece uma rota de engenharia para materiais: quatro Cristais Estáveis + 160 Éter produzem uma Pérola do Ender; oito quartzos + 80 Éter produzem uma ametista. Cada operação leva um ciclo de cinco segundos. Os valores e a montagem são decisões provisórias de implementação, pois o GDD não define receitas exatas.
+
+Monte uma base 3×3 de **ardósia polida**, deixando o centro livre para um funil de saída (oito blocos obrigatórios). Sobre ela, coloque a Câmara no centro, quatro blocos de ametista nos cantos e quatro blocos de cobre cortado nos lados. Todas as oxidações, com ou sem cera, são aceitas. Um funil acima da Câmara fornece a entrada. Vista superior:
+
+```text
+A C A     A = bloco de ametista
+C M C     C = cobre cortado
+A C A     M = Câmara
+```
+
+Ao obter Cristal Estável, a receita da Câmara aparece no livro de receitas. Ela usa dois cristais, uma runa, dois lingotes de ouro, uma fornalha potente e três ardósias polidas. Carregue com fragmentos ou enlace, insira reagentes pelo painel/funil e retire a produção. O painel distingue estrutura incompleta, falta de reagentes, falta de Éter e saída cheia. Reparar a estrutura retoma uma fila pendente em até cinco segundos, sem consumir materiais durante a falha. Sem fila, enlaces ou painel aberto, a Câmara não faz verificações periódicas.
+
+Há dois novos avanços: obter a Câmara e registrar uma transmutação real. Depois de produzir, abra o painel ou retire o produto pelo menu. A prova é compartilhável: visitar uma Câmara pública que já operou permite registrar a descoberta. Ela persiste no mundo, mas não torna o tier III completo. O Códice passa a 14 páginas e inclui a montagem; fabrique um novo para atualizar o texto.
+
+Os testes agora usam `run-gametest`, separado do cliente em `run`, evitando disputa pelos arquivos de log e pelos mundos. A aparência da Câmara ainda usa texturas vanilla e não foi inspecionada no cliente.
+
+Validação final da 0.5: compilação concluída e **21 GameTests aprovados**, incluindo produção por funis, montagem quebrada/reparada, lotes, limites de saída, persistência e registro da conquista. Esses testes não substituem uma partida de sobrevivência ou multiplayer.
 
 ## Novidades da versão 0.4
 
-Todas as sete máquinas têm um painel: clique com a mão vazia para abrir. Ele mostra Éter, entrada, saída e o motivo de espera, com botões para pausar/retomar e desconectar os enlaces de saída. Shift + clique em um item transfere entre o inventário e a máquina. Agachar e interagir com a mão vazia mantém a retirada rápida de produtos.
+Todas as máquinas têm um painel: clique com a mão vazia para abrir. Ele mostra Éter, entrada, saída e o motivo de espera, com botões para pausar/retomar e desconectar os enlaces de saída. Shift + clique em um item transfere entre o inventário e a máquina. Agachar e interagir com a mão vazia mantém a retirada rápida de produtos.
 
 Pausa manual e sinal de redstone ligado suspendem coleta, envio de Éter e processamento automatizado. Funis, recebimento de energia e trocas manuais continuam funcionando. A pausa manual persiste ao salvar o mundo. Remover o sinal ou retomar pelo painel reativa a máquina. As ações são verificadas no servidor, incluindo distância e permissão de interação.
 

@@ -56,7 +56,7 @@ public final class MachineBlock extends Block implements EntityBlock {
             int amount = Math.min(20, EtherData.max() - EtherData.get(player));
             if (amount > 0 && machine.consume(amount)) EtherData.add(player, amount);
         }
-        if ((state.is(ModBlocks.PRISMATIC_CRUSHER) || state.is(ModBlocks.CRYSTAL_REFINERY)) && !stack.isEmpty()) {
+        if ((state.is(ModBlocks.PRISMATIC_CRUSHER) || state.is(ModBlocks.CRYSTAL_REFINERY) || state.is(ModBlocks.TRANSMUTATION_CHAMBER)) && !stack.isEmpty()) {
             var remainder = machine.inventory.insertItem(0, stack.copy(), false);
             stack.setCount(remainder.getCount());
         }
@@ -66,6 +66,7 @@ public final class MachineBlock extends Block implements EntityBlock {
     private static void give(Player player, ItemStack result) { if (!player.getInventory().add(result)) player.drop(result, false); }
     @Override protected net.minecraft.world.InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
         if (!level.isClientSide && level.mayInteract(player, pos) && level.getBlockEntity(pos) instanceof MachineEntity machine) {
+            if (!player.isSpectator()) machine.grantDiscovery(player);
             if (player.isShiftKeyDown()) {
                 var output = machine.inventory.extractItem(1, 64, false);
                 if (!output.isEmpty()) give(player, output);

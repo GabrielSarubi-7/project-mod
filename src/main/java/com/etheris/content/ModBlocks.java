@@ -16,5 +16,6 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> PRISMATIC_CRUSHER = BLOCKS.register("prismatic_crusher", () -> new com.etheris.machine.MachineBlock(machine()));
     public static final DeferredBlock<Block> CRYSTAL_REFINERY = BLOCKS.register("crystal_refinery", () -> new com.etheris.machine.MachineBlock(machine()));
     public static final DeferredBlock<Block> DISTRIBUTION_NODE = BLOCKS.register("distribution_node", () -> new com.etheris.machine.MachineBlock(machine()));
+    public static final DeferredBlock<Block> TRANSMUTATION_CHAMBER = BLOCKS.register("transmutation_chamber", () -> new com.etheris.machine.MachineBlock(machine()));
     private ModBlocks() {}
 }

@@ -1,0 +1,23 @@
+{
+  "parent": "etheris:transmutacao",
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_pearl"
+    },
+    "title": {
+      "translate": "advancement.etheris.transmutation.title"
+    },
+    "description": {
+      "translate": "advancement.etheris.transmutation.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "operated": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

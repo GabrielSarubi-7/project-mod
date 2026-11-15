@@ -1,4 +1,11 @@
 {
+  "block.etheris.transmutation_chamber": "Transmutation Chamber",
+  "gui.etheris.status.7": "Incomplete structure",
+  "gui.etheris.status.8": "Not enough reagents",
+  "advancement.etheris.chamber.title": "A Project in Matter",
+  "advancement.etheris.chamber.description": "Craft a Chamber. Build a 3×3 polished deepslate base, amethyst corners and cut copper sides.",
+  "advancement.etheris.transmutation.title": "Proof of Transmutation",
+  "advancement.etheris.transmutation.description": "Operate a complete Chamber, then open its panel or collect its product to record the discovery.",
   "gui.etheris.pause": "Pause",
   "gui.etheris.resume": "Resume",
   "gui.etheris.unlink": "Unlink",

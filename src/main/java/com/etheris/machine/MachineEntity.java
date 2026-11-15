@@ -11,8 +11,29 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 public final class MachineEntity extends BlockEntity {
     public static final DeferredRegister<BlockEntityType<?>> TYPES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, "etheris");
-    public static final Supplier<BlockEntityType<MachineEntity>> TYPE = TYPES.register("machine", () -> BlockEntityType.Builder.of(MachineEntity::new, ModBlocks.ETHER_COLLECTOR.get(), ModBlocks.AETHER_FOCUS_BLOCK.get(), ModBlocks.RUNE_FORGE.get(), ModBlocks.AMBER_RESERVOIR.get(), ModBlocks.PRISMATIC_CRUSHER.get(), ModBlocks.CRYSTAL_REFINERY.get(), ModBlocks.DISTRIBUTION_NODE.get()).build(null));
+    public static final Supplier<BlockEntityType<MachineEntity>> TYPE = TYPES.register("machine", () -> BlockEntityType.Builder.of(MachineEntity::new, ModBlocks.ETHER_COLLECTOR.get(), ModBlocks.AETHER_FOCUS_BLOCK.get(), ModBlocks.RUNE_FORGE.get(), ModBlocks.AMBER_RESERVOIR.get(), ModBlocks.PRISMATIC_CRUSHER.get(), ModBlocks.CRYSTAL_REFINERY.get(), ModBlocks.DISTRIBUTION_NODE.get(), ModBlocks.TRANSMUTATION_CHAMBER.get()).build(null));
     private int energy;
+    private boolean transmutationCompleted;
+    public boolean transmutationCompleted() { return transmutationCompleted; }
+    public void grantDiscovery(net.minecraft.world.entity.player.Player player) {
+        if (isChamber() && transmutationCompleted && player instanceof net.minecraft.server.level.ServerPlayer serverPlayer) {
+            var advancement = serverPlayer.server.getAdvancements().get(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("etheris", "prova_transmutacao"));
+            if (advancement != null) serverPlayer.getAdvancements().award(advancement, "operated");
+        }
+    }
+    private long lastStructureCheck = Long.MIN_VALUE;
+    private boolean structureReady;
+    public boolean isChamber() { return getBlockState().is(ModBlocks.TRANSMUTATION_CHAMBER); }
+    private boolean structureReady(boolean refresh) {
+        if (!isChamber()) return true;
+        if (level == null) return false;
+        long now = level.getGameTime();
+        if (refresh || lastStructureCheck == Long.MIN_VALUE || now - lastStructureCheck >= 20) {
+            structureReady = ChamberStructure.formed(level, worldPosition);
+            lastStructureCheck = now;
+        }
+        return structureReady;
+    }
     private boolean paused;
     public boolean paused() { return paused; }
     public boolean automationBlocked() { return paused || (level != null && level.hasNeighborSignal(worldPosition)); }
@@ -21,11 +42,13 @@ public final class MachineEntity extends BlockEntity {
     public int status() {
         if (paused) return 1;
         if (level != null && level.hasNeighborSignal(worldPosition)) return 2;
+        if (!structureReady(false)) return 7;
         if (getBlockState().is(ModBlocks.ETHER_COLLECTOR) && level != null && !level.canSeeSky(worldPosition.above())) return 3;
         var recipe = MachineProcessing.find(getBlockState(), inventory.getStackInSlot(0));
         if (recipe == null) return 0;
+        if (inventory.getStackInSlot(0).getCount() < recipe.inputCount()) return 8;
         if (energy < recipe.cost()) return 4;
-        return canProcess() ? 6 : 5;
+        return outputFits(recipe) ? 6 : 5;
     }
     private BlockPos link;
     private final java.util.List<BlockPos> branches = new java.util.ArrayList<>();
@@ -36,12 +59,20 @@ public final class MachineEntity extends BlockEntity {
         @Override public net.minecraft.world.item.ItemStack extractItem(int slot, int amount, boolean simulate) { return slot == 1 ? super.extractItem(slot, amount, simulate) : net.minecraft.world.item.ItemStack.EMPTY; }
         @Override protected void onContentsChanged(int slot) { setChanged(); wake(); }
     };
-    public void wake() { if (level != null && !level.isClientSide && !isRemoved() && !automationBlocked() && (getBlockState().is(ModBlocks.ETHER_COLLECTOR) || link != null || canProcess())) level.scheduleTick(worldPosition, getBlockState().getBlock(), 100); }
+    public void wake() {
+        if (level != null && !level.isClientSide && !isRemoved() && !automationBlocked()
+            && (getBlockState().is(ModBlocks.ETHER_COLLECTOR) || link != null
+                || (isChamber() && !inventory.getStackInSlot(0).isEmpty()) || canProcess()))
+            level.scheduleTick(worldPosition, getBlockState().getBlock(), 100);
+    }
     @Override public void onLoad() { super.onLoad(); wake(); }
     public boolean canProcess() {
         if (automationBlocked()) return false;
         var recipe = MachineProcessing.find(getBlockState(), inventory.getStackInSlot(0));
-        if (recipe == null || energy < recipe.cost()) return false;
+        if (recipe == null || inventory.getStackInSlot(0).getCount() < recipe.inputCount() || energy < recipe.cost() || !structureReady(true)) return false;
+        return outputFits(recipe);
+    }
+    private boolean outputFits(MachineProcessing.Operation recipe) {
         var output = inventory.getStackInSlot(1);
         return output.isEmpty() || (net.minecraft.world.item.ItemStack.isSameItemSameComponents(output, recipe.output()) && output.getCount() + recipe.output().getCount() <= output.getMaxStackSize());
     }
@@ -49,10 +80,11 @@ public final class MachineEntity extends BlockEntity {
         if (!canProcess()) return false;
         var recipe = MachineProcessing.find(getBlockState(), inventory.getStackInSlot(0));
         consume(recipe.cost());
-        var input = inventory.getStackInSlot(0).copy(); input.shrink(1);
+        var input = inventory.getStackInSlot(0).copy(); input.shrink(recipe.inputCount());
         var output = inventory.getStackInSlot(1).copy();
         if (output.isEmpty()) output = recipe.output().copy(); else output.grow(recipe.output().getCount());
         inventory.setStackInSlot(0, input); inventory.setStackInSlot(1, output);
+        if (isChamber()) { transmutationCompleted = true; setChanged(); }
         return true;
     }
     public MachineEntity(BlockPos pos, BlockState state) { super(TYPE.get(), pos, state); }
@@ -91,6 +123,7 @@ public final class MachineEntity extends BlockEntity {
         super.saveAdditional(tag, registries);
         tag.putInt("ether", energy);
         tag.putBoolean("paused", paused);
+        tag.putBoolean("transmutationCompleted", transmutationCompleted);
         tag.put("inventory", inventory.serializeNBT(registries));
         if (link != null) tag.putLong("link", link.asLong());
         tag.putLongArray("branches", branches.stream().mapToLong(BlockPos::asLong).toArray());
@@ -100,6 +133,7 @@ public final class MachineEntity extends BlockEntity {
         super.loadAdditional(tag, registries);
         energy = Math.clamp(tag.getInt("ether"), 0, capacity());
         paused = tag.getBoolean("paused");
+        transmutationCompleted = tag.getBoolean("transmutationCompleted");
         link = tag.contains("link") ? BlockPos.of(tag.getLong("link")) : null;
         if (link != null && (link.equals(worldPosition) || worldPosition.distSqr(link) > 64)) link = null;
         if (tag.contains("inventory")) inventory.deserializeNBT(registries, tag.getCompound("inventory"));

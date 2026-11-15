@@ -143,7 +143,7 @@ public final class EtherisGameTests {
         var book = player.getMainHandItem();
         helper.assertTrue(book.is(Items.WRITTEN_BOOK), "Codex must become a native readable book");
         var contents = book.get(net.minecraft.core.component.DataComponents.WRITTEN_BOOK_CONTENT);
-        helper.assertTrue(contents != null && contents.pages().size() == 12, "Codex must contain twelve guide pages");
+        helper.assertTrue(contents != null && contents.pages().size() == 14, "Codex must contain fourteen guide pages");
         helper.succeed();
     }
     @GameTest(template = "empty")
