@@ -20,6 +20,7 @@ public final class ModCreativeTabs {
             output.accept(ModItems.IRON_DUST);
             output.accept(ModItems.CRYSTAL_DUST);
             output.accept(ModItems.STABLE_CRYSTAL);
+            output.accept(ModItems.VIGIA_CONTRACT);
             output.accept(ModBlocks.PRISMATIC_CRUSHER);
             output.accept(ModBlocks.CRYSTAL_REFINERY);
             output.accept(ModBlocks.DISTRIBUTION_NODE);

@@ -32,7 +32,9 @@ public final class CodexItem extends Item {
             "SINTONIZAÇÃO\n\nCristais Estáveis abrem as magias finais desta etapa e o Nó de Distribuição. Consulte a aba Etheris nos avanços para acompanhar os próximos objetivos. Avanços indicam conquistas, não garantem duração de gameplay.",
             "LIMITES DA VERSÃO\n\nMáquinas são públicas. Quebrar uma máquina derruba seu inventário e perde a energia armazenada. Redes não carregam chunks. Tiers avançados, armaduras e megamáquinas ainda não estão disponíveis.",
             "CÂMARA: MONTAGEM\n\nBase 3×3: ardósia polida; centro livre para funil de saída. Sobre ela:\nA C A\nC M C\nA C A\nM: Câmara.\nA: bloco de ametista.\nC: cobre cortado, com ou sem cera/oxidação. Funil de entrada por cima.",
-            "TRANSMUTAÇÃO\n\n4 Cristais Estáveis + 160 Éter: 1 Pérola do Ender.\n8 quartzos + 80 Éter: 1 ametista.\nInsira pelo painel ou funil. Estrutura incompleta não gasta materiais. Depois de produzir, abra o painel para registrar sua prova."
+            "TRANSMUTAÇÃO\n\n4 Cristais Estáveis + 160 Éter: 1 Pérola do Ender.\n8 quartzos + 80 Éter: 1 ametista.\nInsira pelo painel ou funil. Estrutura incompleta não gasta materiais. Depois de produzir, abra o painel para registrar sua prova.",
+            "PRIMEIRO VÍNCULO\n\nRegistre a prova da Câmara. Fabrique o Contrato de Vigia e use sobre piso livre. Custa 60 Éter interior. Limite: um Vigia por jogador, mesmo descarregado. Ele começa com 300 segundos ativos de reserva.",
+            "ORDENS E CUIDADOS\n\nMão vazia: seguir, guardar, retornar, pausar. Agachado: consultar. Fragmento: +120 segundos e cura leve. Sem dono próximo, ele espera. Para desfazer vínculo perdido: agache e use outro contrato no ar; não há reembolso."
         ).stream().map(text -> Filterable.<Component>passThrough(Component.literal(text))).toList();
         book.set(DataComponents.WRITTEN_BOOK_CONTENT, new WrittenBookContent(Filterable.passThrough("Códice de Etheris"), "Etheris", 0, pages, true));
         player.setItemInHand(hand, book);

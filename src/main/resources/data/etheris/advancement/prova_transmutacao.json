@@ -15,6 +15,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
+  "rewards": {"recipes": ["etheris:vigia_contract"]},
   "criteria": {
     "operated": {
       "trigger": "minecraft:impossible"

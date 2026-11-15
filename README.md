@@ -1,6 +1,28 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.5.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.6.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+
+## Novidades da versão 0.6
+
+O **Vigia de Éter** inaugura a primeira família de lacaios. É um guardião limitado, com 30 pontos de vida, ataques de 4 pontos antes de armadura e no máximo um ataque por segundo. Seu visual provisório usa um golem vanilla reduzido; ainda não há arte ou animação original.
+
+Para criar: registre a **Prova de Transmutação** na Câmara, fabrique um Contrato de Vigia e use-o sobre a face superior de um piso firme com espaço livre. Em sobrevivência, cada criação consome o contrato e **60 Éter interior**. Falta de energia, prova, espaço ou vínculo disponível não consome recursos. O criativo dispensa prova/custo, mantendo o limite de um Vigia por jogador.
+
+Receita do contrato (I = lingote de ferro; R = runa; S = Cristal Estável; P = Pérola do Ender):
+
+```text
+I R I
+S P S
+  I
+```
+
+Clique no Vigia com a mão vazia para alternar **seguir → guardar → retornar → pausar**. Guardar define o posto na posição atual; retornar caminha até esse posto e pausa. Agachar e interagir consulta a ordem e a reserva. Somente o dono pode comandar ou abastecer. Ele procura monstros próximos, ignora jogadores, animais e creepers, e interrompe atividades quando o dono está ausente, em outra dimensão ou a mais de 24 blocos. A defesa fica limitada a oito blocos do dono/posto, sem patrulha global ou teleporte de recuperação.
+
+A reserva inicial dura 300 segundos ativos. Um Fragmento de Etherium adiciona 120 segundos e cura quatro pontos de vida, até 600 segundos. Se não couberem os 120 segundos completos, o fragmento não é consumido. Pausa, dono ausente e falta de combustível interrompem combate e navegação. O vínculo, posto, ordem e reserva são salvos; descarregar a região não libera um segundo lacaio.
+
+Para abandonar um Vigia perdido, **agache e use outro contrato no ar**. Isso desfaz o vínculo sem reembolso; o Vigia antigo deixa de agir e desaparece quando carregado. O contrato usado para desfazer o vínculo não é consumido. A morte libera a vaga, sem deixar saque. Não há respawn automático.
+
+Validação: **28 GameTests aprovados** e compilação concluída, incluindo criação/custos em sobrevivência, espaço bloqueado, vínculo global, persistência, comandos do dono, combate, pausa e deslocamento real de seguir/retornar. Aparência no cliente, uma partida longa e multiplayer com pessoas ainda não foram verificados nesta versão. O Códice tem 16 páginas; fabrique outro para atualizar o texto. Este é um início de Gênese: faltam módulos, outras famílias, ordens de logística, Berçário e Oficina.
 
 ## Novidades da versão 0.5
 

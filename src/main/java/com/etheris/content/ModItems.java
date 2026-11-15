@@ -14,6 +14,7 @@ public final class ModItems {
     public static final DeferredItem<Item> IRON_DUST = ITEMS.registerSimpleItem("iron_dust");
     public static final DeferredItem<Item> CRYSTAL_DUST = ITEMS.registerSimpleItem("crystal_dust");
     public static final DeferredItem<Item> STABLE_CRYSTAL = ITEMS.registerSimpleItem("stable_crystal");
+    public static final DeferredItem<Item> VIGIA_CONTRACT = ITEMS.registerItem("vigia_contract", com.etheris.item.VigiaContractItem::new, new Item.Properties().stacksTo(1));
     public static final DeferredItem<Item> CODEX = ITEMS.registerItem("codex", com.etheris.item.CodexItem::new, new Item.Properties().stacksTo(1));
     public static final DeferredItem<Item> LINK_WAND = ITEMS.registerItem("link_wand", com.etheris.item.LinkWandItem::new, new Item.Properties().stacksTo(1));
     static {

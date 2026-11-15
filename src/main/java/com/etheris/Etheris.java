@@ -12,6 +12,8 @@ public final class Etheris {
     public static final String MOD_ID = "etheris";
 
     public Etheris(IEventBus modBus) {
+        com.etheris.entity.ModEntities.TYPES.register(modBus);
+        modBus.addListener(com.etheris.entity.ModEntities::attributes);
         ModItems.ITEMS.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
         com.etheris.machine.MachineEntity.TYPES.register(modBus);
