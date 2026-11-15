@@ -12,6 +12,55 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 @PrefixGameTestTemplate(false)
 public final class EtherisGameTests {
     @GameTest(template = "empty")
+    public static void menuMovesItemsAndRejectsRemoteControl(GameTestHelper helper) {
+        var pos = new BlockPos(1, 1, 1); helper.setBlock(pos, ModBlocks.RUNE_FORGE.get());
+        var machine = (MachineEntity)helper.getBlockEntity(pos);
+        var player = helper.makeMockPlayer(net.minecraft.world.level.GameType.SURVIVAL);
+        var center = helper.absolutePos(pos).getCenter(); player.setPos(center.x, center.y, center.z);
+        var menu = new com.etheris.machine.MachineMenu(1, player.getInventory(), machine);
+        player.getInventory().setItem(9, new net.minecraft.world.item.ItemStack(Items.COPPER_INGOT, 5));
+        menu.quickMoveStack(player, 2);
+        helper.assertTrue(machine.inventory.getStackInSlot(0).getCount() == 5 && player.getInventory().getItem(9).isEmpty(), "Shift-click must move exactly one source stack into input");
+        helper.assertTrue(menu.getSlot(0).mayPickup(player), "Player must be allowed to retrieve queued input");
+        var removed = menu.getSlot(0).remove(2);
+        helper.assertTrue(removed.getCount() == 2 && machine.inventory.getStackInSlot(0).getCount() == 3, "Normal pickup must remove exactly the requested quantity");
+        helper.assertTrue(!menu.getSlot(1).mayPlace(removed), "Output slot must reject player insertion");
+        helper.assertTrue(menu.clickMenuButton(player, 0) && machine.paused(), "Nearby menu can pause");
+        player.setPos(center.x + 20, center.y, center.z);
+        helper.assertTrue(!menu.stillValid(player) && !menu.clickMenuButton(player, 0) && machine.paused(), "Remote menu commands must be rejected");
+        helper.succeed();
+    }
+    @GameTest(template = "empty")
+    public static void pauseAndLinkRemovalPersist(GameTestHelper helper) {
+        var pos = new BlockPos(1, 1, 1); helper.setBlock(pos, ModBlocks.RUNE_FORGE.get());
+        var machine = (MachineEntity)helper.getBlockEntity(pos);
+        machine.insert(40); machine.inventory.insertItem(0, new net.minecraft.world.item.ItemStack(Items.COPPER_INGOT), false);
+        machine.linkTo(helper.absolutePos(pos.east())); machine.setPaused(true);
+        helper.assertTrue(!machine.processOne() && machine.energy() == 40, "Paused machine must not spend resources");
+        var saved = machine.saveWithFullMetadata(helper.getLevel().registryAccess());
+        var restored = new MachineEntity(helper.absolutePos(pos), machine.getBlockState()); restored.loadWithComponents(saved, helper.getLevel().registryAccess());
+        helper.assertTrue(restored.paused() && !restored.processOne(), "Pause must survive reload");
+        restored.clearLinks();
+        helper.assertTrue(restored.link() == null, "Disconnect must remove outgoing link");
+        restored.setPaused(false);
+        helper.assertTrue(restored.processOne() && restored.energy() == 20, "Resume must allow one normal operation");
+        helper.succeed();
+    }
+    @GameTest(template = "empty", timeoutTicks = 240)
+    public static void redstoneStopsAndResumesProcessing(GameTestHelper helper) {
+        var pos = new BlockPos(2, 2, 2); helper.setBlock(pos, ModBlocks.RUNE_FORGE.get());
+        helper.setBlock(pos.east(), net.minecraft.world.level.block.Blocks.REDSTONE_BLOCK);
+        var machine = (MachineEntity)helper.getBlockEntity(pos);
+        machine.insert(40); machine.inventory.insertItem(0, new net.minecraft.world.item.ItemStack(Items.COPPER_INGOT), false);
+        helper.runAfterDelay(110, () -> {
+            helper.assertTrue(machine.energy() == 40 && machine.inventory.getStackInSlot(1).isEmpty(), "Redstone must hold production without spending input");
+            helper.setBlock(pos.east(), net.minecraft.world.level.block.Blocks.AIR);
+        });
+        helper.runAfterDelay(220, () -> {
+            helper.assertTrue(machine.energy() == 20 && machine.inventory.getStackInSlot(1).getCount() == 1, "Removing redstone must wake production"); helper.succeed();
+        });
+    }
+    @GameTest(template = "empty")
     public static void sintonizationRequiresRefinedCrystal(GameTestHelper helper) {
         var pos = new BlockPos(1, 1, 1); helper.setBlock(pos, ModBlocks.AETHER_FOCUS_BLOCK.get());
         var machine = (MachineEntity)helper.getBlockEntity(pos); machine.insert(100);

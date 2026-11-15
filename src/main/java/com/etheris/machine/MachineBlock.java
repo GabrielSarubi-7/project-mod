@@ -26,6 +26,7 @@ public final class MachineBlock extends Block implements EntityBlock {
     }
     @Override protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (level.getBlockEntity(pos) instanceof MachineEntity machine) {
+            if (machine.automationBlocked()) return;
             if (state.is(ModBlocks.ETHER_COLLECTOR) && level.canSeeSky(pos.above())) machine.insert(level.isNight() ? 4 : 2);
             machine.distribute();
             machine.processOne();
@@ -65,9 +66,10 @@ public final class MachineBlock extends Block implements EntityBlock {
     private static void give(Player player, ItemStack result) { if (!player.getInventory().add(result)) player.drop(result, false); }
     @Override protected net.minecraft.world.InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
         if (!level.isClientSide && level.mayInteract(player, pos) && level.getBlockEntity(pos) instanceof MachineEntity machine) {
-            var output = machine.inventory.extractItem(1, 64, false);
-            if (!output.isEmpty()) give(player, output);
-            player.displayClientMessage(Component.literal("Éter " + machine.energy() + "/" + machine.capacity() + " | Use funil para inserir reagentes e retirar produtos."), true);
+            if (player.isShiftKeyDown()) {
+                var output = machine.inventory.extractItem(1, 64, false);
+                if (!output.isEmpty()) give(player, output);
+            } else player.openMenu(new net.minecraft.world.SimpleMenuProvider((id, inventory, viewer) -> new MachineMenu(id, inventory, machine), state.getBlock().getName()));
         }
         return net.minecraft.world.InteractionResult.SUCCESS;
     }
@@ -75,5 +77,9 @@ public final class MachineBlock extends Block implements EntityBlock {
         if (!state.is(next.getBlock()) && level.getBlockEntity(pos) instanceof MachineEntity machine && !level.isClientSide)
             for (int slot = 0; slot < 2; slot++) net.minecraft.world.Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), machine.inventory.getStackInSlot(slot).copy());
         super.onRemove(state, level, pos, next, moving);
+    }
+    @Override protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighbor, BlockPos neighborPos, boolean moving) {
+        super.neighborChanged(state, level, pos, neighbor, neighborPos, moving);
+        if (level.getBlockEntity(pos) instanceof MachineEntity machine) machine.wake();
     }
 }

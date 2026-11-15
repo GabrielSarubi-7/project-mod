@@ -1,18 +1,26 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.3.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.4.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+
+## Novidades da versão 0.4
+
+Todas as sete máquinas têm um painel: clique com a mão vazia para abrir. Ele mostra Éter, entrada, saída e o motivo de espera, com botões para pausar/retomar e desconectar os enlaces de saída. Shift + clique em um item transfere entre o inventário e a máquina. Agachar e interagir com a mão vazia mantém a retirada rápida de produtos.
+
+Pausa manual e sinal de redstone ligado suspendem coleta, envio de Éter e processamento automatizado. Funis, recebimento de energia e trocas manuais continuam funcionando. A pausa manual persiste ao salvar o mundo. Remover o sinal ou retomar pelo painel reativa a máquina. As ações são verificadas no servidor, incluindo distância e permissão de interação.
+
+Validação: compilação e 15 GameTests de servidor passaram. O cliente iniciou e o painel da Forja foi observado, sem sobreposição de controles na resolução de teste. A conferência interativa foi interrompida; os botões foram validados pelos testes de servidor, não por uma sessão visual completa. Ainda falta uma partida completa de sobrevivência e multiplayer.
 
 ## Novidades da versão 0.3
 
-Sete máquinas, automação por funis e cadeia de refino. O Triturador transforma ferro bruto em dois pós de ferro (30 Éter), ou ametista em dois pós de cristal (20). A Refinaria transforma um pó de ferro em lingote (20), ou um pó de cristal em Cristal Estável (40). Insira reagentes usando funis ou clique com o material nas duas máquinas novas; retire a produção com funil ou mão vazia. Coletor e Forja mantêm as trocas manuais e também aceitam reagentes por funis.
+Sete máquinas, automação por funis e cadeia de refino. O Triturador transforma ferro bruto em dois pós de ferro (30 Éter), ou ametista em dois pós de cristal (20). A Refinaria transforma um pó de ferro em lingote (20), ou um pó de cristal em Cristal Estável (40). Insira reagentes usando funis ou clique com o material nas duas máquinas novas; retire a produção com funil ou pelo painel. Coletor e Forja mantêm as trocas manuais e também aceitam reagentes por funis.
 
-O processamento automatizado realiza no máximo uma operação por ciclo de 100 ticks. Sem energia ou espaço na saída, nada é consumido. Os dois slots e a energia persistem juntos; quebrar a máquina derruba o inventário, mas descarta a energia. Não existe interface gráfica de máquina ainda.
+O processamento automatizado realiza no máximo uma operação por ciclo de 100 ticks. Sem energia ou espaço na saída, nada é consumido. Os dois slots e a energia persistem juntos; quebrar a máquina derruba o inventário, mas descarta a energia.
 
 O Nó de Distribuição permite quatro enlaces explícitos, servidos em ordem alternada, com orçamento total de 8 Éter por ciclo. Repetir um enlace do nó o remove. Outros dispositivos continuam com uma saída. As redes permanecem públicas e não transportam itens.
 
 Runas aprendem as quatro magias após a inicial. As últimas três exigem Cristais Estáveis. A aba de avanços Etheris acompanha seis objetivos de descoberta e engenharia. O Códice passa a ter 12 páginas; fabrique um novo para receber o texto atualizado. O foco exibe sua magia e energia na barra de ação a cada dois segundos.
 
-Os sete dispositivos receberam modelos JSON próprios com texturas vanilla. A arte ainda é provisória, sem animações ou revisão visual dentro do cliente.
+Os sete dispositivos receberam modelos JSON próprios com texturas vanilla. A arte ainda é provisória, sem animações ou revisão visual completa de todos os modelos.
 
 ## Estado atual
 
@@ -29,7 +37,7 @@ Os sete dispositivos receberam modelos JSON próprios com texturas vanilla. A ar
 
 Use Java 21 e execute `gradlew runClient` para abrir o cliente de desenvolvimento. Para validar, execute `gradlew build runGameTestServer`. No Linux use `bash ./gradlew`. Confira também `All N required tests passed` no log: uma saída do Gradle sem erros não basta para provar que o servidor testou o mod.
 
-Para jogar, instale Minecraft 1.21.1 com NeoForge 21.1.172 e coloque o JAR de `build/libs` na pasta `mods`, no cliente e no servidor. Use um mundo de teste com backup. Não foram feitos testes visuais de cliente nem uma sessão multiplayer com duas pessoas.
+Para jogar, instale Minecraft 1.21.1 com NeoForge 21.1.172 e coloque o JAR de `build/libs` na pasta `mods`, no cliente e no servidor. Use um mundo de teste com backup. O cliente e um painel foram inspecionados; ainda não foi validada uma sessão multiplayer com duas pessoas.
 
 ## Loop inicial
 

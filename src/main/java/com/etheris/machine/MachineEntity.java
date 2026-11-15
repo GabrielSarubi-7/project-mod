@@ -13,6 +13,20 @@ public final class MachineEntity extends BlockEntity {
     public static final DeferredRegister<BlockEntityType<?>> TYPES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, "etheris");
     public static final Supplier<BlockEntityType<MachineEntity>> TYPE = TYPES.register("machine", () -> BlockEntityType.Builder.of(MachineEntity::new, ModBlocks.ETHER_COLLECTOR.get(), ModBlocks.AETHER_FOCUS_BLOCK.get(), ModBlocks.RUNE_FORGE.get(), ModBlocks.AMBER_RESERVOIR.get(), ModBlocks.PRISMATIC_CRUSHER.get(), ModBlocks.CRYSTAL_REFINERY.get(), ModBlocks.DISTRIBUTION_NODE.get()).build(null));
     private int energy;
+    private boolean paused;
+    public boolean paused() { return paused; }
+    public boolean automationBlocked() { return paused || (level != null && level.hasNeighborSignal(worldPosition)); }
+    public void setPaused(boolean value) { paused = value; setChanged(); wake(); }
+    public void clearLinks() { link = null; branches.clear(); nextBranch = 0; setChanged(); }
+    public int status() {
+        if (paused) return 1;
+        if (level != null && level.hasNeighborSignal(worldPosition)) return 2;
+        if (getBlockState().is(ModBlocks.ETHER_COLLECTOR) && level != null && !level.canSeeSky(worldPosition.above())) return 3;
+        var recipe = MachineProcessing.find(getBlockState(), inventory.getStackInSlot(0));
+        if (recipe == null) return 0;
+        if (energy < recipe.cost()) return 4;
+        return canProcess() ? 6 : 5;
+    }
     private BlockPos link;
     private final java.util.List<BlockPos> branches = new java.util.ArrayList<>();
     private int nextBranch;
@@ -22,9 +36,10 @@ public final class MachineEntity extends BlockEntity {
         @Override public net.minecraft.world.item.ItemStack extractItem(int slot, int amount, boolean simulate) { return slot == 1 ? super.extractItem(slot, amount, simulate) : net.minecraft.world.item.ItemStack.EMPTY; }
         @Override protected void onContentsChanged(int slot) { setChanged(); wake(); }
     };
-    public void wake() { if (level != null && !level.isClientSide && !isRemoved() && (getBlockState().is(ModBlocks.ETHER_COLLECTOR) || link != null || canProcess())) level.scheduleTick(worldPosition, getBlockState().getBlock(), 100); }
+    public void wake() { if (level != null && !level.isClientSide && !isRemoved() && !automationBlocked() && (getBlockState().is(ModBlocks.ETHER_COLLECTOR) || link != null || canProcess())) level.scheduleTick(worldPosition, getBlockState().getBlock(), 100); }
     @Override public void onLoad() { super.onLoad(); wake(); }
     public boolean canProcess() {
+        if (automationBlocked()) return false;
         var recipe = MachineProcessing.find(getBlockState(), inventory.getStackInSlot(0));
         if (recipe == null || energy < recipe.cost()) return false;
         var output = inventory.getStackInSlot(1);
@@ -54,7 +69,7 @@ public final class MachineEntity extends BlockEntity {
         setChanged(); wake(); return true;
     }
     public void distribute() {
-        if (level == null || level.isClientSide || link == null) return;
+        if (level == null || level.isClientSide || link == null || automationBlocked()) return;
         var targets = new java.util.ArrayList<BlockPos>(); targets.add(link); targets.addAll(branches);
         int budget = 8;
         for (int i = 0; i < targets.size() && budget > 0; i++) {
@@ -72,6 +87,30 @@ public final class MachineEntity extends BlockEntity {
     public int capacity() { return getBlockState().is(ModBlocks.AMBER_RESERVOIR) ? 1000 : 200; }
     public int insert(int amount) { int accepted = Math.min(Math.max(0, amount), capacity() - energy); energy += accepted; if (accepted > 0) { setChanged(); wake(); } return accepted; }
     public boolean consume(int amount) { if (amount < 0 || energy < amount) return false; energy -= amount; setChanged(); return true; }
-    @Override protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) { super.saveAdditional(tag, registries); tag.putInt("ether", energy); tag.put("inventory", inventory.serializeNBT(registries)); if (link != null) tag.putLong("link", link.asLong()); tag.putLongArray("branches", branches.stream().mapToLong(BlockPos::asLong).toArray()); tag.putInt("nextBranch", nextBranch); }
-    @Override protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) { super.loadAdditional(tag, registries); energy = Math.clamp(tag.getInt("ether"), 0, capacity()); link = tag.contains("link") ? BlockPos.of(tag.getLong("link")) : null; if (tag.contains("inventory")) inventory.deserializeNBT(registries, tag.getCompound("inventory")); branches.clear(); if (getBlockState().is(ModBlocks.DISTRIBUTION_NODE)) for (long packed : tag.getLongArray("branches")) { var pos = BlockPos.of(packed); if (branches.size() < 3 && !pos.equals(link) && !pos.equals(worldPosition) && worldPosition.distSqr(pos) <= 64 && !branches.contains(pos)) branches.add(pos); } nextBranch = Math.floorMod(tag.getInt("nextBranch"), branches.size() + 1); }
+    @Override protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+        super.saveAdditional(tag, registries);
+        tag.putInt("ether", energy);
+        tag.putBoolean("paused", paused);
+        tag.put("inventory", inventory.serializeNBT(registries));
+        if (link != null) tag.putLong("link", link.asLong());
+        tag.putLongArray("branches", branches.stream().mapToLong(BlockPos::asLong).toArray());
+        tag.putInt("nextBranch", nextBranch);
+    }
+    @Override protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+        super.loadAdditional(tag, registries);
+        energy = Math.clamp(tag.getInt("ether"), 0, capacity());
+        paused = tag.getBoolean("paused");
+        link = tag.contains("link") ? BlockPos.of(tag.getLong("link")) : null;
+        if (link != null && (link.equals(worldPosition) || worldPosition.distSqr(link) > 64)) link = null;
+        if (tag.contains("inventory")) inventory.deserializeNBT(registries, tag.getCompound("inventory"));
+        branches.clear();
+        if (getBlockState().is(ModBlocks.DISTRIBUTION_NODE)) {
+            for (long packed : tag.getLongArray("branches")) {
+                var pos = BlockPos.of(packed);
+                if (branches.size() < 3 && !pos.equals(link) && !pos.equals(worldPosition)
+                    && worldPosition.distSqr(pos) <= 64 && !branches.contains(pos)) branches.add(pos);
+            }
+        }
+        nextBranch = Math.floorMod(tag.getInt("nextBranch"), branches.size() + 1);
+    }
 }

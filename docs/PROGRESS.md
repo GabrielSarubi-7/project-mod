@@ -1,5 +1,15 @@
 # Etheris development progress
 
+## Checkpoint 0.4.0-alpha — 2026-11-15
+
+Native machine menus now expose energy/capacity, two inventory slots, status diagnostics, manual pause/resume and outgoing-link removal. Empty-hand interaction opens the panel; sneaking preserves quick output retrieval. Shift transfer accepts only recipe inputs, rejects insertion into output, and allows players to retrieve input while hoppers still cannot extract it. Server checks distance, machine identity, interaction permission and spectator controls.
+
+Manual pause persists in NBT. Redstone power or manual pause stops automated generation, processing and outgoing transfer; removing the signal wakes scheduled work. Incoming energy, hoppers and explicit manual exchanges remain available by design. The Codex documents these semantics.
+
+Validation: build and **All 15 required tests passed**, adding menu transfers/input retrieval/remote-action rejection, pause persistence/link removal, and physical redstone stop/resume. The 0.3 GitHub CI also completed successfully. A development client launched successfully and the Rune Forge menu was visually observed at 856×512 with legible labels, slots and buttons. Interactive button QA was interrupted by the Computer Use stop signal; no complete survival or two-player playthrough is claimed. UI actions are covered server-side, but client interaction coverage remains limited.
+
+This checkpoint improves usability and engineering controls; it adds no spells or machines. Counts remain eight spells and seven machines. The full GDD remains incomplete: discovery progression, regional Ether, the first multiblock, remaining machines/spells, minions, armor, higher tiers and megamachines still need implementation and validation. Next milestone: a tested first multiblock and meaningful discovery gates, followed by tiers II–III content. Historical acceptance matrices below describe their own checkpoints only.
+
 ## Checkpoint 0.3.0-alpha — 2026-11-15
 
 Supersedes the 0.2 functionality matrix where noted. Seven machines are now implemented: the original four plus Prismatic Crusher, Crystal Refinery and Distribution Node. Automated processing has persistent input/output slots, a NeoForge item capability, hopper integration, bounded scheduled work, and atomic energy/reagent/result exchange. Unpowered or blocked machines preserve their input. Removal drops inventory; energy is intentionally discarded.
