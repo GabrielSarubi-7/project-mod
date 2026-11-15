@@ -19,8 +19,8 @@ public final class LinkWandItem extends Item {
         } else {
             var start = BlockPos.of(data.getLong("etheris_link_start"));
             if (dimension.equals(data.getString("etheris_link_dimension")) && !start.equals(pos) && start.distSqr(pos) <= 64 && level.hasChunkAt(start) && level.mayInteract(player, start) && level.getBlockEntity(start) instanceof MachineEntity source) {
-                source.linkTo(pos); level.scheduleTick(start, source.getBlockState().getBlock(), 100);
-                player.displayClientMessage(Component.literal("Enlace criado: origem → destino. Máximo 8 Éter a cada 5 segundos."), true);
+                boolean changed = source.linkTo(pos);
+                player.displayClientMessage(Component.literal(changed ? "Enlace atualizado. Nós alternam até 4 destinos; repetir um enlace do nó o remove." : "Nó cheio: remova um enlace existente antes de adicionar outro."), true);
             } else player.displayClientMessage(Component.literal("Enlace inválido: mesma dimensão, máquinas distintas, até 8 blocos."), true);
             data.remove("etheris_link_start"); data.remove("etheris_link_dimension");
         }

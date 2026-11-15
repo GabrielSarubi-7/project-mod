@@ -1,4 +1,10 @@
 {
+  "block.etheris.prismatic_crusher": "Triturador Prismático",
+  "block.etheris.crystal_refinery": "Refinaria de Cristais",
+  "block.etheris.distribution_node": "Nó de Distribuição",
+  "item.etheris.iron_dust": "Pó de Ferro",
+  "item.etheris.crystal_dust": "Pó de Cristal",
+  "item.etheris.stable_crystal": "Cristal Estável",
   "itemGroup.etheris": "Etheris: Ecos do Infinito",
   "item.etheris.rune": "Runa de Princípio",
   "item.etheris.codex": "Códice de Etheris",

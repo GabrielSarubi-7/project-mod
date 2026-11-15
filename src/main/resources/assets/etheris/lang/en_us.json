@@ -1,4 +1,10 @@
 {
+  "block.etheris.prismatic_crusher": "Prismatic Crusher",
+  "block.etheris.crystal_refinery": "Crystal Refinery",
+  "block.etheris.distribution_node": "Distribution Node",
+  "item.etheris.iron_dust": "Iron Dust",
+  "item.etheris.crystal_dust": "Crystal Dust",
+  "item.etheris.stable_crystal": "Stable Crystal",
   "itemGroup.etheris": "Etheris: Echoes of Infinity",
   "item.etheris.rune": "Principle Rune",
   "item.etheris.codex": "Etheris Codex",

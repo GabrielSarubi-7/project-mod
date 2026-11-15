@@ -17,6 +17,12 @@ public final class ModCreativeTabs {
             output.accept(ModItems.ETHERIUM_FRAGMENT);
             output.accept(ModItems.AETHER_FOCUS);
             output.accept(ModItems.RUNE);
+            output.accept(ModItems.IRON_DUST);
+            output.accept(ModItems.CRYSTAL_DUST);
+            output.accept(ModItems.STABLE_CRYSTAL);
+            output.accept(ModBlocks.PRISMATIC_CRUSHER);
+            output.accept(ModBlocks.CRYSTAL_REFINERY);
+            output.accept(ModBlocks.DISTRIBUTION_NODE);
             output.accept(ModItems.CODEX);
             output.accept(ModItems.LINK_WAND);
             output.accept(ModBlocks.ETHER_COLLECTOR);

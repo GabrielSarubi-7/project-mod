@@ -11,6 +11,9 @@ public final class ModItems {
     public static final DeferredItem<Item> ETHERIUM_FRAGMENT = ITEMS.registerSimpleItem("etherium_fragment", new Item.Properties());
     public static final DeferredItem<Item> AETHER_FOCUS = ITEMS.registerItem("aether_focus", AetherFocusItem::new, new Item.Properties().stacksTo(1));
     public static final DeferredItem<Item> RUNE = ITEMS.registerSimpleItem("rune");
+    public static final DeferredItem<Item> IRON_DUST = ITEMS.registerSimpleItem("iron_dust");
+    public static final DeferredItem<Item> CRYSTAL_DUST = ITEMS.registerSimpleItem("crystal_dust");
+    public static final DeferredItem<Item> STABLE_CRYSTAL = ITEMS.registerSimpleItem("stable_crystal");
     public static final DeferredItem<Item> CODEX = ITEMS.registerItem("codex", com.etheris.item.CodexItem::new, new Item.Properties().stacksTo(1));
     public static final DeferredItem<Item> LINK_WAND = ITEMS.registerItem("link_wand", com.etheris.item.LinkWandItem::new, new Item.Properties().stacksTo(1));
     static {
@@ -18,6 +21,9 @@ public final class ModItems {
         ITEMS.registerSimpleBlockItem(ModBlocks.AETHER_FOCUS_BLOCK);
         ITEMS.registerSimpleBlockItem(ModBlocks.RUNE_FORGE);
         ITEMS.registerSimpleBlockItem(ModBlocks.AMBER_RESERVOIR);
+        ITEMS.registerSimpleBlockItem(ModBlocks.PRISMATIC_CRUSHER);
+        ITEMS.registerSimpleBlockItem(ModBlocks.CRYSTAL_REFINERY);
+        ITEMS.registerSimpleBlockItem(ModBlocks.DISTRIBUTION_NODE);
     }
     private ModItems() {}
 }

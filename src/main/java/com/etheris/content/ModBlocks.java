@@ -8,10 +8,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Etheris.MOD_ID);
-    private static BlockBehaviour.Properties machine() { return BlockBehaviour.Properties.of().strength(2.5f, 6f).requiresCorrectToolForDrops(); }
+    private static BlockBehaviour.Properties machine() { return BlockBehaviour.Properties.of().strength(2.5f, 6f).requiresCorrectToolForDrops().noOcclusion(); }
     public static final DeferredBlock<Block> ETHER_COLLECTOR = BLOCKS.register("ether_collector", () -> new com.etheris.machine.MachineBlock(machine()));
     public static final DeferredBlock<Block> AETHER_FOCUS_BLOCK = BLOCKS.register("aether_focus_block", () -> new com.etheris.machine.MachineBlock(machine()));
     public static final DeferredBlock<Block> RUNE_FORGE = BLOCKS.register("rune_forge", () -> new com.etheris.machine.MachineBlock(machine()));
     public static final DeferredBlock<Block> AMBER_RESERVOIR = BLOCKS.register("amber_reservoir", () -> new com.etheris.machine.MachineBlock(machine()));
+    public static final DeferredBlock<Block> PRISMATIC_CRUSHER = BLOCKS.register("prismatic_crusher", () -> new com.etheris.machine.MachineBlock(machine()));
+    public static final DeferredBlock<Block> CRYSTAL_REFINERY = BLOCKS.register("crystal_refinery", () -> new com.etheris.machine.MachineBlock(machine()));
+    public static final DeferredBlock<Block> DISTRIBUTION_NODE = BLOCKS.register("distribution_node", () -> new com.etheris.machine.MachineBlock(machine()));
     private ModBlocks() {}
 }

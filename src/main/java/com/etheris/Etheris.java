@@ -18,5 +18,6 @@ public final class Etheris {
         com.etheris.world.RuinFeature.FEATURES.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
         EtherEvents.register();
+        modBus.addListener((net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent event) -> event.registerBlockEntity(net.neoforged.neoforge.capabilities.Capabilities.ItemHandler.BLOCK, com.etheris.machine.MachineEntity.TYPE.get(), (machine, side) -> machine.inventory));
     }
 }

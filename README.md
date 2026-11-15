@@ -1,6 +1,18 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.2.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.3.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+
+## Novidades da versão 0.3
+
+Sete máquinas, automação por funis e cadeia de refino. O Triturador transforma ferro bruto em dois pós de ferro (30 Éter), ou ametista em dois pós de cristal (20). A Refinaria transforma um pó de ferro em lingote (20), ou um pó de cristal em Cristal Estável (40). Insira reagentes usando funis ou clique com o material nas duas máquinas novas; retire a produção com funil ou mão vazia. Coletor e Forja mantêm as trocas manuais e também aceitam reagentes por funis.
+
+O processamento automatizado realiza no máximo uma operação por ciclo de 100 ticks. Sem energia ou espaço na saída, nada é consumido. Os dois slots e a energia persistem juntos; quebrar a máquina derruba o inventário, mas descarta a energia. Não existe interface gráfica de máquina ainda.
+
+O Nó de Distribuição permite quatro enlaces explícitos, servidos em ordem alternada, com orçamento total de 8 Éter por ciclo. Repetir um enlace do nó o remove. Outros dispositivos continuam com uma saída. As redes permanecem públicas e não transportam itens.
+
+Runas aprendem as quatro magias após a inicial. As últimas três exigem Cristais Estáveis. A aba de avanços Etheris acompanha seis objetivos de descoberta e engenharia. O Códice passa a ter 12 páginas; fabrique um novo para receber o texto atualizado. O foco exibe sua magia e energia na barra de ação a cada dois segundos.
+
+Os sete dispositivos receberam modelos JSON próprios com texturas vanilla. A arte ainda é provisória, sem animações ou revisão visual dentro do cliente.
 
 ## Estado atual
 
@@ -21,9 +33,9 @@ Para jogar, instale Minecraft 1.21.1 com NeoForge 21.1.172 e coloque o JAR de `b
 
 ## Loop inicial
 
-Colete cobre e ametista; fabrique o Coletor e coloque sob céu aberto. Ele coleta 2 Éter de dia ou 4 à noite a cada 5 segundos. Use ametista nele para gastar 20 Éter e obter um fragmento. Carregue a Forja com fragmentos e use cobre para criar runas (20 Éter). O Foco de Vinculação aprende uma nova magia por runa e 40 Éter. Agache e use o foco pessoal no ar para selecionar; use normalmente para conjurar. Consulte as páginas do Códice para reagentes.
+Colete cobre e ametista; fabrique o Coletor e coloque sob céu aberto. Ele coleta 2 Éter de dia ou 4 à noite a cada 5 segundos. Use ametista nele para gastar 20 Éter e obter um fragmento. Carregue a Forja com fragmentos e use cobre para criar runas (20 Éter). O Foco de Vinculação aprende as quatro magias após a inicial usando runas; as três restantes usam Cristais Estáveis. Cada aprendizado custa 40 Éter. Agache e use o foco pessoal no ar para selecionar; use normalmente para conjurar. Consulte as páginas do Códice para reagentes.
 
-Máquinas são públicas e têm interação manual. Quebrá-las perde a energia armazenada. Cada máquina aceita um enlace de saída, reconfigurável pela vara. Não há inventários automatizados, prioridades, proteção por proprietário, transmissão de itens ou estabilidade regional ainda.
+Máquinas são públicas. Quebrá-las perde a energia armazenada e derruba os itens internos. Máquinas comuns aceitam um enlace de saída; o Nó aceita quatro. Ainda faltam prioridades configuráveis, proteção por proprietário, transmissão de itens entre enlaces e estabilidade regional.
 
 ## Desenvolvimento e arte
 

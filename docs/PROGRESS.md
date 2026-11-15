@@ -1,5 +1,17 @@
 # Etheris development progress
 
+## Checkpoint 0.3.0-alpha — 2026-11-15
+
+Supersedes the 0.2 functionality matrix where noted. Seven machines are now implemented: the original four plus Prismatic Crusher, Crystal Refinery and Distribution Node. Automated processing has persistent input/output slots, a NeoForge item capability, hopper integration, bounded scheduled work, and atomic energy/reagent/result exchange. Unpowered or blocked machines preserve their input. Removal drops inventory; energy is intentionally discarded.
+
+The node stores four explicit same-dimension links and alternates the first consumer each cycle with a total budget of 8 Ether. Repeating an existing node link removes it. No item routing, forced chunk loading, ownership or configurable priorities yet.
+
+Progression adds six native advancements and a refined-crystal requirement for the last three spells. Eight spells remain total. The Codex has 12 pages; the personal focus shows status periodically. Seven authored block models use vanilla materials; visual client QA and animated art remain outstanding.
+
+Recipe values are provisional balance choices. Sintonization here is an initial material/learning gate, not completion of the GDD's full tier II. Gênese, minions, armor, remaining machines, advanced tiers and all megamachines remain unimplemented. Do not equate content counts with completed GDD acceptance.
+
+Regression suite adds real hopper transport, blocked-output atomicity, inventory save/load, capability simulation/rejection, node distribution and crystal-gated learning. Prior 0.2 CI succeeded on GitHub. Final 0.3 validation: `build runGameTestServer --no-daemon --offline` passed on Java 21.0.13 / NeoForge 21.1.172; the log reports **All 12 required tests passed**. These are actual headless Minecraft tests, including physical hoppers; no visual client or two-player session has been validated.
+
 ## Checkpoint 0.2.0-alpha — 2026-11-15
 
 This section supersedes the historical 0.1 notes below. Source now implements eight spells across Astra/Vita/Materia/Fluxo/Fulgor, persistent player learning/selection, four stateful machines, manual reagent exchanges, a native written-book Codex, a bounded directed energy link and an Overworld ruin feature with loot. All visuals reuse vanilla textures explicitly as development placeholders.

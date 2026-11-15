@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","pattern":["CRC","ASA","CCC"],"key":{"C":{"item":"minecraft:copper_ingot"},"R":{"item":"etheris:rune"},"A":{"item":"minecraft:amethyst_shard"},"S":{"item":"etheris:stable_crystal"}},"result":{"id":"etheris:distribution_node","count":1}}

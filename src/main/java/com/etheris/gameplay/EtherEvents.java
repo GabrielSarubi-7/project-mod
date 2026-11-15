@@ -18,6 +18,11 @@ public final class EtherEvents {
         if (!event.getEntity().level().isClientSide && event.getEntity().tickCount % 40 == 0 && EtherData.get(event.getEntity()) < EtherData.max()) {
             EtherData.add(event.getEntity(), 1);
         }
+        var player = event.getEntity();
+        if (!player.level().isClientSide && player.tickCount % 40 == 0 && player.getMainHandItem().is(ModItems.AETHER_FOCUS)) {
+            int selected = Math.clamp(player.getPersistentData().getInt("etheris_spell"), 0, 7);
+            player.displayClientMessage(Component.literal(Spells.NAMES[selected] + " | Éter " + EtherData.get(player) + "/" + EtherData.max()), true);
+        }
     }
     private static void clonePlayer(net.neoforged.neoforge.event.entity.player.PlayerEvent.Clone event) {
         for (String key : new String[]{"etheris_ether", "etheris_unlocked", "etheris_spell"})
