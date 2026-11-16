@@ -18,6 +18,10 @@ public final class AetherFocusItem extends Item {
     @Override public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
         if (level.isClientSide) return InteractionResultHolder.success(stack);
+        if (player.isShiftKeyDown()) {
+            player.openMenu(new net.minecraft.world.SimpleMenuProvider((id, inventory, viewer) -> com.etheris.gameplay.FirmamentMenu.server(id, inventory), Component.literal("Firmamento")));
+            return InteractionResultHolder.success(stack);
+        }
         return com.etheris.gameplay.Spells.use(player, this) ? InteractionResultHolder.success(stack) : InteractionResultHolder.fail(stack);
     }
 }
