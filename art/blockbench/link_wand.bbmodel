@@ -1,0 +1,1041 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Enlace | Diapasao Astral",
+  "model_identifier": "link_wand",
+  "parent": "item/handheld",
+  "ambientocclusion": true,
+  "front_gui_light": true,
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "Empunhadura",
+      "type": "cube",
+      "uuid": "4cbc3a29-6418-4c47-a802-4b6417e4d621",
+      "from": [
+        7.3,
+        0,
+        7.3
+      ],
+      "to": [
+        8.7,
+        7.5,
+        8.7
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.799999999999999,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.799999999999999,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.799999999999999,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.799999999999999,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.799999999999999,
+            2.799999999999999
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.799999999999999,
+            2.799999999999999
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Cinta do cabo",
+      "type": "cube",
+      "uuid": "0fd9283e-4bbd-472c-ac28-c5c7d9537890",
+      "from": [
+        7,
+        6,
+        7
+      ],
+      "to": [
+        9,
+        7,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Ponte do diapasao",
+      "type": "cube",
+      "uuid": "6e1425de-50db-469a-a148-a2fce165fe40",
+      "from": [
+        4.5,
+        7.5,
+        7
+      ],
+      "to": [
+        11.5,
+        8.5,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            14,
+            2
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            14,
+            2
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            2
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            14,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            14,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Haste de ressonancia",
+      "type": "cube",
+      "uuid": "8b36bd9f-b5ee-4d33-a5aa-e82e3f0d0bea",
+      "from": [
+        4.5,
+        8.5,
+        7.25
+      ],
+      "to": [
+        5.5,
+        15,
+        8.75
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            13
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            13
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3,
+            13
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            13
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            3
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            3
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Lacre de ressonancia",
+      "type": "cube",
+      "uuid": "b3cce438-adb2-4d61-a9ee-96a263de6de3",
+      "from": [
+        4.3,
+        13,
+        7
+      ],
+      "to": [
+        5.7,
+        13.5,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.8000000000000007,
+            1
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.8000000000000007,
+            1
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.8000000000000007,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.8000000000000007,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Haste de ressonancia",
+      "type": "cube",
+      "uuid": "d7e34a2a-ea1c-49c1-ad20-b10a4ef0fd0a",
+      "from": [
+        10.5,
+        8.5,
+        7.25
+      ],
+      "to": [
+        11.5,
+        15,
+        8.75
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            13
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            13
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3,
+            13
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            13
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            3
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            3
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Lacre de ressonancia",
+      "type": "cube",
+      "uuid": "b451f3dd-78af-4b2a-a161-a30d964b6278",
+      "from": [
+        10.3,
+        13,
+        7
+      ],
+      "to": [
+        11.7,
+        13.5,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.799999999999997,
+            1
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.799999999999997,
+            1
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.799999999999997,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.799999999999997,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Gema lapidada",
+      "type": "cube",
+      "uuid": "9d97abf6-f5c2-43a2-a20b-174977f3fd21",
+      "from": [
+        7.35,
+        9.35,
+        7.35
+      ],
+      "to": [
+        8.65,
+        10.65,
+        8.65
+      ],
+      "origin": [
+        8,
+        10,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Gema de enlace",
+      "type": "cube",
+      "uuid": "8c1fe915-41ce-46bd-ada8-7a05c7a5e7fb",
+      "from": [
+        7.6,
+        14.2,
+        7.6
+      ],
+      "to": [
+        8.4,
+        15.2,
+        8.4
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "Cabo",
+      "uuid": "55b7d1eb-3034-4f7a-a325-0e96b4d71e31",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Estrutura",
+      "uuid": "faa7b5ac-f782-48fc-ae4e-7f9e9c792c0d",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Nucleo",
+      "uuid": "dc532c8a-4285-4a07-a86a-30c572c343ad",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "55b7d1eb-3034-4f7a-a325-0e96b4d71e31",
+      "isOpen": false,
+      "children": [
+        "4cbc3a29-6418-4c47-a802-4b6417e4d621"
+      ]
+    },
+    {
+      "uuid": "faa7b5ac-f782-48fc-ae4e-7f9e9c792c0d",
+      "isOpen": false,
+      "children": [
+        "0fd9283e-4bbd-472c-ac28-c5c7d9537890",
+        "6e1425de-50db-469a-a148-a2fce165fe40",
+        "8b36bd9f-b5ee-4d33-a5aa-e82e3f0d0bea",
+        "b3cce438-adb2-4d61-a9ee-96a263de6de3",
+        "d7e34a2a-ea1c-49c1-ad20-b10a4ef0fd0a",
+        "b451f3dd-78af-4b2a-a161-a30d964b6278",
+        "8c1fe915-41ce-46bd-ada8-7a05c7a5e7fb"
+      ]
+    },
+    {
+      "uuid": "dc532c8a-4285-4a07-a86a-30c572c343ad",
+      "isOpen": false,
+      "children": [
+        "9d97abf6-f5c2-43a2-a20b-174977f3fd21"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "49ef8067-7f53-4dc3-a093-15bd6426b78b",
+      "id": "0",
+      "name": "leather.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA70lEQVR4nMWWMQ4CMQwE/QhaWmokWn4AL+H//SEKpCMX27vOJhTRSafEGXs3Tuz+fG2n83W73B7D4xOLXWPe4kqwCpipA7JrYABmU2buEIBCpgNAa0hluWUeiDb1vhAAQq6e4x5DlcYwQOaFqgcoCZChMGkKkHVFZdeUnYKqRJZloDZiG29pBXrJhMdwdDMk5l88MA2gzRjpJdAxZDSN5vWALAuieq55wPLbEPm3T6oLoMwa9oBadzSGKwFzo0kqsGLsE/nK/AOwUnt5BarwB4DZr2C6AlEXU/hhWIJe9h4s1AmRckbVYOUwJOhMH7wB1iWbXZbe38EAAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "feef64d0-d6b7-403c-a1de-26e8245bd8fa",
+      "id": "1",
+      "name": "gold.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAR0lEQVR4nGN4eLTr/0BihlEHgIg900LIxpTqH3XAqANGHTDqgFEHjDpg1AGjDhh1wKgDRh0w6gCwAxoSTMnGlOofdcCAOwAA6Dqjoxiwm34AAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "dcb1b75e-3eac-40d7-a401-1a7a68125497",
+      "id": "2",
+      "name": "silver.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAR0lEQVR4nGO4+OjF/4HEDKMOABHz1h8hG1Oqf9QBow4YdcCoA0YdMOqAUQeMOmDUAaMOGHXAqAPADojK7yEbU6p/1AED7gAA+Fg7mW2Qjt0AAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "02989db7-c048-4bd7-afb9-4a516ae6c644",
+      "id": "3",
+      "name": "violet.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzUlEQVR4nO3TTQ6DIBiEYa/Ufa/iplfwVE28hTfqBdpggkHLz8zHKIlhwQ54HwGH5f35thxDB3TALQHTa24HcHE/LgeEcRRx2htAERJA7MvRk6gGIPEcogrAxFMIM8ASjyGaAEIEDfCLawF+HwoQLlQA3IABR7ki/nyMGCB2dIo4BEjdnSJeBOQejyKeBZReryKeBCC/jyIeBSCbsYBU/A+AbsjMzcV3AOaL0Pml+AZg7xNZg8RXgOU1lwBo/BQAE5cD2LgUYInLANa4Gz9Fg1qCsmSnCwAAAABJRU5ErkJggg=="
+    },
+    {
+      "uuid": "2a47bce6-2757-418c-a19c-bbd5b6851bf4",
+      "id": "4",
+      "name": "lunar.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAyklEQVR4nO3TzQ2EIBiEYVuzB3vxYi22ZRe2oMGEDbvyM/MxLInxwA14HwGHbT+OnmN4AS/gkYB53foBXNyPvwPCOIpo9gZQhAQQ+3L0JKoBSDyHqAIw8RTCDLDEY4gugBBBA/ziWoDfhwKECxUAN2DAr1wRH6cFA8SOThGHAKm7U8SLgNzjUcSzgNLrVcSTAOT3UcSjAGQzFpCK3wDohszcXPwLwHwROr8U/wDY+0TWIPELYHnNJQAabwJg4nIAG5cCLHEZwBp34wSMp+vtK+n5kgAAAABJRU5ErkJggg=="
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        15,
+        -35,
+        -15
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        15
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -15
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        15
+      ],
+      "translation": [
+        1,
+        2,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -15
+      ],
+      "translation": [
+        1,
+        2,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    }
+  }
+}

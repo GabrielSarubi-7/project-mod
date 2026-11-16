@@ -1,0 +1,1913 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Foco | Cetro do Eclipse",
+  "model_identifier": "aether_focus",
+  "parent": "item/handheld",
+  "ambientocclusion": true,
+  "front_gui_light": true,
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "Empunhadura",
+      "type": "cube",
+      "uuid": "0d6bb187-a14e-4737-aad2-f4273ba9032e",
+      "from": [
+        7.25,
+        0,
+        7.25
+      ],
+      "to": [
+        8.75,
+        8,
+        8.75
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Anel do cabo",
+      "type": "cube",
+      "uuid": "31ff50a8-b53a-4abb-ad36-968a4fa2aca6",
+      "from": [
+        7,
+        1,
+        7
+      ],
+      "to": [
+        9,
+        1.4,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Anel do cabo",
+      "type": "cube",
+      "uuid": "08a54677-27e9-4dfe-ac32-a50818a99195",
+      "from": [
+        7,
+        3,
+        7
+      ],
+      "to": [
+        9,
+        3.4,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.7999999999999998
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Anel do cabo",
+      "type": "cube",
+      "uuid": "a50a5c91-ec1c-43ee-ae15-f725ea5e9219",
+      "from": [
+        7,
+        5,
+        7
+      ],
+      "to": [
+        9,
+        5.4,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Anel do cabo",
+      "type": "cube",
+      "uuid": "451c903f-a580-4995-acd3-a094b6f2b4c2",
+      "from": [
+        7,
+        7.5,
+        7
+      ],
+      "to": [
+        9,
+        7.9,
+        9
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.8000000000000007
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 1",
+      "type": "cube",
+      "uuid": "d8818531-360c-4685-a223-6fd5d67c9468",
+      "from": [
+        10.975000000000001,
+        10.073095244168787,
+        7.675
+      ],
+      "to": [
+        11.625,
+        12.926904755831213,
+        8.325
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.2999999999999972,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.2999999999999972,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.2999999999999972,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.2999999999999972,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 2",
+      "type": "cube",
+      "uuid": "f0da0296-b24a-4364-a679-36f0add55345",
+      "from": [
+        8.906547622084393,
+        13.508452377915606,
+        7.675
+      ],
+      "to": [
+        11.760357133746819,
+        14.158452377915605,
+        8.325
+      ],
+      "origin": [
+        10.333452377915606,
+        13.833452377915606,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        -45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 3",
+      "type": "cube",
+      "uuid": "4eee0915-9430-4677-a1be-26923b792915",
+      "from": [
+        6.573095244168787,
+        14.475000000000001,
+        7.675
+      ],
+      "to": [
+        9.426904755831213,
+        15.125,
+        8.325
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 4",
+      "type": "cube",
+      "uuid": "6a7c6724-483b-4b4d-af2d-8e4826e2cd55",
+      "from": [
+        4.239642866253179,
+        13.508452377915606,
+        7.675
+      ],
+      "to": [
+        7.093452377915607,
+        14.158452377915605,
+        8.325
+      ],
+      "origin": [
+        5.666547622084393,
+        13.833452377915606,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 5",
+      "type": "cube",
+      "uuid": "7641ec4d-aa17-4f89-a085-5dc579dc7c45",
+      "from": [
+        4.375,
+        10.073095244168787,
+        7.675
+      ],
+      "to": [
+        5.025,
+        12.926904755831213,
+        8.325
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.3000000000000007,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.3000000000000007,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            5.7076190233248525
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.3000000000000007,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.3000000000000007,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 6",
+      "type": "cube",
+      "uuid": "97b329a4-3b1a-4b5d-a697-5d8aba719e78",
+      "from": [
+        4.239642866253179,
+        8.841547622084395,
+        7.675
+      ],
+      "to": [
+        7.093452377915606,
+        9.491547622084394,
+        8.325
+      ],
+      "origin": [
+        5.666547622084392,
+        9.166547622084394,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        -45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 7",
+      "type": "cube",
+      "uuid": "2c892ce3-dad2-426d-a7cb-5492a99f8234",
+      "from": [
+        6.573095244168785,
+        7.874999999999999,
+        7.675
+      ],
+      "to": [
+        9.426904755831213,
+        8.524999999999999,
+        8.325
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.707619023324856,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Coroa aberta 8",
+      "type": "cube",
+      "uuid": "cacb00e5-f637-4919-ae82-aef8ac139786",
+      "from": [
+        8.906547622084393,
+        8.841547622084393,
+        7.675
+      ],
+      "to": [
+        11.760357133746819,
+        9.491547622084392,
+        8.325
+      ],
+      "origin": [
+        10.333452377915606,
+        9.166547622084392,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.299999999999999,
+            1.2999999999999972
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.7076190233248525,
+            1.299999999999999
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Gema lapidada",
+      "type": "cube",
+      "uuid": "a0ab68c7-acca-4cd3-a71a-9ad5dc651a3d",
+      "from": [
+        6.85,
+        10.35,
+        6.85
+      ],
+      "to": [
+        9.15,
+        12.65,
+        9.15
+      ],
+      "origin": [
+        8,
+        11.5,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Ponta do cetro",
+      "type": "cube",
+      "uuid": "79906b1b-9f45-4df6-a628-d9306d21de77",
+      "from": [
+        4.4,
+        11.5,
+        7.6
+      ],
+      "to": [
+        5.4,
+        15.5,
+        8.4
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.6000000000000014,
+            8
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.6000000000000014,
+            8
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.6000000000000014
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.6000000000000014
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Lacre lunar",
+      "type": "cube",
+      "uuid": "7fde356a-ae76-4154-a6a0-23695e94dd7f",
+      "from": [
+        4.4,
+        15.5,
+        7.6
+      ],
+      "to": [
+        5.4,
+        16,
+        8.4
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Ponta do cetro",
+      "type": "cube",
+      "uuid": "82043e5a-c42d-45c2-af25-69565085a32c",
+      "from": [
+        10.6,
+        11.5,
+        7.6
+      ],
+      "to": [
+        11.6,
+        15.5,
+        8.4
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            8
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.6000000000000014,
+            8
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.6000000000000014,
+            8
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.6000000000000014
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            1.6000000000000014
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Lacre lunar",
+      "type": "cube",
+      "uuid": "f1a33b6f-e248-4658-abc4-74423a4ab38f",
+      "from": [
+        10.6,
+        15.5,
+        7.6
+      ],
+      "to": [
+        11.6,
+        16,
+        8.4
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Gema lapidada",
+      "type": "cube",
+      "uuid": "da2f1b63-466a-42c4-aa65-732e531d88b1",
+      "from": [
+        7.5,
+        -0.09999999999999998,
+        7.5
+      ],
+      "to": [
+        8.5,
+        0.9,
+        8.5
+      ],
+      "origin": [
+        8,
+        0.4,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "Cabo",
+      "uuid": "de6bbec3-0015-4c95-a33e-967af6160f90",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Aneis",
+      "uuid": "e6cd7dff-0fd3-49f3-a159-d4f5318a1bbf",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Nucleo",
+      "uuid": "a2712350-0322-4235-a5e8-9ea43ac5e0c9",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Estrutura",
+      "uuid": "169e1c03-15b4-421d-a17a-0d2f47cfdb77",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "de6bbec3-0015-4c95-a33e-967af6160f90",
+      "isOpen": false,
+      "children": [
+        "0d6bb187-a14e-4737-aad2-f4273ba9032e",
+        "31ff50a8-b53a-4abb-ad36-968a4fa2aca6",
+        "08a54677-27e9-4dfe-ac32-a50818a99195",
+        "a50a5c91-ec1c-43ee-ae15-f725ea5e9219",
+        "451c903f-a580-4995-acd3-a094b6f2b4c2"
+      ]
+    },
+    {
+      "uuid": "e6cd7dff-0fd3-49f3-a159-d4f5318a1bbf",
+      "isOpen": false,
+      "children": [
+        "d8818531-360c-4685-a223-6fd5d67c9468",
+        "f0da0296-b24a-4364-a679-36f0add55345",
+        "4eee0915-9430-4677-a1be-26923b792915",
+        "6a7c6724-483b-4b4d-af2d-8e4826e2cd55",
+        "7641ec4d-aa17-4f89-a085-5dc579dc7c45",
+        "97b329a4-3b1a-4b5d-a697-5d8aba719e78",
+        "2c892ce3-dad2-426d-a7cb-5492a99f8234",
+        "cacb00e5-f637-4919-ae82-aef8ac139786"
+      ]
+    },
+    {
+      "uuid": "a2712350-0322-4235-a5e8-9ea43ac5e0c9",
+      "isOpen": false,
+      "children": [
+        "a0ab68c7-acca-4cd3-a71a-9ad5dc651a3d",
+        "da2f1b63-466a-42c4-aa65-732e531d88b1"
+      ]
+    },
+    {
+      "uuid": "169e1c03-15b4-421d-a17a-0d2f47cfdb77",
+      "isOpen": false,
+      "children": [
+        "79906b1b-9f45-4df6-a628-d9306d21de77",
+        "7fde356a-ae76-4154-a6a0-23695e94dd7f",
+        "82043e5a-c42d-45c2-af25-69565085a32c",
+        "f1a33b6f-e248-4658-abc4-74423a4ab38f"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "49ef8067-7f53-4dc3-a093-15bd6426b78b",
+      "id": "0",
+      "name": "leather.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA70lEQVR4nMWWMQ4CMQwE/QhaWmokWn4AL+H//SEKpCMX27vOJhTRSafEGXs3Tuz+fG2n83W73B7D4xOLXWPe4kqwCpipA7JrYABmU2buEIBCpgNAa0hluWUeiDb1vhAAQq6e4x5DlcYwQOaFqgcoCZChMGkKkHVFZdeUnYKqRJZloDZiG29pBXrJhMdwdDMk5l88MA2gzRjpJdAxZDSN5vWALAuieq55wPLbEPm3T6oLoMwa9oBadzSGKwFzo0kqsGLsE/nK/AOwUnt5BarwB4DZr2C6AlEXU/hhWIJe9h4s1AmRckbVYOUwJOhMH7wB1iWbXZbe38EAAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "feef64d0-d6b7-403c-a1de-26e8245bd8fa",
+      "id": "1",
+      "name": "gold.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAR0lEQVR4nGN4eLTr/0BihlEHgIg900LIxpTqH3XAqANGHTDqgFEHjDpg1AGjDhh1wKgDRh0w6gCwAxoSTMnGlOofdcCAOwAA6Dqjoxiwm34AAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "2a47bce6-2757-418c-a19c-bbd5b6851bf4",
+      "id": "2",
+      "name": "lunar.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAyklEQVR4nO3TzQ2EIBiEYVuzB3vxYi22ZRe2oMGEDbvyM/MxLInxwA14HwGHbT+OnmN4AS/gkYB53foBXNyPvwPCOIpo9gZQhAQQ+3L0JKoBSDyHqAIw8RTCDLDEY4gugBBBA/ziWoDfhwKECxUAN2DAr1wRH6cFA8SOThGHAKm7U8SLgNzjUcSzgNLrVcSTAOT3UcSjAGQzFpCK3wDohszcXPwLwHwROr8U/wDY+0TWIPELYHnNJQAabwJg4nIAG5cCLHEZwBp34wSMp+vtK+n5kgAAAABJRU5ErkJggg=="
+    },
+    {
+      "uuid": "a3c5206f-dfbc-403f-af60-5910879be455",
+      "id": "3",
+      "name": "obsidian.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA50lEQVR4nMVXMQ6DMAz0F7rA1I4wM/f/76LqYAmFxDnblzCYiMjEl/PFDvLZvueTJv/H+j5OHdXK94xZa0kkEPMbGIAnqMc3BYCRphuA17IPo5umAStoa4QAIGDYPs1jyMoxDKC0UgtRDbhSgBhDpF0AvarIrJq0UxBNkWhTQJzZwaczUItlHsNsMGTNRzQwDECvr8AA2C1a/WqAugxkKiICmN4NkbnrpqoAmLuGNTDiaoas0UyB956QZmCGXWNpmqU2OdNoDETB3wDM+lGBGbCqGEMP6RR46ghUCRFAFhveDQmL4iiTP8Aom3HD1atFAAAAAElFTkSuQmCC"
+    },
+    {
+      "uuid": "02989db7-c048-4bd7-afb9-4a516ae6c644",
+      "id": "4",
+      "name": "violet.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzUlEQVR4nO3TTQ6DIBiEYa/Ufa/iplfwVE28hTfqBdpggkHLz8zHKIlhwQ54HwGH5f35thxDB3TALQHTa24HcHE/LgeEcRRx2htAERJA7MvRk6gGIPEcogrAxFMIM8ASjyGaAEIEDfCLawF+HwoQLlQA3IABR7ki/nyMGCB2dIo4BEjdnSJeBOQejyKeBZReryKeBCC/jyIeBSCbsYBU/A+AbsjMzcV3AOaL0Pml+AZg7xNZg8RXgOU1lwBo/BQAE5cD2LgUYInLANa4Gz9Fg1qCsmSnCwAAAABJRU5ErkJggg=="
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        15,
+        -35,
+        -15
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        15
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -15
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        15
+      ],
+      "translation": [
+        1,
+        2,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -15
+      ],
+      "translation": [
+        1,
+        2,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    }
+  }
+}

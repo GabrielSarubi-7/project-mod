@@ -1,0 +1,2098 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Codice | Livro das Orbitas",
+  "model_identifier": "codex",
+  "parent": "item/handheld",
+  "ambientocclusion": true,
+  "front_gui_light": true,
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "Capa inferior",
+      "type": "cube",
+      "uuid": "43449293-4c34-4282-ae29-99ebc2319988",
+      "from": [
+        3,
+        2,
+        5.5
+      ],
+      "to": [
+        13,
+        14,
+        6.2
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            20,
+            24
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            20,
+            24
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            24
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            24
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            20,
+            1.4000000000000004
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            20,
+            1.4000000000000004
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Paginas",
+      "type": "cube",
+      "uuid": "036f5c18-4663-489c-abbf-ae0fe8aafc27",
+      "from": [
+        3.5,
+        2.5,
+        6.2
+      ],
+      "to": [
+        12.5,
+        13.5,
+        8.8
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            18,
+            22
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            18,
+            22
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            5.200000000000001,
+            22
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            5.200000000000001,
+            22
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            18,
+            5.200000000000001
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            18,
+            5.200000000000001
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Capa superior",
+      "type": "cube",
+      "uuid": "1f72be51-77d2-4bf3-a216-6cad40afbef3",
+      "from": [
+        3,
+        2,
+        8.8
+      ],
+      "to": [
+        13,
+        14,
+        9.5
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            20,
+            24
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            20,
+            24
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.3999999999999986,
+            24
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.3999999999999986,
+            24
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            20,
+            1.3999999999999986
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            20,
+            1.3999999999999986
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Lombada",
+      "type": "cube",
+      "uuid": "a4b8bdb0-7b4b-4691-adbd-a2748ca986db",
+      "from": [
+        2.8,
+        2,
+        5.5
+      ],
+      "to": [
+        3.7,
+        14,
+        9.5
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            24
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            24
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            8,
+            24
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            8,
+            24
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            8
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            8
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Friso da capa",
+      "type": "cube",
+      "uuid": "8c43abe0-cd97-4f26-a5f5-5a58a3f86fd9",
+      "from": [
+        3.5,
+        2.4,
+        9.5
+      ],
+      "to": [
+        12.5,
+        2.8,
+        9.75
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.7999999999999998
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.7999999999999998
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            0.7999999999999998
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            0.7999999999999998
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.5
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.5
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Friso da capa",
+      "type": "cube",
+      "uuid": "9643ddbb-5b86-474f-a258-9484256550a2",
+      "from": [
+        3.5,
+        13,
+        9.5
+      ],
+      "to": [
+        12.5,
+        13.4,
+        9.75
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.5
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            18,
+            0.5
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Cantoneira",
+      "type": "cube",
+      "uuid": "27a84f33-db99-497a-aa58-1ade37d322a9",
+      "from": [
+        3.6,
+        3,
+        9.5
+      ],
+      "to": [
+        4.5,
+        3.9,
+        9.8
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            0.6000000000000014
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            0.6000000000000014
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Cantoneira",
+      "type": "cube",
+      "uuid": "f1c725fb-a2af-4f33-a520-f7d005fc5f4c",
+      "from": [
+        3.6,
+        12,
+        9.5
+      ],
+      "to": [
+        4.5,
+        12.9,
+        9.8
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            0.6000000000000014
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.7999999999999998,
+            0.6000000000000014
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Cantoneira",
+      "type": "cube",
+      "uuid": "83d3ba7f-f3fa-405d-a7e3-56f37ac1a2c9",
+      "from": [
+        11.5,
+        3,
+        9.5
+      ],
+      "to": [
+        12.4,
+        3.9,
+        9.8
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.7999999999999998
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            0.6000000000000014
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            0.6000000000000014
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Cantoneira",
+      "type": "cube",
+      "uuid": "0c72a675-6bb1-4616-aeb8-5cd01b5029c9",
+      "from": [
+        11.5,
+        12,
+        9.5
+      ],
+      "to": [
+        12.4,
+        12.9,
+        9.8
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000014,
+            1.8000000000000007
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            0.6000000000000014
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            0.6000000000000014
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 1",
+      "type": "cube",
+      "uuid": "3825ad04-03a5-4179-a330-be923e4c55bc",
+      "from": [
+        10.600000000000001,
+        6.780202025355334,
+        9.600000000000001
+      ],
+      "to": [
+        11,
+        9.219797974644667,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 2",
+      "type": "cube",
+      "uuid": "579166cf-18fd-438c-a758-19d5f9250920",
+      "from": [
+        8.760101012677666,
+        9.779898987322333,
+        9.600000000000001
+      ],
+      "to": [
+        11.199696961967,
+        10.179898987322332,
+        10
+      ],
+      "origin": [
+        9.979898987322333,
+        9.979898987322333,
+        9.8
+      ],
+      "rotation": [
+        0,
+        0,
+        -45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 3",
+      "type": "cube",
+      "uuid": "23316945-af19-49ec-a58d-ef1d50261928",
+      "from": [
+        6.780202025355334,
+        10.600000000000001,
+        9.600000000000001
+      ],
+      "to": [
+        9.219797974644667,
+        11,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.879191898578666,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.879191898578666,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.879191898578666,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.879191898578666,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 4",
+      "type": "cube",
+      "uuid": "6bd2e84d-28fa-45b4-ac24-407378e1ed3c",
+      "from": [
+        4.800303038033001,
+        9.779898987322333,
+        9.600000000000001
+      ],
+      "to": [
+        7.239898987322333,
+        10.179898987322332,
+        10
+      ],
+      "origin": [
+        6.020101012677667,
+        9.979898987322333,
+        9.8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 5",
+      "type": "cube",
+      "uuid": "423900ea-4716-40f5-a8e7-feeb13c62cfd",
+      "from": [
+        5,
+        6.780202025355334,
+        9.600000000000001
+      ],
+      "to": [
+        5.4,
+        9.219797974644667,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            4.879191898578666
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 6",
+      "type": "cube",
+      "uuid": "9b3d1dd5-8487-48e9-aa1e-6132dad20962",
+      "from": [
+        4.800303038033,
+        5.820101012677667,
+        9.600000000000001
+      ],
+      "to": [
+        7.2398989873223325,
+        6.2201010126776675,
+        10
+      ],
+      "origin": [
+        6.020101012677666,
+        6.020101012677667,
+        9.8
+      ],
+      "rotation": [
+        0,
+        0,
+        -45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 7",
+      "type": "cube",
+      "uuid": "447b8bd0-dfb1-4715-aa11-c7d320b35a77",
+      "from": [
+        6.780202025355333,
+        5,
+        9.600000000000001
+      ],
+      "to": [
+        9.219797974644665,
+        5.4,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.879191898578664,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Selo orbital 8",
+      "type": "cube",
+      "uuid": "31dcd8f6-80d5-424c-a665-cce69574f586",
+      "from": [
+        8.760101012677666,
+        5.820101012677666,
+        9.600000000000001
+      ],
+      "to": [
+        11.199696961967,
+        6.220101012677667,
+        10
+      ],
+      "origin": [
+        9.979898987322333,
+        6.020101012677666,
+        9.8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999972,
+            0.8000000000000007
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.7999999999999972
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.879191898578668,
+            0.7999999999999972
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Gema lapidada",
+      "type": "cube",
+      "uuid": "0dc43519-e3c8-4a8c-a139-37a025e48984",
+      "from": [
+        7.2,
+        7.2,
+        9.1
+      ],
+      "to": [
+        8.8,
+        8.8,
+        10.700000000000001
+      ],
+      "origin": [
+        8,
+        8,
+        9.9
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Fecho",
+      "type": "cube",
+      "uuid": "4b7615bb-9758-42d3-a827-e58b81672357",
+      "from": [
+        11.5,
+        7,
+        5.3
+      ],
+      "to": [
+        13.3,
+        9,
+        9.8
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3.6000000000000014,
+            4
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3.6000000000000014,
+            4
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            9.000000000000002,
+            4
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            9.000000000000002,
+            4
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            3.6000000000000014,
+            9.000000000000002
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            3.6000000000000014,
+            9.000000000000002
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Fita violeta",
+      "type": "cube",
+      "uuid": "1d46b742-55bf-434f-a75d-c4ac7f191d9e",
+      "from": [
+        9,
+        0.5,
+        7
+      ],
+      "to": [
+        10,
+        3,
+        7.2
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "Livro",
+      "uuid": "bd55aca4-b2fc-4a40-ac59-990d4edda7e1",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Estrutura",
+      "uuid": "e5b8977a-3f04-4c19-a5b8-5a8bf49fb1e8",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Aneis",
+      "uuid": "22d17c90-6377-4174-a87e-724b3e96df62",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Nucleo",
+      "uuid": "dfed6a6c-7173-4a7d-ad47-9f155e389231",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "bd55aca4-b2fc-4a40-ac59-990d4edda7e1",
+      "isOpen": false,
+      "children": [
+        "43449293-4c34-4282-ae29-99ebc2319988",
+        "036f5c18-4663-489c-abbf-ae0fe8aafc27",
+        "1f72be51-77d2-4bf3-a216-6cad40afbef3",
+        "a4b8bdb0-7b4b-4691-adbd-a2748ca986db"
+      ]
+    },
+    {
+      "uuid": "e5b8977a-3f04-4c19-a5b8-5a8bf49fb1e8",
+      "isOpen": false,
+      "children": [
+        "8c43abe0-cd97-4f26-a5f5-5a58a3f86fd9",
+        "9643ddbb-5b86-474f-a258-9484256550a2",
+        "27a84f33-db99-497a-aa58-1ade37d322a9",
+        "f1c725fb-a2af-4f33-a520-f7d005fc5f4c",
+        "83d3ba7f-f3fa-405d-a7e3-56f37ac1a2c9",
+        "0c72a675-6bb1-4616-aeb8-5cd01b5029c9",
+        "4b7615bb-9758-42d3-a827-e58b81672357",
+        "1d46b742-55bf-434f-a75d-c4ac7f191d9e"
+      ]
+    },
+    {
+      "uuid": "22d17c90-6377-4174-a87e-724b3e96df62",
+      "isOpen": false,
+      "children": [
+        "3825ad04-03a5-4179-a330-be923e4c55bc",
+        "579166cf-18fd-438c-a758-19d5f9250920",
+        "23316945-af19-49ec-a58d-ef1d50261928",
+        "6bd2e84d-28fa-45b4-ac24-407378e1ed3c",
+        "423900ea-4716-40f5-a8e7-feeb13c62cfd",
+        "9b3d1dd5-8487-48e9-aa1e-6132dad20962",
+        "447b8bd0-dfb1-4715-aa11-c7d320b35a77",
+        "31dcd8f6-80d5-424c-a665-cce69574f586"
+      ]
+    },
+    {
+      "uuid": "dfed6a6c-7173-4a7d-ad47-9f155e389231",
+      "isOpen": false,
+      "children": [
+        "0dc43519-e3c8-4a8c-a139-37a025e48984"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "49ef8067-7f53-4dc3-a093-15bd6426b78b",
+      "id": "0",
+      "name": "leather.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA70lEQVR4nMWWMQ4CMQwE/QhaWmokWn4AL+H//SEKpCMX27vOJhTRSafEGXs3Tuz+fG2n83W73B7D4xOLXWPe4kqwCpipA7JrYABmU2buEIBCpgNAa0hluWUeiDb1vhAAQq6e4x5DlcYwQOaFqgcoCZChMGkKkHVFZdeUnYKqRJZloDZiG29pBXrJhMdwdDMk5l88MA2gzRjpJdAxZDSN5vWALAuieq55wPLbEPm3T6oLoMwa9oBadzSGKwFzo0kqsGLsE/nK/AOwUnt5BarwB4DZr2C6AlEXU/hhWIJe9h4s1AmRckbVYOUwJOhMH7wB1iWbXZbe38EAAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "f724a324-beab-4931-a043-ba8ac48fc410",
+      "id": "1",
+      "name": "pages.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAO0lEQVR4nO3SIQEAIBAEwUtNCjQJaIGj2BPjBSPWj9isOaqz3LOrM4B4AMADAB4A8ACABwA8AOCB7wEPEUz3pppmGTsAAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "a3c5206f-dfbc-403f-af60-5910879be455",
+      "id": "2",
+      "name": "obsidian.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA50lEQVR4nMVXMQ6DMAz0F7rA1I4wM/f/76LqYAmFxDnblzCYiMjEl/PFDvLZvueTJv/H+j5OHdXK94xZa0kkEPMbGIAnqMc3BYCRphuA17IPo5umAStoa4QAIGDYPs1jyMoxDKC0UgtRDbhSgBhDpF0AvarIrJq0UxBNkWhTQJzZwaczUItlHsNsMGTNRzQwDECvr8AA2C1a/WqAugxkKiICmN4NkbnrpqoAmLuGNTDiaoas0UyB956QZmCGXWNpmqU2OdNoDETB3wDM+lGBGbCqGEMP6RR46ghUCRFAFhveDQmL4iiTP8Aom3HD1atFAAAAAElFTkSuQmCC"
+    },
+    {
+      "uuid": "feef64d0-d6b7-403c-a1de-26e8245bd8fa",
+      "id": "3",
+      "name": "gold.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAR0lEQVR4nGN4eLTr/0BihlEHgIg900LIxpTqH3XAqANGHTDqgFEHjDpg1AGjDhh1wKgDRh0w6gCwAxoSTMnGlOofdcCAOwAA6Dqjoxiwm34AAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "2a47bce6-2757-418c-a19c-bbd5b6851bf4",
+      "id": "4",
+      "name": "lunar.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAyklEQVR4nO3TzQ2EIBiEYVuzB3vxYi22ZRe2oMGEDbvyM/MxLInxwA14HwGHbT+OnmN4AS/gkYB53foBXNyPvwPCOIpo9gZQhAQQ+3L0JKoBSDyHqAIw8RTCDLDEY4gugBBBA/ziWoDfhwKECxUAN2DAr1wRH6cFA8SOThGHAKm7U8SLgNzjUcSzgNLrVcSTAOT3UcSjAGQzFpCK3wDohszcXPwLwHwROr8U/wDY+0TWIPELYHnNJQAabwJg4nIAG5cCLHEZwBp34wSMp+vtK+n5kgAAAABJRU5ErkJggg=="
+    },
+    {
+      "uuid": "02989db7-c048-4bd7-afb9-4a516ae6c644",
+      "id": "5",
+      "name": "violet.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzUlEQVR4nO3TTQ6DIBiEYa/Ufa/iplfwVE28hTfqBdpggkHLz8zHKIlhwQ54HwGH5f35thxDB3TALQHTa24HcHE/LgeEcRRx2htAERJA7MvRk6gGIPEcogrAxFMIM8ASjyGaAEIEDfCLawF+HwoQLlQA3IABR7ki/nyMGCB2dIo4BEjdnSJeBOQejyKeBZReryKeBCC/jyIeBSCbsYBU/A+AbsjMzcV3AOaL0Pml+AZg7xNZg8RXgOU1lwBo/BQAE5cD2LgUYInLANa4Gz9Fg1qCsmSnCwAAAABJRU5ErkJggg=="
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        15,
+        -35,
+        -15
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        15
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -15
+      ],
+      "translation": [
+        0,
+        1,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        15
+      ],
+      "translation": [
+        1,
+        2,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -15
+      ],
+      "translation": [
+        1,
+        2,
+        0
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    }
+  }
+}
