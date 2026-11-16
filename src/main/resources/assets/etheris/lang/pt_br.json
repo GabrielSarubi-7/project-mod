@@ -1,4 +1,8 @@
 {
+  "item.etheris.eclipse_helmet": "Coroa do Eclipse",
+  "item.etheris.eclipse_chestplate": "Véu do Eclipse — Peitoral",
+  "item.etheris.eclipse_leggings": "Véu do Eclipse — Grevas",
+  "item.etheris.eclipse_boots": "Passos do Eclipse",
   "tooltip.etheris.vigia_contract": "Piso livre + prova da Câmara + 60 Éter. Um Vigia por jogador.",
   "tooltip.etheris.vigia_release": "Agachar + usar no ar desfaz o vínculo antigo, sem reembolso.",
   "message.etheris.vigia.released": "Vínculo desfeito. O Vigia antigo desaparecerá quando estiver carregado, sem devolver materiais.",

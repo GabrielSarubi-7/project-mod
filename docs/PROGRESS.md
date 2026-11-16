@@ -1,5 +1,17 @@
 # Etheris development progress
 
+## Checkpoint 0.7.0-preview.1 — 2026-11-16
+
+Current priority overrides the historical expansion plans below: build the visual slice before adding more systems. First Firmament menu and first Eclipse Veil armor are implemented; the three spell revisions and observatory rehearsal remain pending.
+
+The armor uses four registered ArmorItems, its own material, client-only HumanoidModel geometry, a 256×32 palette atlas and original item icons. Crown, dark visor, lunar eyes, asymmetric pauldrons, chest inlay and three rigid mantle panels establish the silhouette. Pose/slot visibility is inherited through NeoForge's armor model hooks. The set has 20 total defense, durability multiplier 30, toughness 2 per piece and stable-crystal repair. These are preview balance values, not a completed GDD equipment progression. No survival recipes, emissive layer, cloth simulation or editable Blockbench source are included. Texture/icon authoring source is `tools/eclipse_palette.ps1`; geometry source is `EclipseArmorModel.java`.
+
+Operator command `/etheris atelier` supplies the four pieces and a focus through inventory insertion, dropping overflow rather than replacing existing equipment. It was exercised in the development client; all pieces were equipped in previously empty armor slots, and front/back and inventory rendering were visually inspected. Native Minecraft screenshots were saved for the delivery. No client asset-loading errors appeared. Movement, crouching, slim-arm skins, shader compatibility and human multiplayer remain unverified.
+
+Validation: `build runGameTestServer --no-daemon --offline` passed with **All 29 required tests passed** on Java 21.0.13 / NeoForge 21.1.172. The added armor test checks item/damage serialization, equipment assignment, total material defense and repair ingredient. This does not prove combat balance or animation quality. Version metadata was subsequently updated to 0.7.0-preview.1 and the distributable rebuilt.
+
+Next: reimagine Astral Spark, Vital Touch and Flux Impulse with anticipation, a readable release and controlled decay, then integrate a short optional test scenario. Firmament keyboard support, small-screen layout and full localization are still pending. The full GDD and requested visual slice are not complete.
+
 ## Checkpoint 0.6.0-alpha — 2026-11-15
 
 First minion family: Ether Sentinel/Vigia. A crafted contract requires the Chamber's completed-operation advancement, a solid floor with unoccupied dry space, and 60 inner Ether in survival. Successful creation consumes one contract; creative bypasses proof/resources but not capacity. The world-wide SavedData ledger reserves one entity UUID per owner across dimensions and unloaded chunks. Entity NBT stores owner, anchor, order and fuel. Death/destruction releases only the matching UUID; unloading does not. Sneak-use a contract in air explicitly releases an abandoned bond without refund, and invalidated entities stop working/discard when loaded.

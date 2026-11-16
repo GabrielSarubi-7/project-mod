@@ -1,0 +1,21 @@
+package com.etheris.gameplay;
+
+import com.etheris.content.ModItems;
+import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
+
+public final class VisualPreviewCommands {
+    public static void register(RegisterCommandsEvent event) {
+        event.getDispatcher().register(Commands.literal("etheris").then(Commands.literal("atelier").requires(source -> source.hasPermission(2)).executes(context -> {
+            var player=context.getSource().getPlayerOrException();
+            for(var item:new net.minecraft.world.item.Item[]{ModItems.ECLIPSE_HELMET.get(),ModItems.ECLIPSE_CHESTPLATE.get(),ModItems.ECLIPSE_LEGGINGS.get(),ModItems.ECLIPSE_BOOTS.get(),ModItems.AETHER_FOCUS.get()}) {
+                var stack=new ItemStack(item); if(!player.getInventory().add(stack)) player.drop(stack,false);
+            }
+            player.sendSystemMessage(Component.literal("Véu do Eclipse recebido. Equipe as quatro peças e use F5 para observar. Agache + use o foco para abrir o Firmamento."));
+            return 1;
+        })));
+    }
+    private VisualPreviewCommands() {}
+}

@@ -15,6 +15,7 @@ public final class Etheris {
         com.etheris.entity.ModEntities.TYPES.register(modBus);
         modBus.addListener(com.etheris.entity.ModEntities::attributes);
         ModItems.ITEMS.register(modBus);
+        com.etheris.content.EclipseArmor.MATERIALS.register(modBus);
         com.etheris.gameplay.FirmamentMenu.TYPES.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
         com.etheris.machine.MachineEntity.TYPES.register(modBus);

@@ -13,6 +13,7 @@ public final class EtherEvents {
         NeoForge.EVENT_BUS.addListener(EtherEvents::onPlayerTick);
         NeoForge.EVENT_BUS.addListener(EtherEvents::clonePlayer);
         NeoForge.EVENT_BUS.addListener(CodexCommands::register);
+        NeoForge.EVENT_BUS.addListener(VisualPreviewCommands::register);
     }
     private static void onPlayerTick(PlayerTickEvent.Post event) {
         if (!event.getEntity().level().isClientSide && event.getEntity().tickCount % 40 == 0 && EtherData.get(event.getEntity()) < EtherData.max()) {

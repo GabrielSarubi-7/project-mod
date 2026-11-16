@@ -1,4 +1,8 @@
 {
+  "item.etheris.eclipse_helmet": "Eclipse Crown",
+  "item.etheris.eclipse_chestplate": "Eclipse Veil — Cuirass",
+  "item.etheris.eclipse_leggings": "Eclipse Veil — Legguards",
+  "item.etheris.eclipse_boots": "Eclipse Striders",
   "tooltip.etheris.vigia_contract": "Clear floor + Chamber proof + 60 Ether. One Sentinel per player.",
   "tooltip.etheris.vigia_release": "Sneak + use in air releases the old bond without a refund.",
   "message.etheris.vigia.released": "Bond released. The old Sentinel will disappear when loaded, without refunding materials.",

@@ -1,6 +1,18 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.6.0-alpha para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.7.0-preview.1 para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+
+## Prévia visual — Firmamento e Véu do Eclipse
+
+A expansão de sistemas está suspensa para trabalhar apresentação, conjuração e identidade visual. Esta prévia entrega o primeiro menu **Firmamento** e a primeira armadura original **Véu do Eclipse**. Ainda não é o slice visual completo.
+
+Agache e use o Foco Etéreo para abrir o Firmamento: a constelação à esquerda permite inspecionar magias, e **Sintonizar** confirma a seleção. Conhecimento, seleção e energia são sincronizados com o servidor. O menu ainda precisa de revisão de teclado, telas pequenas e localização completa.
+
+Em um mundo de teste com comandos habilitados, use `/etheris atelier`. O comando entrega as quatro peças e um foco no inventário, sem substituir seu equipamento; se faltar espaço, os itens caem ao lado do personagem. Equipe o conjunto e pressione **F5** para ver frente e costas. Também está disponível na aba criativa Etheris. Ainda não há receita de sobrevivência para esta armadura de apresentação.
+
+O conjunto tem coroa de duas hastes, viseira escura, olhos lunares, ombreiras assimétricas, núcleo no peito e manto em três painéis. Geometria, atlas e ícones são próprios; `tools/eclipse_palette.ps1` regenera as texturas. As quatro peças somam 20 pontos de proteção e aceitam reparo com Cristal Estável. Esses valores são provisórios. O manto é rígido; os detalhes claros ainda não emitem luz.
+
+Validação: compilação concluída e **29 GameTests aprovados**, incluindo persistência de item/durabilidade e reparo da armadura. O conjunto foi equipado e inspecionado no cliente de frente e costas, com texturas carregadas. Ainda faltam inspeção em movimento/agachado, skins de braços finos, multiplayer e uma sessão longa. Próximo marco: refazer Faísca Astral, Toque Vital e Impulso de Fluxo, depois integrar o ensaio curto de conjuração.
 
 ## Novidades da versão 0.6
 
