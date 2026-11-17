@@ -1,6 +1,14 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.7.0-preview.3 para Minecraft Java 1.21.1 com NeoForge 21.1.172, GeckoLib 4.9.3 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.7.0-preview.4 para Minecraft Java 1.21.1 com NeoForge 21.1.172, GeckoLib 4.9.3 e Java 21. O GDD completo ainda não está implementado.
+
+## Vazio — Coroa da Ausência
+
+Novo conjunto independente inspirado na referência do usuário: armadura de obsidiana, prata violeta, rosto negro com uma fenda estelar, coroa fraturada com fragmentos flutuantes e eclipse no peito. A capa rasgada tem doze segmentos e bordas que se dissolvem em violeta. Estolas, laterais e lâminas dos punhos acompanham o movimento com inércia; metal e tecido têm amplitudes diferentes. GeckoLib anima a coroa e o núcleo, com emissão seletiva de luz.
+
+Use `/etheris vazio`, equipe as quatro peças e pressione F5. Também estão na aba criativa Etheris. O comando adiciona os itens, sem substituir seu equipamento. Guia: [docs/VAZIO.md](docs/VAZIO.md). Fonte editável: `art/blockbench/vazio_regalia.bbmodel`. Não há receita ou poderes de escola nesta prévia.
+
+Compilação, **30 GameTests de servidor**, testes de estabilidade do movimento e validações de assets passaram. A geometria foi conferida em uma renderização local fora do jogo; revisão interativa no cliente continua pendente, pois o usuário interrompeu o controle das janelas com Esc. A Astra permanece como na versão aprovada pelo usuário.
 
 ## Astra — Oráculo Celestial
 
@@ -93,7 +101,7 @@ Os sete dispositivos receberam modelos JSON próprios com texturas vanilla. A ar
 - Vara de Enlace transfere energia entre máquinas a até 8 blocos, sem forçar carregamento de chunks.
 - Ruína astral em terreno plano de novos chunks do Overworld, com saque de materiais.
 - Códice fabricável (livro + ametista): primeiro uso transforma em livro escrito; segundo uso abre as páginas. Guia alternativo: `/etheris codex`.
-- Assets visuais ainda são placeholders de desenvolvimento; a direção final depende do pipeline de arte/Blockbench.
+- Máquinas, instrumentos, Vigia e os conjuntos visuais têm arte própria; parte dos efeitos e da apresentação restante ainda é provisória.
 
 ## Execução
 
@@ -109,7 +117,7 @@ Máquinas são públicas. Quebrá-las perde a energia armazenada e derruba os it
 
 ## Desenvolvimento e arte
 
-Abra `build.gradle` no IntelliJ e selecione JDK 21. A coleção de oito máquinas e três instrumentos, o Vigia e Astra têm fontes editáveis em `art/blockbench`; consulte o README dessa pasta. Os modelos JSON estão em `src/main/resources/assets/etheris/models`; Astra usa também `geo`, `animations` e `textures/armor`. Parte da arte restante ainda é provisória. Isso não completa as armaduras e megamáquinas previstas no GDD.
+Abra `build.gradle` no IntelliJ e selecione JDK 21. A coleção de oito máquinas e três instrumentos, o Vigia, Astra e Vazio têm fontes editáveis em `art/blockbench`; consulte o README dessa pasta. Os modelos JSON estão em `src/main/resources/assets/etheris/models`; as armaduras GeckoLib usam também `geo`, `animations` e `textures/armor`. Parte da arte restante ainda é provisória. Isso não completa as armaduras e megamáquinas previstas no GDD.
 
 ## Marcos
 

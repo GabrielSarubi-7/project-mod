@@ -1,4 +1,9 @@
 {
+  "item.etheris.vazio_helmet": "Coroa da Ausência — Vazio",
+  "item.etheris.vazio_chestplate": "Couraça do Eclipse Negro — Vazio",
+  "item.etheris.vazio_leggings": "Perneiras da Fenda — Vazio",
+  "item.etheris.vazio_boots": "Passos do Silêncio — Vazio",
+  "message.etheris.vazio_preview": "Conjunto do Vazio recebido. Equipe as quatro peças e use F5 para observar. A capa pertence ao peitoral.",
   "item.etheris.astra_helmet": "Astra — Máscara do Oráculo",
   "item.etheris.astra_chestplate": "Astra — Vestes Celestiais",
   "item.etheris.astra_leggings": "Astra — Calças do Firmamento",

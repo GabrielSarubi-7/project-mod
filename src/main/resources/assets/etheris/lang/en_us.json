@@ -1,4 +1,9 @@
 {
+  "item.etheris.vazio_helmet": "Crown of Absence — Void",
+  "item.etheris.vazio_chestplate": "Black Eclipse Cuirass — Void",
+  "item.etheris.vazio_leggings": "Rift Leggings — Void",
+  "item.etheris.vazio_boots": "Silent Steps — Void",
+  "message.etheris.vazio_preview": "Void armor received. Equip the four pieces and use F5 to inspect. The cape belongs to the chestplate.",
   "item.etheris.astra_helmet": "Astra — Oracle Mask",
   "item.etheris.astra_chestplate": "Astra — Celestial Vestments",
   "item.etheris.astra_leggings": "Astra — Firmament Leggings",

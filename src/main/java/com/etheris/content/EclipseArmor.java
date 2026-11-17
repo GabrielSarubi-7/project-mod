@@ -20,5 +20,9 @@ public final class EclipseArmor {
         Map.of(ArmorItem.Type.HELMET,3, ArmorItem.Type.CHESTPLATE,8, ArmorItem.Type.LEGGINGS,6, ArmorItem.Type.BOOTS,3, ArmorItem.Type.BODY,8),
         20, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> Ingredient.of(ModItems.STABLE_CRYSTAL.get()),
         List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath("etheris", "astra"))), 2, 0));
+    public static final net.neoforged.neoforge.registries.DeferredHolder<ArmorMaterial, ArmorMaterial> VAZIO = MATERIALS.register("vazio", () -> new ArmorMaterial(
+        Map.of(ArmorItem.Type.HELMET,3, ArmorItem.Type.CHESTPLATE,8, ArmorItem.Type.LEGGINGS,6, ArmorItem.Type.BOOTS,3, ArmorItem.Type.BODY,8),
+        20, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> Ingredient.of(ModItems.STABLE_CRYSTAL.get()),
+        List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath("etheris", "vazio"))), 2, 0));
     private EclipseArmor() {}
 }

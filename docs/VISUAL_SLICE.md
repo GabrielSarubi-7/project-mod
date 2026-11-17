@@ -1,5 +1,7 @@
 # Firmamento — direção do slice visual
 
+Atualização 0.7.0-preview.4: **Vazio — Coroa da Ausência** implementado a partir da nova referência. Obsidiana e metal violeta claro, rosto negro com estrela, coroa fraturada, eclipse no peito e manto rasgado com extremidades luminosas. Usa a base de inércia aprovada na Astra, com amplitude contida no metal e uma capa um pouco mais pesada. A geometria foi inspecionada fora do jogo; o teste visual no cliente está pendente. Veja [VAZIO.md](VAZIO.md).
+
 Atualização 0.7.0-preview.3: a prioridade de armadura passou para **Astra — Oráculo Celestial**, seguindo a referência enviada pelo usuário. Marfim, violeta profundo e ouro; máscara sem olhos, instrumento orbital, talismãs e uma capa cerimonial. A revisão atual usa GeckoLib, brilho emissivo e tecido articulado com inércia. Veja [ASTRA.md](ASTRA.md). O Véu do Eclipse permanece como conjunto separado e não recebe automaticamente essas mudanças. As notas abaixo registram a direção inicial do slice.
 
 Expansão de sistemas suspensa. A experiência deve comunicar um cavaleiro arcano que veste o céu de um eclipse.

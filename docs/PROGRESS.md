@@ -1,5 +1,17 @@
 # Etheris development progress
 
+## Checkpoint 0.7.0-preview.4 — 2026-11-16
+
+After approving Astra's motion, the user supplied a distinct Vazio reference and requested equivalent quality. Added four separate Vazio ArmorItems, own material/registration/localization/icons, `/etheris vazio` and a GeckoLib renderer/model/emissive layer. Astra's source, geometry, texture and movement tuning are unchanged.
+
+Vazio uses 314 cuboids and 39 bones with eight equipment roots. Identity: angular pale-violet metal over obsidian, a featureless black face with a luminous four-point slit, a fractured crown with three floating shards, a black eclipse disk with rotating broken inner ring, angular pauldrons and a torn violet mantle. Twelve cape segments, three-part side cloth and front stole reuse the tested secondary-motion solver. Cape amplitude is 88% of Astra's; detached metal bracer fins use 35%, while cloth keeps its bend/settle behavior. Only the appropriate atlas tiles emit; the eclipse center remains opaque black. A 12-second authored loop handles crown levitation, iris rotation and core/face breathing.
+
+Validation: Java 21 build and **all 30 required GameTests passed** with GeckoLib loaded on the dedicated test server. The new test checks Vazio item/damage serialization, distinct slots, full-set defense, crystal repair and mixed Astra/Vazio equipment. The existing cloth regression suite passed, including 30/60/144 FPS and 2,400 stress frames. Asset validation checks bone hierarchy, animated targets, thin cape geometry, atlas bounds/parity, localizations and exact emissive material selection. Final geometry corrections were followed by asset validation and a successful build; server logic did not change after its test run.
+
+The user stopped Computer Use with physical Esc while opening Blockbench, so all subsequent work used source files and offline validation. `tools/preview_geo.mjs` renders the actual generated geometry without driving apps; front/back inspection caught and corrected coplanar toe caps and cloth seams. Its image approximates lighting and is **not a game screenshot**. In-game animation, equipment visibility, shader/elytra/cosmetic-cape interaction and multiplayer visual behavior remain unverified for Vazio. No claim that the client was opened or visually approved.
+
+Delivery: preview.4 JAR, Vazio Blockbench package, guide and offline geometry preview. No survival recipes, school bonuses, new spell mechanics or GDD completion. Current spell/observatory work remains pending. Commit/PR checkpoint only, no merge.
+
 ## Checkpoint 0.7.0-preview.3 — 2026-11-16
 
 Current focus is the user's Astra reference and softer movement, rather than expanding systems. Astra is a separate four-piece GeckoLib armor set: ivory hood, faceless porcelain mask, orbit/meridian halos, hanging gold-framed violet talismans, chest astrolabe, lunar stoles and a new violet cape with ivory/gold edging. `/etheris astra` supplies the set without replacing equipped items. No survival recipe or school bonus is claimed.
