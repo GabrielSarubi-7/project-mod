@@ -1,6 +1,14 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.7.0-preview.1 para Minecraft Java 1.21.1 com NeoForge 21.1.172 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.7.0-preview.3 para Minecraft Java 1.21.1 com NeoForge 21.1.172, GeckoLib 4.9.3 e Java 21. O GDD completo ainda não está implementado.
+
+## Astra — Oráculo Celestial
+
+Astra agora tem quatro peças equipáveis com capuz de porcelana, máscara lisa, halos orbitais, talismãs, astrolábio e tecidos violetas com ouro. A capa nova possui doze segmentos articulados. Estolas e laterais foram divididas em três partes mais finas; pontas das mangas e talismãs também se movem. A animação pelo GeckoLib acompanha deslocamento, curvas, passos e agachamento, com atraso e amortecimento. As estrelas e os cristais têm uma camada emissiva pulsante.
+
+Use `/etheris astra` com permissão de operador para receber o conjunto; equipe as peças e pressione F5. O comando não troca seu equipamento atual. Não há receita de sobrevivência nesta prévia. O guia de teste e os limites visuais estão em [docs/ASTRA.md](docs/ASTRA.md); o projeto editável é `art/blockbench/astra_oracle.bbmodel`.
+
+Compilação, 29 GameTests de servidor e verificações de estabilidade da animação passaram. A avaliação em movimento no cliente desta revisão será feita pelo usuário. O tecido usa articulações amortecidas, sem colisão física completa; a locomoção vanilla do jogador é preservada. A capa pertence ao peitoral Astra, não ao Véu do Eclipse.
 
 ## Prévia visual — Firmamento e Véu do Eclipse
 
@@ -91,7 +99,7 @@ Os sete dispositivos receberam modelos JSON próprios com texturas vanilla. A ar
 
 Use Java 21 e execute `gradlew runClient` para abrir o cliente de desenvolvimento. Para validar, execute `gradlew build runGameTestServer`. No Linux use `bash ./gradlew`. Confira também `All N required tests passed` no log: uma saída do Gradle sem erros não basta para provar que o servidor testou o mod.
 
-Para jogar, instale Minecraft 1.21.1 com NeoForge 21.1.172 e coloque o JAR de `build/libs` na pasta `mods`, no cliente e no servidor. Use um mundo de teste com backup. O cliente e um painel foram inspecionados; ainda não foi validada uma sessão multiplayer com duas pessoas.
+Para jogar, instale Minecraft 1.21.1 com NeoForge 21.1.172 e coloque o JAR de `build/libs` e **GeckoLib NeoForge 1.21.1 versão 4.9.3** na pasta `mods`, no cliente e no servidor. GeckoLib é obrigatório e não vem embutido no JAR do Etheris. O ambiente de desenvolvimento baixa a dependência pelo Gradle. Use um mundo de teste com backup. Ainda não foi validada uma sessão multiplayer com duas pessoas.
 
 ## Loop inicial
 
@@ -101,7 +109,7 @@ Máquinas são públicas. Quebrá-las perde a energia armazenada e derruba os it
 
 ## Desenvolvimento e arte
 
-Abra `build.gradle` no IntelliJ e selecione JDK 21. Arte vanilla é usada explicitamente como provisória; ainda não existem modelos `.bbmodel` ou animações finais. Os modelos JSON estão em `src/main/resources/assets/etheris/models`. Não são equivalentes às armaduras e megamáquinas previstas no GDD.
+Abra `build.gradle` no IntelliJ e selecione JDK 21. A coleção de oito máquinas e três instrumentos, o Vigia e Astra têm fontes editáveis em `art/blockbench`; consulte o README dessa pasta. Os modelos JSON estão em `src/main/resources/assets/etheris/models`; Astra usa também `geo`, `animations` e `textures/armor`. Parte da arte restante ainda é provisória. Isso não completa as armaduras e megamáquinas previstas no GDD.
 
 ## Marcos
 

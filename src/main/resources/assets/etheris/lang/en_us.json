@@ -1,4 +1,9 @@
 {
+  "item.etheris.astra_helmet": "Astra — Oracle Mask",
+  "item.etheris.astra_chestplate": "Astra — Celestial Vestments",
+  "item.etheris.astra_leggings": "Astra — Firmament Leggings",
+  "item.etheris.astra_boots": "Astra — Oracle Steps",
+  "message.etheris.astra_preview": "Astra set received. Equip all four pieces and use F5 to inspect the rings and talismans.",
   "item.etheris.eclipse_helmet": "Eclipse Crown",
   "item.etheris.eclipse_chestplate": "Eclipse Veil — Cuirass",
   "item.etheris.eclipse_leggings": "Eclipse Veil — Legguards",

@@ -8,6 +8,13 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Etheris.MOD_ID);
+    public static final DeferredItem<com.etheris.item.AstraArmorItem> ASTRA_HELMET = astra("astra_helmet", net.minecraft.world.item.ArmorItem.Type.HELMET);
+    public static final DeferredItem<com.etheris.item.AstraArmorItem> ASTRA_CHESTPLATE = astra("astra_chestplate", net.minecraft.world.item.ArmorItem.Type.CHESTPLATE);
+    public static final DeferredItem<com.etheris.item.AstraArmorItem> ASTRA_LEGGINGS = astra("astra_leggings", net.minecraft.world.item.ArmorItem.Type.LEGGINGS);
+    public static final DeferredItem<com.etheris.item.AstraArmorItem> ASTRA_BOOTS = astra("astra_boots", net.minecraft.world.item.ArmorItem.Type.BOOTS);
+    private static DeferredItem<com.etheris.item.AstraArmorItem> astra(String id, net.minecraft.world.item.ArmorItem.Type type) {
+        return ITEMS.register(id, () -> new com.etheris.item.AstraArmorItem(type, new Item.Properties().durability(type.getDurability(30))));
+    }
     public static final DeferredItem<net.minecraft.world.item.ArmorItem> ECLIPSE_HELMET = eclipse("eclipse_helmet", net.minecraft.world.item.ArmorItem.Type.HELMET);
     public static final DeferredItem<net.minecraft.world.item.ArmorItem> ECLIPSE_CHESTPLATE = eclipse("eclipse_chestplate", net.minecraft.world.item.ArmorItem.Type.CHESTPLATE);
     public static final DeferredItem<net.minecraft.world.item.ArmorItem> ECLIPSE_LEGGINGS = eclipse("eclipse_leggings", net.minecraft.world.item.ArmorItem.Type.LEGGINGS);

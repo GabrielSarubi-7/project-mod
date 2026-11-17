@@ -1,5 +1,7 @@
 # Oficina do Firmamento
 
+`astra_oracle.bbmodel` é o Oráculo Celestial da escola Astra: 277 cubos, 40 ossos, atlas incorporado e loop de prévia de 12 segundos. Abre como projeto Bedrock no Blockbench. A capa tem quatro articulações em cada uma de três faixas; estolas/laterais têm três articulações cada. O loop do editor mostra uma oscilação de prévia; no jogo, GeckoLib recebe os ângulos da simulação de inércia em Java. Portanto, a resposta a correr/virar/parar não aparece apenas apertando Play no editor. Preserve os nomes e a hierarquia dos ossos. Use `node tools/astra_armor.mjs` para regenerar os assets e `node tools/validate_astra.mjs` para conferir. O atlas emissivo separado fica em `textures/armor/astra_glowmask.png`. Guia completo: [../../docs/ASTRA.md](../../docs/ASTRA.md).
+
 Abra `00_colecao_firmamento.bbmodel` no Blockbench para ver as oito máquinas e os três instrumentos juntos. Cada peça também tem seu próprio projeto Java Block/Item, com texturas incorporadas, grupos nomeados e exportação Minecraft 1.21.1. A coleção é apenas uma prancha de inspeção, não um bloco para exportar ao jogo.
 
 As oito máquinas, Foco Etéreo, Varinha de Enlace e Códice já têm modelos e texturas integrados aos recursos do mod. A primeira coleção foi aberta e inspecionada no Blockbench 5.2.2; depois foram refinados os UVs dos cristais e o contraste da obsidiana. A inspeção dessas revisões no cliente ainda está pendente.

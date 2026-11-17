@@ -20,6 +20,8 @@ public final class ModCreativeTabs {
             output.accept(ModItems.IRON_DUST);
             output.accept(ModItems.CRYSTAL_DUST);
             output.accept(ModItems.STABLE_CRYSTAL);
+            output.accept(ModItems.ASTRA_HELMET); output.accept(ModItems.ASTRA_CHESTPLATE);
+            output.accept(ModItems.ASTRA_LEGGINGS); output.accept(ModItems.ASTRA_BOOTS);
             output.accept(ModItems.ECLIPSE_HELMET); output.accept(ModItems.ECLIPSE_CHESTPLATE);
             output.accept(ModItems.ECLIPSE_LEGGINGS); output.accept(ModItems.ECLIPSE_BOOTS);
             output.accept(ModItems.VIGIA_CONTRACT);

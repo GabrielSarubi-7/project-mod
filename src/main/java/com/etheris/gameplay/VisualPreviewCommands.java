@@ -8,6 +8,14 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 
 public final class VisualPreviewCommands {
     public static void register(RegisterCommandsEvent event) {
+        event.getDispatcher().register(Commands.literal("etheris").then(Commands.literal("astra").requires(source -> source.hasPermission(2)).executes(context -> {
+            var player=context.getSource().getPlayerOrException();
+            for(var item:new net.minecraft.world.item.Item[]{ModItems.ASTRA_HELMET.get(),ModItems.ASTRA_CHESTPLATE.get(),ModItems.ASTRA_LEGGINGS.get(),ModItems.ASTRA_BOOTS.get()}) {
+                var stack=new ItemStack(item); if(!player.getInventory().add(stack)) player.drop(stack,false);
+            }
+            player.sendSystemMessage(Component.translatable("message.etheris.astra_preview"));
+            return 1;
+        })));
         event.getDispatcher().register(Commands.literal("etheris").then(Commands.literal("atelier").requires(source -> source.hasPermission(2)).executes(context -> {
             var player=context.getSource().getPlayerOrException();
             for(var item:new net.minecraft.world.item.Item[]{ModItems.ECLIPSE_HELMET.get(),ModItems.ECLIPSE_CHESTPLATE.get(),ModItems.ECLIPSE_LEGGINGS.get(),ModItems.ECLIPSE_BOOTS.get(),ModItems.AETHER_FOCUS.get()}) {

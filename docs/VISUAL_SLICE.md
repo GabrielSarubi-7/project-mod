@@ -1,5 +1,7 @@
 # Firmamento — direção do slice visual
 
+Atualização 0.7.0-preview.3: a prioridade de armadura passou para **Astra — Oráculo Celestial**, seguindo a referência enviada pelo usuário. Marfim, violeta profundo e ouro; máscara sem olhos, instrumento orbital, talismãs e uma capa cerimonial. A revisão atual usa GeckoLib, brilho emissivo e tecido articulado com inércia. Veja [ASTRA.md](ASTRA.md). O Véu do Eclipse permanece como conjunto separado e não recebe automaticamente essas mudanças. As notas abaixo registram a direção inicial do slice.
+
 Expansão de sistemas suspensa. A experiência deve comunicar um cavaleiro arcano que veste o céu de um eclipse.
 
 Paleta: obsidiana azul #0B0D19, ouro antigo #D9BC7B, prata lunar e violeta #B8AAEC. Ouro desenha a estrutura; luz ocupa poucos pontos de foco. Evitar chuva de partículas e excesso de informação. Animações devem ter antecipação, liberação e dissipação.
