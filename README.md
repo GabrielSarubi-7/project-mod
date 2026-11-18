@@ -1,14 +1,16 @@
 # Etheris — Ecos do Infinito
 
-Versão 0.7.0-preview.4 para Minecraft Java 1.21.1 com NeoForge 21.1.172, GeckoLib 4.9.3 e Java 21. O GDD completo ainda não está implementado.
+Versão 0.7.0-preview.5 para Minecraft Java 1.21.1 com NeoForge 21.1.172, GeckoLib 4.9.3 e Java 21. O GDD completo ainda não está implementado.
 
 ## Vazio — Coroa da Ausência
 
 Novo conjunto independente inspirado na referência do usuário: armadura de obsidiana, prata violeta, rosto negro com uma fenda estelar, coroa fraturada com fragmentos flutuantes e eclipse no peito. A capa rasgada tem doze segmentos e bordas que se dissolvem em violeta. Estolas, laterais e lâminas dos punhos acompanham o movimento com inércia; metal e tecido têm amplitudes diferentes. GeckoLib anima a coroa e o núcleo, com emissão seletiva de luz.
 
+A preview.5 reconstrói a superfície com polígonos: capacete envolvente, coroa curva com pontas finas, placas chanfradas, bordas e gravuras em relevo, anel de eclipse contínuo e tecido com pregas e degradê. A geometria detalhada é ligada aos mesmos ossos do GeckoLib e aparece no jogo, inclusive na camada emissiva. A fonte Blockbench agora usa formato **Generic Model**, com malhas editáveis.
+
 Use `/etheris vazio`, equipe as quatro peças e pressione F5. Também estão na aba criativa Etheris. O comando adiciona os itens, sem substituir seu equipamento. Guia: [docs/VAZIO.md](docs/VAZIO.md). Fonte editável: `art/blockbench/vazio_regalia.bbmodel`. Não há receita ou poderes de escola nesta prévia.
 
-Compilação, **30 GameTests de servidor**, testes de estabilidade do movimento e validações de assets passaram. A geometria foi conferida em uma renderização local fora do jogo; revisão interativa no cliente continua pendente, pois o usuário interrompeu o controle das janelas com Esc. A Astra permanece como na versão aprovada pelo usuário.
+Compilação, **30 GameTests de servidor**, testes de estabilidade do movimento, carregamento de polígonos e validações de assets passaram. A geometria foi conferida em uma renderização local fora do jogo; a avaliação interativa da revisão esculpida continua pendente. A Astra permanece como na versão aprovada pelo usuário.
 
 ## Astra — Oráculo Celestial
 

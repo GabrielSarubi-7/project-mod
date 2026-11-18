@@ -13,6 +13,20 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 
 public final class VazioArmorModel extends GeoModel<VazioArmorItem> {
+    @Override public software.bernie.geckolib.cache.object.BakedGeoModel getBakedModel(ResourceLocation location) {
+        var model = super.getBakedModel(location);
+        // The cached skeleton is replaced on resource reload. Load its polygon surfaces once,
+        // shared by all four armor items; normal Gecko bone animation and glow then render them.
+        if (model.getBone("armorHead").orElseThrow().getCubes().isEmpty()) {
+            var resource = ResourceLocation.fromNamespaceAndPath("etheris", "armor_mesh/vazio.mesh.json");
+            try (var reader = net.minecraft.client.Minecraft.getInstance().getResourceManager().getResourceOrThrow(resource).openAsReader()) {
+                ArmorMeshLoader.attach(model, ArmorMeshLoader.read(reader));
+            } catch (java.io.IOException error) {
+                throw new IllegalStateException("Cannot load sculpted Vazio armor: " + resource, error);
+            }
+        }
+        return model;
+    }
     // Reuse the verified secondary-motion solver; Astra's geometry/tuning remain unchanged.
     private final Map<LivingEntity, AstraClothMotion> cloth = new WeakHashMap<>();
 

@@ -12,24 +12,36 @@ const bones=geometry.bones,byName=new Map(bones.map(b=>[b.name,b]));
 const roots=['armorHead','armorBody','armorRightArm','armorLeftArm','armorRightLeg','armorLeftLeg','armorRightBoot','armorLeftBoot'];
 assert.equal(byName.size,bones.length);
 assert.deepEqual(bones.filter(b=>!b.parent).map(b=>b.name).sort(),[...roots].sort());
-let cubes=0;
+const sculpt=read(path.join(assets,'armor_mesh/vazio.mesh.json'));
+const meshes=new Map(sculpt.bones.map(b=>[b.name,b.meshes]));
+assert.deepEqual([...meshes.keys()].sort(),[...byName.keys()].sort());
+let faces=0,pieces=0,triangles=0;
 for(const b of bones){
   const chain=new Set([b.name]);let parent=b.parent;
   while(parent){assert.ok(byName.has(parent));assert.ok(!chain.has(parent),'Cyclic bone graph');chain.add(parent);parent=byName.get(parent).parent;}
-  for(const c of b.cubes){
-    assert.ok(c.origin.every(Number.isFinite));assert.ok(c.size.every(n=>Number.isFinite(n)&&n>0));
-    for(const f of Object.values(c.uv))assert.ok(f.uv.every(n=>n>=0)&&f.uv_size.every(v=>v>=1)&&f.uv[0]+f.uv_size[0]<=1024&&f.uv[1]+f.uv_size[1]<=64);
-    cubes++;
+  assert.equal(b.cubes.length,0,'Gecko skeleton must not double-render old cuboids');
+  for(const m of meshes.get(b.name)){
+    for(const p of m.vertices)assert.ok(p.length===3&&p.every(Number.isFinite));
+    for(const f of m.faces){
+      assert.ok([3,4].includes(f.vertices.length));
+      assert.ok(f.vertices.every(i=>Number.isInteger(i)&&i>=0&&i<m.vertices.length));
+      assert.equal(f.vertices.length,f.uv.length);
+      assert.ok(f.uv.every(([u,v])=>u>=0&&u<=1024&&v>=0&&v<=64));
+      assert.ok(Math.abs(Math.hypot(...f.normal)-1)<.002);
+      faces++;triangles+=f.vertices.length-2;
+    }
+    pieces++;
   }
 }
-assert.equal(cubes,project.elements.length);
-assert.ok(cubes<500,'Keep the wearable geometry budget bounded');
+assert.equal(pieces,project.elements.length);
+assert.ok(faces<9000&&triangles<14000,'Keep wearable polygon cost bounded');
+assert.ok(project.elements.every(e=>e.type==='mesh'),'Editable sources must contain the actual polygons');
+assert.equal(project.meta.model_format,'free');
 assert.equal(byName.get('cape_root').parent,'armorBody');
 for(const column of ['right','center','left'])for(let i=0;i<4;i++){
   const b=byName.get(`cape_${column}_${i}`);
   assert.equal(b.parent,i===0?'cape_root':`cape_${column}_${i-1}`);
-  assert.ok(b.cubes.length>1,'Torn cape requires real segmented geometry');
-  assert.ok(b.cubes.every(c=>c.size[2]<.4),'Cloth should be thin');
+  assert.ok(meshes.get(b.name).some(m=>m.faces.length>30),'Cape needs real folded surfaces');
 }
 for(const name of ['robe_right','robe_left','stole_front'])for(let i=0;i<3;i++){
   const b=byName.get(i===0?name:name+'_'+i);
@@ -66,4 +78,4 @@ for(const lang of ['pt_br','en_us']){
   for(const part of ['helmet','chestplate','leggings','boots'])assert.ok(messages[`item.etheris.vazio_${part}`]);
   assert.ok(messages['message.etheris.vazio_preview']);
 }
-console.log(`PASS Vazio: ${cubes} cuboids, ${bones.length} bones, 8 equipment roots, cape/cloth hierarchy, UVs, animations, localized items and selective emission.`);
+console.log(`PASS Vazio: ${pieces} sculpted pieces, ${faces} faces (${triangles} triangles), ${bones.length} bones; slot/cloth hierarchy, UVs, animations, mesh source, localized items and selective emission.`);

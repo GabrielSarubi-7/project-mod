@@ -1,5 +1,15 @@
 # Etheris development progress
 
+## Checkpoint 0.7.0-preview.5 — 2026-11-18
+
+User requested a less blocky, more detailed Vazio. Replaced the broad cuboid surfaces with authored polygons: an octagonal helmet shell, curved tapered crown blades and faceted floating crystals, bevelled breastplate/pauldron/gauntlet/greave profiles, continuous torus eclipse rings, fine edge channels and radial markings. Cape/stole/side cloth now has folded triangular surfaces and a continuous violet gradient; the hem is irregular rather than coarse rectangular steps. Existing 39-bone layout, four items, command, balance and cloth dynamics remain; Astra is untouched.
+
+The game now reads `armor_mesh/vazio.mesh.json` (197 pieces / 6,297 faces / 8,818 triangles) through `ArmorMeshLoader`. It produces GeoQuad surfaces on the existing Gecko bones, with X reflection, reversed winding, normalized UVs and outward normals. The skeleton `.geo.json` deliberately has no cubes; surfaces attach once per cached skeleton and reload with it. This preserves Gecko slot visibility, motion and the existing emissive pass. Surface loading resolves all bones before mutating the cache and is idempotent. The editable Blockbench source is now Generic Model with welded mesh positions, not a Bedrock cube approximation. Manual mesh edits require updating the surface resource; default Bedrock export alone is insufficient.
+
+Validation: `build runGameTestServer --no-daemon --offline` passed on Java 21 / NeoForge 21.1.172 / GeckoLib 4.9.3. All **30 required GameTests** passed. New `checkArmorMeshes` exercises the actual runtime baker over all shipped faces: winding/normals/UVs, eight slot roots, repeat attachment, invalid-bone atomicity and a fresh skeleton reload. Existing cloth stability checks passed. The asset validator checks hierarchy, mesh editing source, face/triangle budget, atlas, animation names, localizations and emission. Front/back offline renders of the actual polygon resources were inspected; a coplanar boot seam was corrected before final build. This is not an in-game visual approval or a performance benchmark with multiple players.
+
+GeckoLib 4.9.3's bundled source was used to verify GeoCube/GeoQuad/GeoVertex and GeoModel lifecycle. Official background: [Geo Models](https://github.com/bernie-g/geckolib/wiki/Geo-Models-(Geckolib4)); Blockbench's [Generic Model format](https://github.com/JannisX11/blockbench/blob/master/js/formats/generic.ts) supports polygon meshes and animation. No new runtime dependency is required. The GDD, spell visual revisions and observatory rehearsal remain unfinished.
+
 ## Checkpoint 0.7.0-preview.4 — 2026-11-16
 
 After approving Astra's motion, the user supplied a distinct Vazio reference and requested equivalent quality. Added four separate Vazio ArmorItems, own material/registration/localization/icons, `/etheris vazio` and a GeckoLib renderer/model/emissive layer. Astra's source, geometry, texture and movement tuning are unchanged.

@@ -15,6 +15,15 @@ function rotate(v,deg){let[x,y,z]=v;for(let i=0;i<3;i++){const a=(deg?.[i]||0)*M
 const boneMap=new Map(model.bones.map(b=>[b.name,b]));
 const faces={north:[0,3,2,1],south:[5,6,7,4],west:[4,7,3,0],east:[1,2,6,5],up:[3,7,6,2],down:[4,0,1,5]};
 const quads=[];
+const meshPath=path.join(assets,`armor_mesh/${name}.mesh.json`);
+if(fs.existsSync(meshPath)){
+  const sculpt=JSON.parse(fs.readFileSync(meshPath,'utf8'));
+  for(const b of sculpt.bones)for(const m of b.meshes)for(const f of m.faces){
+    const points=f.vertices.map(i=>m.vertices[i]),uv=[...f.uv];
+    if(points.length===3){points.push(points[2]);uv.push(uv[2]);}
+    quads.push({points,normal:f.normal,uv});
+  }
+}
 for(const b of model.bones)for(const c of b.cubes){
   const[x,y,z]=c.origin,[w,h,d]=c.size;
   let vertices=[[x,y,z],[x+w,y,z],[x+w,y+h,z],[x,y+h,z],[x,y,z+d],[x+w,y,z+d],[x+w,y+h,z+d],[x,y+h,z+d]];

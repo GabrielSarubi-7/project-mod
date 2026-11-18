@@ -53,6 +53,9 @@ tasks.register('generateTestTemplate') {
 tasks.named('processResources') { dependsOn 'generateTestTemplate' }
 
 java { toolchain.languageVersion = JavaLanguageVersion.of(21) }
+// The polygon baker check exercises Gecko/Minecraft math without starting a game window.
+sourceSets.test.compileClasspath += sourceSets.main.compileClasspath
+sourceSets.test.runtimeClasspath += sourceSets.main.runtimeClasspath
 
 tasks.register('checkAstraCloth', JavaExec) {
     dependsOn 'testClasses'
@@ -60,6 +63,12 @@ tasks.register('checkAstraCloth', JavaExec) {
     mainClass = 'com.etheris.animation.AstraClothMotionCheck'
 }
 tasks.named('check') { dependsOn 'checkAstraCloth' }
+tasks.register('checkArmorMeshes', JavaExec) {
+    dependsOn 'testClasses'
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.etheris.animation.ArmorMeshCheck'
+}
+tasks.named('check') { dependsOn 'checkArmorMeshes' }
 
 tasks.withType(ProcessResources).configureEach {
     var replaceProperties = [minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
