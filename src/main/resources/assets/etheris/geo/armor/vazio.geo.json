@@ -1,0 +1,403 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.vazio_regalia",
+        "texture_width": 1024,
+        "texture_height": 64,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 5,
+        "visible_bounds_offset": [
+          0,
+          1.7,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "armorHead",
+          "pivot": [
+            0,
+            24,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "void_face",
+          "parent": "armorHead",
+          "pivot": [
+            0,
+            28.4,
+            -4.98
+          ],
+          "cubes": []
+        },
+        {
+          "name": "crown_shard_right",
+          "parent": "armorHead",
+          "pivot": [
+            -5.83,
+            38.18,
+            -0.4
+          ],
+          "cubes": []
+        },
+        {
+          "name": "crown_shard_left",
+          "parent": "armorHead",
+          "pivot": [
+            5.5,
+            37.7,
+            -0.35
+          ],
+          "cubes": []
+        },
+        {
+          "name": "crown_shard_rear",
+          "parent": "armorHead",
+          "pivot": [
+            -0.7,
+            34.5,
+            3.8
+          ],
+          "cubes": []
+        },
+        {
+          "name": "armorBody",
+          "pivot": [
+            0,
+            24,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "void_core",
+          "parent": "armorBody",
+          "pivot": [
+            0,
+            20.25,
+            -3.8
+          ],
+          "cubes": []
+        },
+        {
+          "name": "void_iris",
+          "parent": "void_core",
+          "pivot": [
+            0,
+            20.25,
+            -4.33
+          ],
+          "cubes": []
+        },
+        {
+          "name": "robe_right",
+          "parent": "armorBody",
+          "pivot": [
+            -4.7,
+            12.7,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "robe_right_1",
+          "parent": "robe_right",
+          "pivot": [
+            -4.7,
+            9.2,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "robe_right_2",
+          "parent": "robe_right_1",
+          "pivot": [
+            -4.7,
+            5.699999999999999,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "robe_left",
+          "parent": "armorBody",
+          "pivot": [
+            4.7,
+            12.7,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "robe_left_1",
+          "parent": "robe_left",
+          "pivot": [
+            4.7,
+            9.2,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "robe_left_2",
+          "parent": "robe_left_1",
+          "pivot": [
+            4.7,
+            5.699999999999999,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "stole_front",
+          "parent": "armorBody",
+          "pivot": [
+            0,
+            12.25,
+            -3.6
+          ],
+          "cubes": []
+        },
+        {
+          "name": "stole_front_1",
+          "parent": "stole_front",
+          "pivot": [
+            0,
+            8.8,
+            -3.63
+          ],
+          "cubes": []
+        },
+        {
+          "name": "stole_front_2",
+          "parent": "stole_front_1",
+          "pivot": [
+            0,
+            5.35,
+            -3.66
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_root",
+          "parent": "armorBody",
+          "pivot": [
+            0,
+            23,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_right_0",
+          "parent": "cape_root",
+          "pivot": [
+            -3.65,
+            23,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_right_1",
+          "parent": "cape_right_0",
+          "pivot": [
+            -3.65,
+            18.35,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_right_2",
+          "parent": "cape_right_1",
+          "pivot": [
+            -3.65,
+            13.7,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_right_3",
+          "parent": "cape_right_2",
+          "pivot": [
+            -3.65,
+            9.049999999999999,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_center_0",
+          "parent": "cape_root",
+          "pivot": [
+            0,
+            23,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_center_1",
+          "parent": "cape_center_0",
+          "pivot": [
+            0,
+            18.35,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_center_2",
+          "parent": "cape_center_1",
+          "pivot": [
+            0,
+            13.7,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_center_3",
+          "parent": "cape_center_2",
+          "pivot": [
+            0,
+            9.049999999999999,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_left_0",
+          "parent": "cape_root",
+          "pivot": [
+            3.65,
+            23,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_left_1",
+          "parent": "cape_left_0",
+          "pivot": [
+            3.65,
+            18.35,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_left_2",
+          "parent": "cape_left_1",
+          "pivot": [
+            3.65,
+            13.7,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "cape_left_3",
+          "parent": "cape_left_2",
+          "pivot": [
+            3.65,
+            9.049999999999999,
+            4.5
+          ],
+          "cubes": []
+        },
+        {
+          "name": "back_eclipse",
+          "parent": "cape_center_0",
+          "pivot": [
+            0,
+            20.5,
+            5.02
+          ],
+          "cubes": []
+        },
+        {
+          "name": "armorRightArm",
+          "pivot": [
+            -5,
+            22,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "sleeve_right",
+          "parent": "armorRightArm",
+          "pivot": [
+            -8.1,
+            15.1,
+            1
+          ],
+          "cubes": []
+        },
+        {
+          "name": "armorLeftArm",
+          "pivot": [
+            5,
+            22,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "sleeve_left",
+          "parent": "armorLeftArm",
+          "pivot": [
+            8.1,
+            15.1,
+            1
+          ],
+          "cubes": []
+        },
+        {
+          "name": "armorRightLeg",
+          "pivot": [
+            -2,
+            12,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "armorRightBoot",
+          "pivot": [
+            -2,
+            12,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "armorLeftLeg",
+          "pivot": [
+            2,
+            12,
+            0
+          ],
+          "cubes": []
+        },
+        {
+          "name": "armorLeftBoot",
+          "pivot": [
+            2,
+            12,
+            0
+          ],
+          "cubes": []
+        }
+      ]
+    }
+  ]
+}

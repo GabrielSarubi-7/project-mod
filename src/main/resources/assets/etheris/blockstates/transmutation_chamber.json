@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "etheris:block/transmutation_chamber"
+    }
+  }
+}

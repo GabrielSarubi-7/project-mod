@@ -1,0 +1,1563 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Forja | Altar da Brasa Violeta",
+  "model_identifier": "rune_forge",
+  "parent": "block/block",
+  "ambientocclusion": true,
+  "front_gui_light": false,
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "Sapata de obsidiana",
+      "type": "cube",
+      "uuid": "62bd2e54-3b4f-4d4d-a70f-4b7d50c8526d",
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        1.5,
+        15
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            28,
+            28
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            28,
+            28
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Filete de ouro",
+      "type": "cube",
+      "uuid": "9d6f0180-34b4-48c0-a0e3-e9357997f8f3",
+      "from": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "to": [
+        14.5,
+        2,
+        14.5
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            26,
+            26
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            26,
+            26
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Plataforma chanfrada",
+      "type": "cube",
+      "uuid": "78031be0-56b4-4350-a429-13b2b5f077dd",
+      "from": [
+        2,
+        2,
+        2
+      ],
+      "to": [
+        14,
+        3,
+        14
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Corpo da forja",
+      "type": "cube",
+      "uuid": "4586eedb-eef8-4e17-a691-e4e96a3e4785",
+      "from": [
+        3,
+        3,
+        3
+      ],
+      "to": [
+        13,
+        9,
+        13
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            20,
+            12
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            20,
+            12
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            20,
+            12
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            20,
+            12
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            20,
+            20
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            20,
+            20
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Boca escura",
+      "type": "cube",
+      "uuid": "1094a29d-5fbf-4a83-aa06-d18e7fc181b1",
+      "from": [
+        5,
+        3.8,
+        2.8
+      ],
+      "to": [
+        11,
+        7.8,
+        3.1
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            12,
+            8
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            12,
+            8
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000005,
+            8
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000005,
+            8
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            12,
+            0.6000000000000005
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            12,
+            0.6000000000000005
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Brasa astral",
+      "type": "cube",
+      "uuid": "d350bc7c-c5a1-4dbc-a6c6-c310a88be0be",
+      "from": [
+        5.8,
+        4.1,
+        2.6
+      ],
+      "to": [
+        10.2,
+        5.5,
+        2.85
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Grade dourada",
+      "type": "cube",
+      "uuid": "90c92450-8136-4d13-a679-8aa65a35fa14",
+      "from": [
+        4.4,
+        3.8,
+        2.3
+      ],
+      "to": [
+        4.8500000000000005,
+        7.8,
+        2.65
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            8
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            8
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7000000000000002,
+            8
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7000000000000002,
+            8
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            0.7000000000000002
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            0.7000000000000002
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Grade dourada",
+      "type": "cube",
+      "uuid": "b241c89a-2eec-4898-a21d-172f5654575e",
+      "from": [
+        7.5,
+        3.8,
+        2.3
+      ],
+      "to": [
+        7.95,
+        7.8,
+        2.65
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            8
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            8
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7000000000000002,
+            8
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7000000000000002,
+            8
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            0.7000000000000002
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.9000000000000004,
+            0.7000000000000002
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Grade dourada",
+      "type": "cube",
+      "uuid": "6fac24c2-fc35-43e6-a4c2-358b9fad8675",
+      "from": [
+        10.6,
+        3.8,
+        2.3
+      ],
+      "to": [
+        11.049999999999999,
+        7.8,
+        2.65
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.8999999999999986,
+            8
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.8999999999999986,
+            8
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.7000000000000002,
+            8
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.7000000000000002,
+            8
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.8999999999999986,
+            0.7000000000000002
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.8999999999999986,
+            0.7000000000000002
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Mesa de gravacao",
+      "type": "cube",
+      "uuid": "3c29595f-481c-4470-a07f-ced81144a3e8",
+      "from": [
+        2,
+        9,
+        4
+      ],
+      "to": [
+        14,
+        10,
+        12
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            24,
+            16
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            24,
+            16
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Bigorna obsidiana",
+      "type": "cube",
+      "uuid": "dc298542-7197-40df-a2bb-3cfc174d5ac3",
+      "from": [
+        3,
+        10,
+        5
+      ],
+      "to": [
+        13,
+        12,
+        11
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            20,
+            4
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            20,
+            4
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            12,
+            4
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            12,
+            4
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            20,
+            12
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            20,
+            12
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Superficie rúnica",
+      "type": "cube",
+      "uuid": "5027ca25-1039-4741-abe1-5006988f442b",
+      "from": [
+        3.5,
+        12,
+        5.5
+      ],
+      "to": [
+        12.5,
+        12.3,
+        10.5
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Espora do altar",
+      "type": "cube",
+      "uuid": "59800e1a-280d-4a46-a21a-187a1a5840ee",
+      "from": [
+        3,
+        12,
+        8
+      ],
+      "to": [
+        4,
+        14.5,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Ponta dourada",
+      "type": "cube",
+      "uuid": "6afdccb3-e4d9-4e20-af35-ba3907674047",
+      "from": [
+        3,
+        14.5,
+        8
+      ],
+      "to": [
+        4,
+        15,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Espora do altar",
+      "type": "cube",
+      "uuid": "4c75d74f-972e-4ebd-a8e3-6befb285399d",
+      "from": [
+        12,
+        12,
+        8
+      ],
+      "to": [
+        13,
+        14.5,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Ponta dourada",
+      "type": "cube",
+      "uuid": "2b0f0c43-0643-43b1-abb7-c7dd549c212b",
+      "from": [
+        12,
+        14.5,
+        8
+      ],
+      "to": [
+        13,
+        15,
+        10
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            1
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "texture": 1
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "Estrutura",
+      "uuid": "8acffa1f-c8d8-4e91-a35f-a9d4cef797a6",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Fornalha",
+      "uuid": "c0f40c2d-a46c-4c00-a493-1c5a9cad1a09",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "8acffa1f-c8d8-4e91-a35f-a9d4cef797a6",
+      "isOpen": false,
+      "children": [
+        "62bd2e54-3b4f-4d4d-a70f-4b7d50c8526d",
+        "9d6f0180-34b4-48c0-a0e3-e9357997f8f3",
+        "78031be0-56b4-4350-a429-13b2b5f077dd",
+        "4586eedb-eef8-4e17-a691-e4e96a3e4785",
+        "1094a29d-5fbf-4a83-aa06-d18e7fc181b1",
+        "3c29595f-481c-4470-a07f-ced81144a3e8",
+        "dc298542-7197-40df-a2bb-3cfc174d5ac3",
+        "5027ca25-1039-4741-abe1-5006988f442b",
+        "59800e1a-280d-4a46-a21a-187a1a5840ee",
+        "6afdccb3-e4d9-4e20-af35-ba3907674047",
+        "4c75d74f-972e-4ebd-a8e3-6befb285399d",
+        "2b0f0c43-0643-43b1-abb7-c7dd549c212b"
+      ]
+    },
+    {
+      "uuid": "c0f40c2d-a46c-4c00-a493-1c5a9cad1a09",
+      "isOpen": false,
+      "children": [
+        "d350bc7c-c5a1-4dbc-a6c6-c310a88be0be",
+        "90c92450-8136-4d13-a679-8aa65a35fa14",
+        "b241c89a-2eec-4898-a21d-172f5654575e",
+        "6fac24c2-fc35-43e6-a4c2-358b9fad8675"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "a3c5206f-dfbc-403f-af60-5910879be455",
+      "id": "0",
+      "name": "obsidian.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA50lEQVR4nMVXMQ6DMAz0F7rA1I4wM/f/76LqYAmFxDnblzCYiMjEl/PFDvLZvueTJv/H+j5OHdXK94xZa0kkEPMbGIAnqMc3BYCRphuA17IPo5umAStoa4QAIGDYPs1jyMoxDKC0UgtRDbhSgBhDpF0AvarIrJq0UxBNkWhTQJzZwaczUItlHsNsMGTNRzQwDECvr8AA2C1a/WqAugxkKiICmN4NkbnrpqoAmLuGNTDiaoas0UyB956QZmCGXWNpmqU2OdNoDETB3wDM+lGBGbCqGEMP6RR46ghUCRFAFhveDQmL4iiTP8Aom3HD1atFAAAAAElFTkSuQmCC"
+    },
+    {
+      "uuid": "feef64d0-d6b7-403c-a1de-26e8245bd8fa",
+      "id": "1",
+      "name": "gold.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAR0lEQVR4nGN4eLTr/0BihlEHgIg900LIxpTqH3XAqANGHTDqgFEHjDpg1AGjDhh1wKgDRh0w6gCwAxoSTMnGlOofdcCAOwAA6Dqjoxiwm34AAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "17553d81-5204-45a8-a3ef-e2ac78be405d",
+      "id": "2",
+      "name": "cavity.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA7ElEQVR4nMWWsQ7DIAxEPVXK0qFSt3xE///nUnWolBJs35mDDihSBObZdxjsub+O2/Y4tvs+PD6x2DXmLa4Eq4CZOiC7BgZgNmXmDgEoZLoAtIZUllvmgWhT7wsBIOTqOe4xVGkMA2ReqHqAkgAZCpOmAFlXVHZN2SmoSmRZBmojtvGWVqCXTHgMRzdDYv7FA9MA2oyRXgIdQ0bTaF4PyLIgqueaByy/DZF/56S6AMqsYQ+odUdjuBIwN5qkAivGOZGvzD8AK7WXV6AKfwGY/QqmKxB1MYUfhiXoZe/BQp0QKWdUDVYOQ4LO9MEbh07Sb1ZdhOIAAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "02989db7-c048-4bd7-afb9-4a516ae6c644",
+      "id": "3",
+      "name": "violet.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzUlEQVR4nO3TTQ6DIBiEYa/Ufa/iplfwVE28hTfqBdpggkHLz8zHKIlhwQ54HwGH5f35thxDB3TALQHTa24HcHE/LgeEcRRx2htAERJA7MvRk6gGIPEcogrAxFMIM8ASjyGaAEIEDfCLawF+HwoQLlQA3IABR7ki/nyMGCB2dIo4BEjdnSJeBOQejyKeBZReryKeBCC/jyIeBSCbsYBU/A+AbsjMzcV3AOaL0Pml+AZg7xNZg8RXgOU1lwBo/BQAE5cD2LgUYInLANa4Gz9Fg1qCsmSnCwAAAABJRU5ErkJggg=="
+    },
+    {
+      "uuid": "8dffd96a-02ab-4ead-a385-89edf5e5e04d",
+      "id": "4",
+      "name": "rune.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAk0lEQVR4nGOQVLT4P5CYYdQBlBpwdH3lqANGHTBwDgBZDsN0dwDMUnSaLg5AtgwXm2YOQLeEEJ+qDsBmOLFiFDsAl6GkipPlAHyGkStHtAMIGUKpPIYDSE3VpKpBVz/4QmDQpQFChtElF+AzlG7lAC7D6VoSYrOE7nUBumUDUhsiO2LA2gOUBPuoA4aXAyjFow4AAND2ICUk+f79AAAAAElFTkSuQmCC"
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  }
+}

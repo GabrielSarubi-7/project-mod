@@ -16,6 +16,23 @@ public final class ModCreativeTabs {
         .displayItems((parameters, output) -> {
             output.accept(ModItems.ETHERIUM_FRAGMENT);
             output.accept(ModItems.AETHER_FOCUS);
+            output.accept(ModItems.RUNE);
+            output.accept(ModItems.IRON_DUST);
+            output.accept(ModItems.CRYSTAL_DUST);
+            output.accept(ModItems.STABLE_CRYSTAL);
+            output.accept(ModItems.VAZIO_HELMET); output.accept(ModItems.VAZIO_CHESTPLATE);
+            output.accept(ModItems.VAZIO_LEGGINGS); output.accept(ModItems.VAZIO_BOOTS);
+            output.accept(ModItems.ASTRA_HELMET); output.accept(ModItems.ASTRA_CHESTPLATE);
+            output.accept(ModItems.ASTRA_LEGGINGS); output.accept(ModItems.ASTRA_BOOTS);
+            output.accept(ModItems.ECLIPSE_HELMET); output.accept(ModItems.ECLIPSE_CHESTPLATE);
+            output.accept(ModItems.ECLIPSE_LEGGINGS); output.accept(ModItems.ECLIPSE_BOOTS);
+            output.accept(ModItems.VIGIA_CONTRACT);
+            output.accept(ModBlocks.PRISMATIC_CRUSHER);
+            output.accept(ModBlocks.CRYSTAL_REFINERY);
+            output.accept(ModBlocks.DISTRIBUTION_NODE);
+            output.accept(ModBlocks.TRANSMUTATION_CHAMBER);
+            output.accept(ModItems.CODEX);
+            output.accept(ModItems.LINK_WAND);
             output.accept(ModBlocks.ETHER_COLLECTOR);
             output.accept(ModBlocks.AETHER_FOCUS_BLOCK);
             output.accept(ModBlocks.RUNE_FORGE);

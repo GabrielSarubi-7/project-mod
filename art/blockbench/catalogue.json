@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ether_collector",
+    "title": "Coletor | Astrolabio do Firmamento",
+    "kind": "block",
+    "cubes": 26,
+    "project": "ether_collector.bbmodel"
+  },
+  {
+    "id": "aether_focus_block",
+    "title": "Foco Etéreo | Altar da Convergencia",
+    "kind": "block",
+    "cubes": 18,
+    "project": "aether_focus_block.bbmodel"
+  },
+  {
+    "id": "rune_forge",
+    "title": "Forja | Altar da Brasa Violeta",
+    "kind": "block",
+    "cubes": 16,
+    "project": "rune_forge.bbmodel"
+  },
+  {
+    "id": "amber_reservoir",
+    "title": "Reservatorio | Relicario de Ambar",
+    "kind": "block",
+    "cubes": 17,
+    "project": "amber_reservoir.bbmodel"
+  },
+  {
+    "id": "prismatic_crusher",
+    "title": "Triturador | Mandibulas do Prisma",
+    "kind": "block",
+    "cubes": 20,
+    "project": "prismatic_crusher.bbmodel"
+  },
+  {
+    "id": "crystal_refinery",
+    "title": "Refinaria | Destilaria da Lua",
+    "kind": "block",
+    "cubes": 18,
+    "project": "crystal_refinery.bbmodel"
+  },
+  {
+    "id": "distribution_node",
+    "title": "No | Bussola dos Quatro Enlaces",
+    "kind": "block",
+    "cubes": 20,
+    "project": "distribution_node.bbmodel"
+  },
+  {
+    "id": "transmutation_chamber",
+    "title": "Camara | Santuario do Eclipse",
+    "kind": "block",
+    "cubes": 33,
+    "project": "transmutation_chamber.bbmodel"
+  },
+  {
+    "id": "aether_focus",
+    "title": "Foco | Cetro do Eclipse",
+    "kind": "item",
+    "cubes": 19,
+    "project": "aether_focus.bbmodel"
+  },
+  {
+    "id": "link_wand",
+    "title": "Enlace | Diapasao Astral",
+    "kind": "item",
+    "cubes": 9,
+    "project": "link_wand.bbmodel"
+  },
+  {
+    "id": "codex",
+    "title": "Codice | Livro das Orbitas",
+    "kind": "item",
+    "cubes": 21,
+    "project": "codex.bbmodel"
+  }
+]

@@ -1,0 +1,1940 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Triturador | Mandibulas do Prisma",
+  "model_identifier": "prismatic_crusher",
+  "parent": "block/block",
+  "ambientocclusion": true,
+  "front_gui_light": false,
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "Sapata de obsidiana",
+      "type": "cube",
+      "uuid": "efc491f9-30ad-4483-a3de-2ac1f7d9e6c5",
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        1.5,
+        15
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            28,
+            3
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            28,
+            28
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            28,
+            28
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Filete de ouro",
+      "type": "cube",
+      "uuid": "1e3a6178-d843-4c1e-aeea-7432b41f0a1c",
+      "from": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "to": [
+        14.5,
+        2,
+        14.5
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            26,
+            1
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            26,
+            26
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            26,
+            26
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Plataforma chanfrada",
+      "type": "cube",
+      "uuid": "eda03712-e861-4763-aa0e-7e567d48395d",
+      "from": [
+        2,
+        2,
+        2
+      ],
+      "to": [
+        14,
+        3,
+        14
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            24,
+            2
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            24,
+            24
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Cuba de moagem",
+      "type": "cube",
+      "uuid": "f0fe9652-24df-433d-a21b-423d680bceef",
+      "from": [
+        3,
+        3,
+        3
+      ],
+      "to": [
+        13,
+        7,
+        13
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            20,
+            8
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            20,
+            8
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            20,
+            8
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            20,
+            8
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            20,
+            20
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            20,
+            20
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Cavidade de moagem",
+      "type": "cube",
+      "uuid": "9397cee8-2ca2-4d4f-a445-0161e7fd1f69",
+      "from": [
+        4,
+        7,
+        4
+      ],
+      "to": [
+        12,
+        7.2,
+        12
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.40000000000000036
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.40000000000000036
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.40000000000000036
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.40000000000000036
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Eixo do triturador",
+      "type": "cube",
+      "uuid": "8780dd24-925d-47b3-a47a-22d933008cd2",
+      "from": [
+        4.5,
+        7,
+        4
+      ],
+      "to": [
+        6.5,
+        9.5,
+        12
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            16
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            16
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Dente prismatico",
+      "type": "cube",
+      "uuid": "cf6d1e83-68a5-4ed7-a0c8-1d6fce1186c7",
+      "from": [
+        4.7,
+        8.7,
+        4.05
+      ],
+      "to": [
+        6.3,
+        10.3,
+        5.55
+      ],
+      "origin": [
+        5.5,
+        9.5,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Dente prismatico",
+      "type": "cube",
+      "uuid": "be2d5ec2-0b29-417b-a05c-9f0dc2676021",
+      "from": [
+        4.7,
+        8.7,
+        6.95
+      ],
+      "to": [
+        6.3,
+        10.3,
+        8.45
+      ],
+      "origin": [
+        5.5,
+        9.5,
+        7.7
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Dente prismatico",
+      "type": "cube",
+      "uuid": "fbe918e8-0778-472e-aef6-6da3cf298e1d",
+      "from": [
+        4.7,
+        8.7,
+        9.85
+      ],
+      "to": [
+        6.3,
+        10.3,
+        11.35
+      ],
+      "origin": [
+        5.5,
+        9.5,
+        10.6
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Eixo do triturador",
+      "type": "cube",
+      "uuid": "251de604-a93e-430e-aabc-5ed5416e62ff",
+      "from": [
+        9.5,
+        7,
+        4
+      ],
+      "to": [
+        11.5,
+        9.5,
+        12
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 3
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            5
+          ],
+          "texture": 3
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": 3
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            5
+          ],
+          "texture": 3
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            16
+          ],
+          "texture": 3
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            16
+          ],
+          "texture": 3
+        }
+      }
+    },
+    {
+      "name": "Dente prismatico",
+      "type": "cube",
+      "uuid": "a1da0171-fd7b-492c-aa1a-e4bab3126a72",
+      "from": [
+        9.7,
+        8.7,
+        4.05
+      ],
+      "to": [
+        11.3,
+        10.3,
+        5.55
+      ],
+      "origin": [
+        10.5,
+        9.5,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Dente prismatico",
+      "type": "cube",
+      "uuid": "0a3b7ba5-bb00-4336-a89b-4a92d53060e5",
+      "from": [
+        9.7,
+        8.7,
+        6.95
+      ],
+      "to": [
+        11.3,
+        10.3,
+        8.45
+      ],
+      "origin": [
+        10.5,
+        9.5,
+        7.7
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Dente prismatico",
+      "type": "cube",
+      "uuid": "0a8d518d-483d-4e04-a5b0-b17af4d5d57c",
+      "from": [
+        9.7,
+        8.7,
+        9.85
+      ],
+      "to": [
+        11.3,
+        10.3,
+        11.35
+      ],
+      "origin": [
+        10.5,
+        9.5,
+        10.6
+      ],
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 4
+        }
+      }
+    },
+    {
+      "name": "Muralha lateral",
+      "type": "cube",
+      "uuid": "03b58b6c-f85a-4dca-a38b-f566e39487b7",
+      "from": [
+        1.8,
+        3,
+        3
+      ],
+      "to": [
+        3.8,
+        12.5,
+        13
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3.9999999999999996,
+            19
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3.9999999999999996,
+            19
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            20,
+            19
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            20,
+            19
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            3.9999999999999996,
+            20
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            3.9999999999999996,
+            20
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Faixa estrutural",
+      "type": "cube",
+      "uuid": "1da32626-6946-43d9-a429-5e822f2b4a52",
+      "from": [
+        1.6500000000000001,
+        10.8,
+        2.8
+      ],
+      "to": [
+        3.95,
+        11.5,
+        13.2
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 6,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            20.799999999999997,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            20.799999999999997,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            20.799999999999997
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.6,
+            20.799999999999997
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Muralha lateral",
+      "type": "cube",
+      "uuid": "c2bb986c-a074-496f-ad3b-4d3a39e67e94",
+      "from": [
+        12.2,
+        3,
+        3
+      ],
+      "to": [
+        14.2,
+        12.5,
+        13
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 7,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            19
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            19
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            20,
+            19
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            20,
+            19
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            20
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            20
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "Faixa estrutural",
+      "type": "cube",
+      "uuid": "4c3f61f7-68f3-4290-a752-6d1d5c13fab8",
+      "from": [
+        12.049999999999999,
+        10.8,
+        2.8
+      ],
+      "to": [
+        14.35,
+        11.5,
+        13.2
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4.600000000000001,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4.600000000000001,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            20.799999999999997,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            20.799999999999997,
+            1.3999999999999986
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4.600000000000001,
+            20.799999999999997
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4.600000000000001,
+            20.799999999999997
+          ],
+          "texture": 1
+        }
+      }
+    },
+    {
+      "name": "Saida de po",
+      "type": "cube",
+      "uuid": "557a70c5-9d76-4a2f-a76e-bec0540415c5",
+      "from": [
+        5,
+        3.5,
+        2.7
+      ],
+      "to": [
+        11,
+        5.7,
+        3
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            12,
+            4.4
+          ],
+          "texture": 2
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            12,
+            4.4
+          ],
+          "texture": 2
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            4.4
+          ],
+          "texture": 2
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            4.4
+          ],
+          "texture": 2
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            12,
+            0.5999999999999996
+          ],
+          "texture": 2
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            12,
+            0.5999999999999996
+          ],
+          "texture": 2
+        }
+      }
+    },
+    {
+      "name": "Selo de principio",
+      "type": "cube",
+      "uuid": "7ece3eb3-2536-4ed6-a89b-04cbaf0116e3",
+      "from": [
+        7.4,
+        5.7,
+        2.5
+      ],
+      "to": [
+        8.6,
+        6.8999999999999995,
+        2.7
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "texture": 5
+        }
+      }
+    },
+    {
+      "name": "Travessa posterior",
+      "type": "cube",
+      "uuid": "e494f264-4e42-40ed-a245-7ecee6f859a6",
+      "from": [
+        3,
+        11,
+        11.5
+      ],
+      "to": [
+        13,
+        12,
+        13
+      ],
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "autouv": 0,
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            20,
+            2
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            20,
+            2
+          ],
+          "texture": 1
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3,
+            2
+          ],
+          "texture": 1
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            2
+          ],
+          "texture": 1
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            20,
+            3
+          ],
+          "texture": 1
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            20,
+            3
+          ],
+          "texture": 1
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "Estrutura",
+      "uuid": "6f87de22-d3ec-4e3c-a28c-43fde0b85798",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Moagem",
+      "uuid": "e5398510-4624-4c84-a144-2a36719c40aa",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    },
+    {
+      "name": "Runas",
+      "uuid": "fd72a9ef-46bc-44eb-a68f-591e979a4dc5",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "isOpen": false
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "6f87de22-d3ec-4e3c-a28c-43fde0b85798",
+      "isOpen": false,
+      "children": [
+        "efc491f9-30ad-4483-a3de-2ac1f7d9e6c5",
+        "1e3a6178-d843-4c1e-aeea-7432b41f0a1c",
+        "eda03712-e861-4763-aa0e-7e567d48395d",
+        "f0fe9652-24df-433d-a21b-423d680bceef",
+        "9397cee8-2ca2-4d4f-a445-0161e7fd1f69",
+        "03b58b6c-f85a-4dca-a38b-f566e39487b7",
+        "1da32626-6946-43d9-a429-5e822f2b4a52",
+        "c2bb986c-a074-496f-ad3b-4d3a39e67e94",
+        "4c3f61f7-68f3-4290-a752-6d1d5c13fab8",
+        "557a70c5-9d76-4a2f-a76e-bec0540415c5",
+        "e494f264-4e42-40ed-a245-7ecee6f859a6"
+      ]
+    },
+    {
+      "uuid": "e5398510-4624-4c84-a144-2a36719c40aa",
+      "isOpen": false,
+      "children": [
+        "8780dd24-925d-47b3-a47a-22d933008cd2",
+        "cf6d1e83-68a5-4ed7-a0c8-1d6fce1186c7",
+        "be2d5ec2-0b29-417b-a05c-9f0dc2676021",
+        "fbe918e8-0778-472e-aef6-6da3cf298e1d",
+        "251de604-a93e-430e-aabc-5ed5416e62ff",
+        "a1da0171-fd7b-492c-aa1a-e4bab3126a72",
+        "0a3b7ba5-bb00-4336-a89b-4a92d53060e5",
+        "0a8d518d-483d-4e04-a5b0-b17af4d5d57c"
+      ]
+    },
+    {
+      "uuid": "fd72a9ef-46bc-44eb-a68f-591e979a4dc5",
+      "isOpen": false,
+      "children": [
+        "7ece3eb3-2536-4ed6-a89b-04cbaf0116e3"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "a3c5206f-dfbc-403f-af60-5910879be455",
+      "id": "0",
+      "name": "obsidian.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA50lEQVR4nMVXMQ6DMAz0F7rA1I4wM/f/76LqYAmFxDnblzCYiMjEl/PFDvLZvueTJv/H+j5OHdXK94xZa0kkEPMbGIAnqMc3BYCRphuA17IPo5umAStoa4QAIGDYPs1jyMoxDKC0UgtRDbhSgBhDpF0AvarIrJq0UxBNkWhTQJzZwaczUItlHsNsMGTNRzQwDECvr8AA2C1a/WqAugxkKiICmN4NkbnrpqoAmLuGNTDiaoas0UyB956QZmCGXWNpmqU2OdNoDETB3wDM+lGBGbCqGEMP6RR46ghUCRFAFhveDQmL4iiTP8Aom3HD1atFAAAAAElFTkSuQmCC"
+    },
+    {
+      "uuid": "feef64d0-d6b7-403c-a1de-26e8245bd8fa",
+      "id": "1",
+      "name": "gold.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAR0lEQVR4nGN4eLTr/0BihlEHgIg900LIxpTqH3XAqANGHTDqgFEHjDpg1AGjDhh1wKgDRh0w6gCwAxoSTMnGlOofdcCAOwAA6Dqjoxiwm34AAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "17553d81-5204-45a8-a3ef-e2ac78be405d",
+      "id": "2",
+      "name": "cavity.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA7ElEQVR4nMWWsQ7DIAxEPVXK0qFSt3xE///nUnWolBJs35mDDihSBObZdxjsub+O2/Y4tvs+PD6x2DXmLa4Eq4CZOiC7BgZgNmXmDgEoZLoAtIZUllvmgWhT7wsBIOTqOe4xVGkMA2ReqHqAkgAZCpOmAFlXVHZN2SmoSmRZBmojtvGWVqCXTHgMRzdDYv7FA9MA2oyRXgIdQ0bTaF4PyLIgqueaByy/DZF/56S6AMqsYQ+odUdjuBIwN5qkAivGOZGvzD8AK7WXV6AKfwGY/QqmKxB1MYUfhiXoZe/BQp0QKWdUDVYOQ4LO9MEbh07Sb1ZdhOIAAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "dcb1b75e-3eac-40d7-a401-1a7a68125497",
+      "id": "3",
+      "name": "silver.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAR0lEQVR4nGO4+OjF/4HEDKMOABHz1h8hG1Oqf9QBow4YdcCoA0YdMOqAUQeMOmDUAaMOGHXAqAPADojK7yEbU6p/1AED7gAA+Fg7mW2Qjt0AAAAASUVORK5CYII="
+    },
+    {
+      "uuid": "02989db7-c048-4bd7-afb9-4a516ae6c644",
+      "id": "4",
+      "name": "violet.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzUlEQVR4nO3TTQ6DIBiEYa/Ufa/iplfwVE28hTfqBdpggkHLz8zHKIlhwQ54HwGH5f35thxDB3TALQHTa24HcHE/LgeEcRRx2htAERJA7MvRk6gGIPEcogrAxFMIM8ASjyGaAEIEDfCLawF+HwoQLlQA3IABR7ki/nyMGCB2dIo4BEjdnSJeBOQejyKeBZReryKeBCC/jyIeBSCbsYBU/A+AbsjMzcV3AOaL0Pml+AZg7xNZg8RXgOU1lwBo/BQAE5cD2LgUYInLANa4Gz9Fg1qCsmSnCwAAAABJRU5ErkJggg=="
+    },
+    {
+      "uuid": "8dffd96a-02ab-4ead-a385-89edf5e5e04d",
+      "id": "5",
+      "name": "rune.png",
+      "namespace": "etheris",
+      "folder": "block/firmament",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "mode": "bitmap",
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAk0lEQVR4nGOQVLT4P5CYYdQBlBpwdH3lqANGHTBwDgBZDsN0dwDMUnSaLg5AtgwXm2YOQLeEEJ+qDsBmOLFiFDsAl6GkipPlAHyGkStHtAMIGUKpPIYDSE3VpKpBVz/4QmDQpQFChtElF+AzlG7lAC7D6VoSYrOE7nUBumUDUhsiO2LA2gOUBPuoA4aXAyjFow4AAND2ICUk+f79AAAAAElFTkSuQmCC"
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  }
+}

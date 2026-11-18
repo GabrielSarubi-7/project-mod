@@ -18,17 +18,10 @@ public final class AetherFocusItem extends Item {
     @Override public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
         if (level.isClientSide) return InteractionResultHolder.success(stack);
-        if (!EtherData.spend(player, 8)) {
-            player.displayClientMessage(Component.literal("O foco está sem Éter suficiente (8 necessários)."), true);
-            return InteractionResultHolder.fail(stack);
+        if (player.isShiftKeyDown()) {
+            player.openMenu(new net.minecraft.world.SimpleMenuProvider((id, inventory, viewer) -> com.etheris.gameplay.FirmamentMenu.server(id, inventory), Component.literal("Firmamento")));
+            return InteractionResultHolder.success(stack);
         }
-        ServerLevel server = (ServerLevel) level;
-        server.sendParticles(ParticleTypes.END_ROD, player.getX(), player.getEyeY(), player.getZ(), 18, .5, .5, .5, .08);
-        for (Entity entity : level.getEntities(player, player.getBoundingBox().inflate(4), e -> e instanceof LivingEntity && e != player)) {
-            entity.hurt(level.damageSources().indirectMagic(player, player), 4.0f);
-        }
-        player.getCooldowns().addCooldown(this, 20);
-        player.displayClientMessage(Component.literal("Faísca Astral conjurada. Éter: " + EtherData.get(player) + "/" + EtherData.max()), true);
-        return InteractionResultHolder.success(stack);
+        return com.etheris.gameplay.Spells.use(player, this) ? InteractionResultHolder.success(stack) : InteractionResultHolder.fail(stack);
     }
 }

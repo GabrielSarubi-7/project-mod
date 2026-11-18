@@ -1,0 +1,30 @@
+{
+  "parent": "etheris:sintonizacao",
+  "display": {
+    "icon": {
+      "id": "etheris:transmutation_chamber"
+    },
+    "title": {
+      "translate": "advancement.etheris.chamber.title"
+    },
+    "description": {
+      "translate": "advancement.etheris.chamber.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chamber": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "etheris:transmutation_chamber"
+          }
+        ]
+      }
+    }
+  }
+}

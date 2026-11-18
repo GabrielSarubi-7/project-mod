@@ -1,0 +1,1560 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "modded_entity",
+    "box_uv": true
+  },
+  "name": "Vigia | Cavaleiro do Limiar",
+  "model_identifier": "VigiaModel",
+  "modded_entity_version": "1.17",
+  "resolution": {
+    "width": 256,
+    "height": 32
+  },
+  "elements": [
+    {
+      "uuid": "4d74f7e5-d1a9-480b-ac77-aa7ebcfefb61",
+      "name": "Elmo sem rosto",
+      "type": "cube",
+      "from": [
+        -4,
+        32,
+        -4
+      ],
+      "to": [
+        4,
+        41,
+        4
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "6b968034-3024-4bb4-ab7a-d96b27783375",
+      "name": "Mascara vazia",
+      "type": "cube",
+      "from": [
+        -3.4,
+        35,
+        -4.25
+      ],
+      "to": [
+        3.4,
+        39,
+        -3.85
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        128,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "6db11f5d-86a9-4746-a906-071ef970a34f",
+      "name": "Olho do Vigia",
+      "type": "cube",
+      "from": [
+        -2.5,
+        36.8,
+        -4.5
+      ],
+      "to": [
+        2.5,
+        37.5,
+        -4.1
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "34e50375-8733-4b7f-a9e6-a7b098c804c8",
+      "name": "Crista central",
+      "type": "cube",
+      "from": [
+        -0.6,
+        38,
+        -4.2
+      ],
+      "to": [
+        0.6,
+        43,
+        -3.4000000000000004
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "51fbe266-54a0-4f16-aa03-1b36a332bf78",
+      "name": "Coroa quebrada",
+      "type": "cube",
+      "from": [
+        3.4000000000000004,
+        38,
+        -1
+      ],
+      "to": [
+        4.4,
+        45,
+        0.5
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "a7374db1-5be6-44d7-aceb-e52e1c52a69e",
+      "name": "Ponta lunar",
+      "type": "cube",
+      "from": [
+        3.55,
+        45,
+        -0.85
+      ],
+      "to": [
+        4.25,
+        46,
+        0.35
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "da8afef4-7864-4259-ac52-6adb4e01ed6d",
+      "name": "Coroa quebrada",
+      "type": "cube",
+      "from": [
+        -4.4,
+        38,
+        -1
+      ],
+      "to": [
+        -3.4,
+        45,
+        0.5
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "828064e7-25af-445d-ae36-49c3bd31cb17",
+      "name": "Ponta lunar",
+      "type": "cube",
+      "from": [
+        -4.25,
+        45,
+        -0.85
+      ],
+      "to": [
+        -3.55,
+        46,
+        0.35
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "c3df2d9b-95cd-4136-a80a-6613628a98de",
+      "name": "Carapaca peitoral",
+      "type": "cube",
+      "from": [
+        -6,
+        21,
+        -4
+      ],
+      "to": [
+        6,
+        32,
+        4
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "d43213a5-fb70-44c7-ae4a-fe9640c134bf",
+      "name": "Gola de ouro",
+      "type": "cube",
+      "from": [
+        -6.5,
+        31.799999999999997,
+        -4.3
+      ],
+      "to": [
+        6.5,
+        32.8,
+        4.3
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "14d33257-c9c9-4ad3-a4ef-11e59da69692",
+      "name": "Recesso do nucleo",
+      "type": "cube",
+      "from": [
+        -2.6,
+        24.6,
+        -4.3
+      ],
+      "to": [
+        2.6,
+        30,
+        -3.8
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        128,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "1ec41bf9-da23-437d-ace3-9446d539e857",
+      "name": "Moldura superior",
+      "type": "cube",
+      "from": [
+        -2.8,
+        29.7,
+        -4.65
+      ],
+      "to": [
+        2.8,
+        30.3,
+        -4.15
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "2e7b7572-fa89-488c-a136-dbb16ea78843",
+      "name": "Moldura inferior",
+      "type": "cube",
+      "from": [
+        -2.8,
+        24.4,
+        -4.65
+      ],
+      "to": [
+        2.8,
+        25,
+        -4.15
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "18159701-6ff8-4202-a414-f71c688cc467",
+      "name": "Moldura lateral",
+      "type": "cube",
+      "from": [
+        2.1999999999999997,
+        25,
+        -4.65
+      ],
+      "to": [
+        2.8,
+        30,
+        -4.15
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "2d074510-29a6-4ab9-aab0-483b8205b78f",
+      "name": "Moldura lateral",
+      "type": "cube",
+      "from": [
+        -2.8000000000000003,
+        25,
+        -4.65
+      ],
+      "to": [
+        -2.2,
+        30,
+        -4.15
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "74087a42-446b-488b-a5f7-bd37735a9190",
+      "name": "Nucleo lunar",
+      "type": "cube",
+      "from": [
+        -1.5,
+        26,
+        -4.8
+      ],
+      "to": [
+        1.5,
+        29,
+        -4
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "2753074b-165b-4b4d-af30-d529ce8c87b7",
+      "name": "Selo eclipse",
+      "type": "cube",
+      "from": [
+        -0.30000000000000004,
+        27.200000000000003,
+        -5
+      ],
+      "to": [
+        0.6,
+        28.1,
+        -4.75
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        128,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "5dbc4447-d6f6-42f7-a23f-69b21d355058",
+      "name": "Cintura flutuante",
+      "type": "cube",
+      "from": [
+        -3.5,
+        16,
+        -2.8
+      ],
+      "to": [
+        3.5,
+        21,
+        2.8
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        128,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "80bd8387-8aa6-473c-a987-f1386e45a079",
+      "name": "Cinto de ligacao",
+      "type": "cube",
+      "from": [
+        -4.2,
+        17,
+        -3.2
+      ],
+      "to": [
+        4.2,
+        18,
+        3.2
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "8b707111-af29-4d96-a65d-7112e4967a16",
+      "name": "Talisma posterior",
+      "type": "cube",
+      "from": [
+        3,
+        10,
+        4.3
+      ],
+      "to": [
+        5,
+        24,
+        4.8999999999999995
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "fe3c6238-a24c-47f9-ad20-536251192320",
+      "name": "Filete do talisma",
+      "type": "cube",
+      "from": [
+        3.8000000000000003,
+        12,
+        4.95
+      ],
+      "to": [
+        4.2,
+        23,
+        5.15
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "48cf4e96-8eda-4707-adb1-4fdc4e44c7c7",
+      "name": "Talisma posterior",
+      "type": "cube",
+      "from": [
+        -5,
+        10,
+        4.3
+      ],
+      "to": [
+        -3,
+        24,
+        4.8999999999999995
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "dd6562a9-d7cf-494f-a39e-f76dfbe7c9c1",
+      "name": "Filete do talisma",
+      "type": "cube",
+      "from": [
+        -4.2,
+        12,
+        4.95
+      ],
+      "to": [
+        -3.8,
+        23,
+        5.15
+      ],
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "14fa3f90-9559-44fc-ae07-a541df642067",
+      "name": "Articulacao lunar",
+      "type": "cube",
+      "from": [
+        6.5,
+        27.5,
+        -1.5
+      ],
+      "to": [
+        9.5,
+        30.5,
+        1.5
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "e60179db-912c-4c9f-ad8f-5e293c31fd8e",
+      "name": "Braco segmentado",
+      "type": "cube",
+      "from": [
+        6,
+        19,
+        -2
+      ],
+      "to": [
+        10,
+        28,
+        2
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "96b6e673-d672-477f-a172-39d7bec322cd",
+      "name": "Bracelete",
+      "type": "cube",
+      "from": [
+        5.700000000000001,
+        20,
+        -2.3
+      ],
+      "to": [
+        10.3,
+        21,
+        2.3
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "c9665f92-f5ab-4ca1-acd2-9510980ce63a",
+      "name": "Punho de guarda",
+      "type": "cube",
+      "from": [
+        5.3999999999999995,
+        12,
+        -2.7
+      ],
+      "to": [
+        10.6,
+        19,
+        2.7
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "f3b27a2f-b9b8-4823-a4b9-8074159b5341",
+      "name": "Punho dourado",
+      "type": "cube",
+      "from": [
+        5.3500000000000005,
+        13.3,
+        -2.75
+      ],
+      "to": [
+        10.65,
+        14,
+        2.75
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "19312e2f-57c7-4d85-a08b-43a4f0a3de8b",
+      "name": "Selo do punho",
+      "type": "cube",
+      "from": [
+        7.3999999999999995,
+        15.5,
+        -2.9
+      ],
+      "to": [
+        8.6,
+        18,
+        -2.6
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "3a4667d7-e609-42ca-a9c7-c8af7ad26571",
+      "name": "Ombreira alta",
+      "type": "cube",
+      "from": [
+        5,
+        29,
+        -3.1
+      ],
+      "to": [
+        11,
+        33,
+        3.1
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "39ebe952-6f59-441a-acf5-14fc632d0379",
+      "name": "Friso da ombreira",
+      "type": "cube",
+      "from": [
+        4.799999999999999,
+        28.8,
+        -3.3
+      ],
+      "to": [
+        11.2,
+        29.5,
+        3.3
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "d0fb36ff-aa96-467a-a11e-3a15e79e9905",
+      "name": "Crista da guarda",
+      "type": "cube",
+      "from": [
+        10.1,
+        32,
+        -1
+      ],
+      "to": [
+        11.1,
+        35,
+        1
+      ],
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "81d99f24-9c5e-40de-a7e0-704bd46f37dd",
+      "name": "Articulacao lunar",
+      "type": "cube",
+      "from": [
+        -9.5,
+        27.5,
+        -1.5
+      ],
+      "to": [
+        -6.5,
+        30.5,
+        1.5
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "7f49bfec-3441-450c-a68c-c38977fe2b82",
+      "name": "Braco segmentado",
+      "type": "cube",
+      "from": [
+        -10,
+        19,
+        -2
+      ],
+      "to": [
+        -6,
+        28,
+        2
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "b5cd4592-83c0-415d-acd9-430c39ddd914",
+      "name": "Bracelete",
+      "type": "cube",
+      "from": [
+        -10.3,
+        20,
+        -2.3
+      ],
+      "to": [
+        -5.7,
+        21,
+        2.3
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "b38e86f1-0468-42dd-a599-3da7b676ae72",
+      "name": "Punho de guarda",
+      "type": "cube",
+      "from": [
+        -10.600000000000001,
+        12,
+        -2.7
+      ],
+      "to": [
+        -5.4,
+        19,
+        2.7
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "82fa5e80-8d8f-442f-a84b-8607b0b48c3f",
+      "name": "Punho dourado",
+      "type": "cube",
+      "from": [
+        -10.649999999999999,
+        13.3,
+        -2.75
+      ],
+      "to": [
+        -5.35,
+        14,
+        2.75
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "b75b82ec-64dd-46a1-aff6-7ac69aaaa342",
+      "name": "Selo do punho",
+      "type": "cube",
+      "from": [
+        -8.6,
+        15.5,
+        -2.9
+      ],
+      "to": [
+        -7.4,
+        18,
+        -2.6
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "f5439eb6-4653-4d23-aaf6-729ba292844d",
+      "name": "Ombreira alta",
+      "type": "cube",
+      "from": [
+        -11,
+        29,
+        -3.1
+      ],
+      "to": [
+        -5,
+        33,
+        3.1
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "866333ee-ded8-49a1-adbf-c2082947f683",
+      "name": "Friso da ombreira",
+      "type": "cube",
+      "from": [
+        -11.2,
+        28.8,
+        -3.3
+      ],
+      "to": [
+        -4.8,
+        29.5,
+        3.3
+      ],
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "1202ca2e-d62f-42ed-ab6d-d1153cca4552",
+      "name": "Perna de obsidiana",
+      "type": "cube",
+      "from": [
+        0.7000000000000002,
+        2,
+        -2.5
+      ],
+      "to": [
+        5.7,
+        16,
+        2.5
+      ],
+      "origin": [
+        3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "1da54945-0c89-47d0-a35a-eea303ad72b8",
+      "name": "Joelheira",
+      "type": "cube",
+      "from": [
+        0.5,
+        8.5,
+        -2.8
+      ],
+      "to": [
+        5.9,
+        11,
+        -1.7999999999999998
+      ],
+      "origin": [
+        3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "2e9c98c1-f7a6-45f8-ab18-06374f9bca2f",
+      "name": "Greva lunar",
+      "type": "cube",
+      "from": [
+        2.8,
+        4,
+        -2.7
+      ],
+      "to": [
+        3.6,
+        8,
+        -2.3000000000000003
+      ],
+      "origin": [
+        3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "8e20beb8-4ceb-4a51-a33a-f2a862fac817",
+      "name": "Bota",
+      "type": "cube",
+      "from": [
+        0.6000000000000005,
+        0,
+        -3.3
+      ],
+      "to": [
+        5.800000000000001,
+        3,
+        2.7
+      ],
+      "origin": [
+        3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "eaa6e616-3108-469f-aebb-0c05851aae32",
+      "name": "Sola dourada",
+      "type": "cube",
+      "from": [
+        0.6000000000000005,
+        0,
+        -3.3
+      ],
+      "to": [
+        5.800000000000001,
+        1,
+        2.7
+      ],
+      "origin": [
+        3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "d328f518-d3b5-4b40-af00-6dc9f2ac7d03",
+      "name": "Perna de obsidiana",
+      "type": "cube",
+      "from": [
+        -5.7,
+        2,
+        -2.5
+      ],
+      "to": [
+        -0.7000000000000002,
+        16,
+        2.5
+      ],
+      "origin": [
+        -3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "df68399e-934d-46b7-ad9f-d7d6ad0f3248",
+      "name": "Joelheira",
+      "type": "cube",
+      "from": [
+        -5.9,
+        8.5,
+        -2.8
+      ],
+      "to": [
+        -0.5,
+        11,
+        -1.7999999999999998
+      ],
+      "origin": [
+        -3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "bf0303e6-df78-42f5-a4e9-1db5ce0cf9eb",
+      "name": "Greva lunar",
+      "type": "cube",
+      "from": [
+        -3.6000000000000005,
+        4,
+        -2.7
+      ],
+      "to": [
+        -2.8000000000000003,
+        8,
+        -2.3000000000000003
+      ],
+      "origin": [
+        -3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        192,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "3fa9ce2d-797a-4e62-a9de-a2910da6602b",
+      "name": "Bota",
+      "type": "cube",
+      "from": [
+        -5.800000000000001,
+        0,
+        -3.3
+      ],
+      "to": [
+        -0.6000000000000001,
+        3,
+        2.7
+      ],
+      "origin": [
+        -3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        0,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    },
+    {
+      "uuid": "b3032d5e-941b-4944-aa2f-46ab13cd2eea",
+      "name": "Sola dourada",
+      "type": "cube",
+      "from": [
+        -5.800000000000001,
+        0,
+        -3.3
+      ],
+      "to": [
+        -0.6000000000000001,
+        1,
+        2.7
+      ],
+      "origin": [
+        -3.2,
+        13,
+        0
+      ],
+      "box_uv": true,
+      "uv_offset": [
+        64,
+        0
+      ],
+      "autouv": 0,
+      "mirror_uv": false
+    }
+  ],
+  "groups": [
+    {
+      "name": "head",
+      "uuid": "379d61ea-379f-48b1-a127-2209aba08c74",
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "body",
+      "uuid": "b3f4f8e7-4924-4736-a006-3e4b36eb1431",
+      "origin": [
+        0,
+        31,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "right_arm",
+      "uuid": "ead62dcd-2022-4ca5-a6f4-93eec12e7d43",
+      "origin": [
+        8,
+        30,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "left_arm",
+      "uuid": "1d123037-41cc-411e-abdd-995516e20f49",
+      "origin": [
+        -8,
+        30,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "right_leg",
+      "uuid": "6668ba33-d8c0-4fd7-a4b6-3e03dc299b3c",
+      "origin": [
+        3.2,
+        13,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "left_leg",
+      "uuid": "76f814c0-408e-4076-a191-e8fee1fa9acc",
+      "origin": [
+        -3.2,
+        13,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "379d61ea-379f-48b1-a127-2209aba08c74",
+      "isOpen": false,
+      "children": [
+        "4d74f7e5-d1a9-480b-ac77-aa7ebcfefb61",
+        "6b968034-3024-4bb4-ab7a-d96b27783375",
+        "6db11f5d-86a9-4746-a906-071ef970a34f",
+        "34e50375-8733-4b7f-a9e6-a7b098c804c8",
+        "51fbe266-54a0-4f16-aa03-1b36a332bf78",
+        "a7374db1-5be6-44d7-aceb-e52e1c52a69e",
+        "da8afef4-7864-4259-ac52-6adb4e01ed6d",
+        "828064e7-25af-445d-ae36-49c3bd31cb17"
+      ]
+    },
+    {
+      "uuid": "b3f4f8e7-4924-4736-a006-3e4b36eb1431",
+      "isOpen": false,
+      "children": [
+        "c3df2d9b-95cd-4136-a80a-6613628a98de",
+        "d43213a5-fb70-44c7-ae4a-fe9640c134bf",
+        "14d33257-c9c9-4ad3-a4ef-11e59da69692",
+        "1ec41bf9-da23-437d-ace3-9446d539e857",
+        "2e7b7572-fa89-488c-a136-dbb16ea78843",
+        "18159701-6ff8-4202-a414-f71c688cc467",
+        "2d074510-29a6-4ab9-aab0-483b8205b78f",
+        "74087a42-446b-488b-a5f7-bd37735a9190",
+        "2753074b-165b-4b4d-af30-d529ce8c87b7",
+        "5dbc4447-d6f6-42f7-a23f-69b21d355058",
+        "80bd8387-8aa6-473c-a987-f1386e45a079",
+        "8b707111-af29-4d96-a65d-7112e4967a16",
+        "fe3c6238-a24c-47f9-ad20-536251192320",
+        "48cf4e96-8eda-4707-adb1-4fdc4e44c7c7",
+        "dd6562a9-d7cf-494f-a39e-f76dfbe7c9c1"
+      ]
+    },
+    {
+      "uuid": "ead62dcd-2022-4ca5-a6f4-93eec12e7d43",
+      "isOpen": false,
+      "children": [
+        "14fa3f90-9559-44fc-ae07-a541df642067",
+        "e60179db-912c-4c9f-ad8f-5e293c31fd8e",
+        "96b6e673-d672-477f-a172-39d7bec322cd",
+        "c9665f92-f5ab-4ca1-acd2-9510980ce63a",
+        "f3b27a2f-b9b8-4823-a4b9-8074159b5341",
+        "19312e2f-57c7-4d85-a08b-43a4f0a3de8b",
+        "3a4667d7-e609-42ca-a9c7-c8af7ad26571",
+        "39ebe952-6f59-441a-acf5-14fc632d0379",
+        "d0fb36ff-aa96-467a-a11e-3a15e79e9905"
+      ]
+    },
+    {
+      "uuid": "1d123037-41cc-411e-abdd-995516e20f49",
+      "isOpen": false,
+      "children": [
+        "81d99f24-9c5e-40de-a7e0-704bd46f37dd",
+        "7f49bfec-3441-450c-a68c-c38977fe2b82",
+        "b5cd4592-83c0-415d-acd9-430c39ddd914",
+        "b38e86f1-0468-42dd-a599-3da7b676ae72",
+        "82fa5e80-8d8f-442f-a84b-8607b0b48c3f",
+        "b75b82ec-64dd-46a1-aff6-7ac69aaaa342",
+        "f5439eb6-4653-4d23-aaf6-729ba292844d",
+        "866333ee-ded8-49a1-adbf-c2082947f683"
+      ]
+    },
+    {
+      "uuid": "6668ba33-d8c0-4fd7-a4b6-3e03dc299b3c",
+      "isOpen": false,
+      "children": [
+        "1202ca2e-d62f-42ed-ab6d-d1153cca4552",
+        "1da54945-0c89-47d0-a35a-eea303ad72b8",
+        "2e9c98c1-f7a6-45f8-ab18-06374f9bca2f",
+        "8e20beb8-4ceb-4a51-a33a-f2a862fac817",
+        "eaa6e616-3108-469f-aebb-0c05851aae32"
+      ]
+    },
+    {
+      "uuid": "76f814c0-408e-4076-a191-e8fee1fa9acc",
+      "isOpen": false,
+      "children": [
+        "d328f518-d3b5-4b40-af00-6dc9f2ac7d03",
+        "df68399e-934d-46b7-ad9f-d7d6ad0f3248",
+        "bf0303e6-df78-42f5-a4e9-1db5ce0cf9eb",
+        "3fa9ce2d-797a-4e62-a9de-a2910da6602b",
+        "b3032d5e-941b-4944-aa2f-46ab13cd2eea"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "uuid": "80c834a3-402a-4e59-ad27-61af091e8b1e",
+      "id": "0",
+      "name": "vigia.png",
+      "width": 256,
+      "height": 32,
+      "uv_width": 256,
+      "uv_height": 32,
+      "internal": true,
+      "mode": "bitmap",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAAgCAYAAAD9qabkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHwSURBVHhe7dmhbV1BEEDRjyIFhoSYhpm4CjeVetJDgGswt+QmXIEjGUTK3Ym1dHUeOOQNvvOknduP+8f373cPI2H29vqL9uXrN9rv53farVHshtNvp85enn7SGoSmQWjGBbATzuTEWYPQNAhNg9AsC2A3nDp11iA0DULTIDT/LIDGIcwahKZBaBqE5u8CmOIQZg1C0yA0DULzsQD+F4cw66u4pkFoGoTm9lkcwqx/RE2D0DQIzfIIuBtOv506axCaBqFpEJpxAeyEMzlx1iA0DULTIDTLAtgNp06dNQhNg9A0CM11BhyikDQITYPQ8GfAvoprGoSmQWj4M2D/iJoGoWkQmusMOEQhaRCaBqFZHgF3w+m3U2cNQtMgNA1CMy6AnXAmJ84ahKZBaBqEZlkAu+HUqbMGoWkQmgah4c+AfRXXNAhNg9DwZ8D+ETUNQtMgNNcZcIhC0iA0DUJznQGHKCQNQtMgNMsj4G44/XbqrEFoGoSmQWjGBbATzuTEWYPQNAhNg9AsC2A3nDp11ldxTYPQNAgNfwbsH1HTIDQNQnOdAYcoJA1C0yA01xlwiELSIDQNQnOdAYcoJA1C0yA0yyPgbjj9duqsQWgahKZBaMYFsBPO5MRZX8U1DULTIDTLAtgNp06d9Y+oaRCaBqH5A09bYsxlrL6PAAAAAElFTkSuQmCC"
+    }
+  ]
+}
